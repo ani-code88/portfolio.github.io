@@ -5,9 +5,8 @@
 }
 .team-item {
   position: relative;
-  /* display: inline-block;
-  min-width: 25%; */
-  /* border: 1px solid #fff; */
+  overflow: hidden;
+  margin-bottom: 2px;
 }
 
 .team-img {
