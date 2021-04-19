@@ -534,11 +534,8 @@ body {
     .social-icons::before {
      display: none;
    }
-   body {
-    padding: 25px;
-  }
 
-  #menuToggle {
+   #menuToggle {
     display: inline-block;
     position: fixed;
     top: 5px;
@@ -653,6 +650,9 @@ body {
   }
 
   @media (max-width: 576px) {
+    .services-content-right {
+      padding: 0 20px;
+    }
     .logo-contact{
       position: fixed;
       top: 0;
