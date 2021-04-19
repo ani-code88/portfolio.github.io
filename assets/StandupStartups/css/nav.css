@@ -14,9 +14,11 @@
 .contact-top a{
   text-decoration: none;
   color: #27284f;
+  font-size: 12px;
 }
 .contact-top .fa{
   margin-right: 15px;
+  font-size: 12px;
 }
 .contact-top a:hover{
   color: #04aae2;
@@ -243,7 +245,7 @@
   .social-icons a{
     display: block;
     margin: 20px 0;
-    color: #b1b1da;
+    opacity: 0.8;
   }
   .social-icons a .fa{
     padding: 4px 6px;
@@ -376,8 +378,8 @@
 @media (max-width: 576px) {
   .logo-contact{
     position: fixed;
-    top: 0px;
-    left: 0;
+    bottom: 5%;
+    right: 10px;
     padding: 0 10px;
     z-index: 200;
     width: 100%;
@@ -393,7 +395,22 @@
   .contact-top{
   margin: 0 auto;
   }
- 
+ .social-icons{
+    top: 90%;
+    left: 10px;
+  }
+  .social-icons a{
+    display: inline-block;
+    margin: 20px 0;
+    opacity: 0.8;
+  }
+  .social-icons a .fa{
+    padding: 4px 6px;
+    font-size: 16px;
+  }
+  .social-icons::before {
+   display: none;
+ }
   #menuToggle {
     right: 10px;
     top: 4px;
