@@ -5,14 +5,17 @@
 }
 .team-item {
   position: relative;
+  /* height: 95%; */
   overflow: hidden;
   margin-bottom: 2px;
+  border: 10px solid rgba(4, 170, 226, 0.5);
+  border-style: inset;
 }
-
 .team-img {
   display: block;
   width: 100%;
   height: 100%;
+  transform: scale(1.3)
 }
 .team-overlay {
   position: absolute;
