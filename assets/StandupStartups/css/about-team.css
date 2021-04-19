@@ -5,7 +5,6 @@
 }
 .team-item {
   position: relative;
-  /* height: 95%; */
   overflow: hidden;
   margin-bottom: 2px;
   border: 10px solid rgba(4, 170, 226, 0.5);
