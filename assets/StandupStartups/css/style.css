@@ -275,23 +275,6 @@ body.home .main-container {
 }
 
 @media (max-width: 576px) {
-  .social-icons{
-    top: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .social-icons a{
-    display: inline-block;
-    margin: 20px 0;
-    opacity: 0.8;
-  }
-  .social-icons a .fa{
-    padding: 4px 6px;
-    font-size: 16px;
-  }
-  .social-icons::before {
-   display: none;
- }
   body {
     font-size: 14px;
   }
@@ -336,8 +319,10 @@ body.home .main-container {
   }
   /* Social Media Icons for Home Page*/
   .social-icons{
+    text-align: center;
     top: 90%;
     left: 50%;
+    bottom: 0;
     transform: translateX(-50%);
   }
   .social-icons a{
