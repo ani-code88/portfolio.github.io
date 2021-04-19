@@ -28,38 +28,6 @@
   margin-left: 120px;
   width: 110px;
 }
-.social-icons{
-  display: block;
-  padding: 10px;
-  position: absolute;
-  bottom: 6%;
-  right: 10%;
-  z-index: 20;
-}
-.social-icons a{
-  display: inline-block;
-  text-decoration: none;
-  color: #27284f;
-  margin: 0 12px;
-}
-.social-icons a .fa{
-  display: block;
-  padding: 4px 6px;
-  font-size: 20px;
-}
-.social-icons a:hover{
-  color: #04aae2;
-}
-.social-icons::before {
-  content: '';
-  position: absolute;
-  left: -40px;
-  top: 48%;
-  height: 4px;
-  width: 40px;
-  border-radius: 10px;
-  background-color: #27284f;
-}
 
 /* Custom Css Ends*/
 
@@ -237,23 +205,7 @@
   }
 }
 @media (max-width: 991px) {
-  .social-icons{
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-  }
-  .social-icons a{
-    display: block;
-    margin: 20px 0;
-    opacity: 0.8;
-  }
-  .social-icons a .fa{
-    padding: 4px 6px;
-    font-size: 16px;
-  }
-  .social-icons::before {
-   display: none;
- }
+  
  #menuToggle {
   display: inline-block;
   position: fixed;
@@ -319,22 +271,11 @@
   margin: 0;
   padding-top: 60px;
   background-image: linear-gradient(to bottom, #1c1c38, #27284f);
-  /* background-color: #04aae2; */
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-/* #menu::before{
-  content: '';
-  position: absolute;
-  top: 5%;
-  left: -50%;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  background-color: rgba(39, 40, 79, 0.5);
-} */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -345,14 +286,7 @@
 #menu li:hover span {
   color: #04aae2;
 }
-/* #menu li::after {
-  position: absolute;
-  content: '';
-  height: 1px;
-  width: calc(100% - 60px);
-  background: #333; 
-  left: 30px;
-} */
+
 #menu li:last-child::after {
   display: none;
 }
@@ -378,8 +312,8 @@
 @media (max-width: 576px) {
   .logo-contact{
     position: fixed;
-    bottom: 5%;
-    right: 10px;
+    bottom: 0;
+    right: 0;
     padding: 0 10px;
     z-index: 200;
     width: 100%;
@@ -395,22 +329,8 @@
   .contact-top{
   margin: 0 auto;
   }
- .social-icons{
-    top: 90%;
-    left: 10px;
-  }
-  .social-icons a{
-    display: inline-block;
-    margin: 20px 0;
-    opacity: 0.8;
-  }
-  .social-icons a .fa{
-    padding: 4px 6px;
-    font-size: 16px;
-  }
-  .social-icons::before {
-   display: none;
- }
+   
+ 
   #menuToggle {
     right: 10px;
     top: 4px;
