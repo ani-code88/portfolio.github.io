@@ -171,6 +171,7 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
+  background-color: rgba(4, 170, 226, 0.2);
 }
 .team h2{
   text-align: center;
