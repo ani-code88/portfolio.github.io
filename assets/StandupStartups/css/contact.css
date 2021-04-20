@@ -322,21 +322,7 @@ body {
 /*================================================== */
 
 /* [ RESPONSIVE DESIGN STYLES ] */
-@media (max-width: 576px) {
-  .contact{
-    padding: 0;
-  }
-  .contact-title{
-    margin-bottom: 30px;
-    margin-top: 60px;
-  }
-}
 
-  @media (min-width: 992px) {
-    body {
-      overflow-x: hidden;
-    }
-  }
   /* Mobile  Navigation */
 
   @media (max-width: 991px) {
@@ -482,6 +468,7 @@ body {
   }
 
   @media (max-width: 576px) {
+
      .contact{
       padding: 0;
       padding-bottom: 20px;
@@ -489,6 +476,13 @@ body {
     }
     .contact-title{
       margin-top: 90px;
+      padding: 0 40px;
+    }
+    .contact-title h1{
+      font-size: 32px;
+    }
+     .contact-title p{
+      font-size: 16px;
     }
     .logo-contact{
       position: fixed;
@@ -513,7 +507,6 @@ body {
     .contact-content-left{
       display: none;
     }
-   
     body {
       font-size: 14px;
     }

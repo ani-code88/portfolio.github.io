@@ -89,13 +89,13 @@ body {
       padding: 40px;
     }
     .contact-wrap .contact-info {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
     }
     .contact-wrap .contact-info ul li {
       margin-bottom: 15px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
     }
-    .contact-wrap .contact-info ul li .wrap-icon {
+    .contact-wrap .contact-info ul li .fa {
       font-size: 20px;
       color: #fff;
       margin-top: 5px;
