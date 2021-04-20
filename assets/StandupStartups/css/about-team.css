@@ -1,7 +1,38 @@
+.team{
+  display: flex;
+  padding: 0 100px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 70px;
+  background-color: rgba(4, 170, 226, 0.2);
+}
+.team h2{
+  text-align: center;
+  font-size: 32px;
+  padding: 50px 0;
+  color: #1c1c38;
+}
 .team-gallary{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .team-gallary{
+    margin: 0 auto;
+  }
+  .team{
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .team-gallary{
+    margin: 0 auto;
+  }
+  .team{
+    padding: 0 40px;
+  }
 }
 .our-team {
   padding: 30px 0 40px;
@@ -10,8 +41,11 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  transition: 0.5s linear;
 }
-
+.our-team:hover{
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
 .our-team .picture {
   display: inline-block;
   height: 130px;
@@ -24,7 +58,8 @@
 .our-team .picture::before {
   content: "";
   width: 100%;
-  height: 0;
+  /* height: 0; */
+  height: 100%;
   border-radius: 50%;
   background-color: #F44336;
   position: absolute;
@@ -36,62 +71,65 @@
   transition: all 0.3s linear 0s;
 }
 
-.our-team:hover .picture::before {
+/* .our-team:hover .picture::before {
   height: 100%;
-}
+  } */
 
-.our-team .picture::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #F44336;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F44336;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* transform: scale(1); */
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+    transition: all 0.9s ease 0s;
+  }
 
-.our-team .picture img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  transform: scale(1);
-  transition: all 0.9s ease 0s;
-}
-
-.our-team:hover .picture img {
+/* .our-team:hover .picture img {
   box-shadow: 0 0 0 14px #f7f5ec;
   transform: scale(0.7);
-}
-.team-content{
-  color: #000;
-}
-.team-content h2{
-  padding: 0;
-  font-size: 18px;
-}
-.team-content p{
-  padding: 0;
-  font-size: 14px;
-  opacity: 0.6;
-}
+  } */
+  .team-content{
+    color: #000;
+  }
+  .team-content h2{
+    padding: 0;
+    font-size: 18px;
+  }
+  .team-content p{
+    padding: 0;
+    font-size: 14px;
+    opacity: 0.6;
+  }
 
-.our-team .social {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #F44336;
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  transition: all 0.5s ease 0s;
-}
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #F44336;
+    position: absolute;
+    /* bottom: -100px; */
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
 
+/* 
 .our-team:hover .social {
   bottom: 0;
 }
-
+*/
 .our-team .social li {
   display: inline-block;
 }
@@ -106,6 +144,42 @@
 }
 
 .our-team .social li a:hover {
-  color: #1369ce;
-  background-color: #f7f5ec;
+  color: #04AAE2;
+  /* background-color: #f7f5ec; */
+}
+.our-team[data="team-card-1"] .picture::before{
+  background-color: hsl(45deg 100% 70%);
+}
+.our-team[data="team-card-1"] .picture::after{
+  background-color: hsl(45deg 100% 70%);
+}
+.our-team[data="team-card-1"] .social{
+  background-color: hsl(45deg 100% 70%);
+}
+.our-team[data="team-card-2"] .picture::before{
+  background-color: hsl(4deg 100% 70%);
+}
+.our-team[data="team-card-2"] .picture::after{
+  background-color: hsl(4deg 100% 70%);
+}
+.our-team[data="team-card-2"] .social{
+  background-color: hsl(4deg 100% 70%);
+}
+.our-team[data="team-card-3"] .picture::before{
+  background-color: hsl(195deg 100% 70%);
+}
+.our-team[data="team-card-3"] .picture::after{
+  background-color: hsl(195deg 100% 70%);
+}
+.our-team[data="team-card-3"] .social{
+  background-color: hsl(195deg 100% 70%);
+}
+.our-team[data="team-card-4"] .picture::before{
+  background-color: hsl(122deg 100% 70%);
+}
+.our-team[data="team-card-4"] .picture::after{
+  background-color: hsl(122deg 100% 70%);
+}
+.our-team[data="team-card-4"] .social{
+  background-color: hsl(122deg 100% 70%);
 }

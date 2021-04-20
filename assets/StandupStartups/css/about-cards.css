@@ -3,7 +3,7 @@
   display: inline-block;
   width: 100%;
   padding: 0rem 1rem 4.5rem 1rem;
-  background-color: #04aae2;
+  background-color: hsl(195deg 100% 70%);
   position: relative;
   transition: 0.3s;
 }
@@ -21,8 +21,8 @@
   height: 0px;
   top: 0px;
   right: 0px;
-  border-bottom: 20px solid #04aae2;
-  border-left: 20px solid #04aae2;
+  border-bottom: 20px solid hsl(195deg 100% 70%);
+  border-left: 20px solid hsl(195deg 100% 70%);
   border-right: 20px solid #e8f6fc;
   border-top: 20px solid #e8f6fc;
   position: absolute;
@@ -35,8 +35,8 @@
   display: block;
   width: 0px;
   height: 0px;
-  border-top: 40px solid #04aae2;
-  border-right: 40px solid #04aae2;
+  border-top: 40px solid hsl(195deg 100% 70%);
+  border-right: 40px solid hsl(195deg 100% 70%);
   border-left: 40px solid #e8f6fc;
   border-bottom: 40px solid #e8f6fc;
   bottom: 0px;
@@ -48,49 +48,49 @@
   transition: all 0.5s;
 }
 .card-folded[data="card-folded-2"]{
-  background-color: #FFC107;
+  background-color: hsl(45deg 100% 70%);
 }
 .card-folded[data="card-folded-2"]::after{
-  border-bottom: 20px solid #FFC107;
-  border-left: 20px solid #FFC107;
+  border-bottom: 20px solid hsl(45deg 100% 70%);
+  border-left: 20px solid hsl(45deg 100% 70%);
 }
 .card-folded[data="card-folded-2"]::before{
-  border-top: 40px solid #FFC107;
-  border-right: 40px solid #FFC107;
+  border-top: 40px solid hsl(45deg 100% 70%);
+  border-right: 40px solid hsl(45deg 100% 70%);
 }
 .card-folded[data="card-folded-3"]{
-  background-color: #4CAF50;
+  background-color: hsl(213deg 100% 70%);
 }
 .card-folded[data="card-folded-3"]::after{
-  border-bottom: 20px solid #4CAF50;
-  border-left: 20px solid #4CAF50;
+  border-bottom: 20px solid hsl(213deg 100% 70%);
+  border-left: 20px solid hsl(213deg 100% 70%);
 }
 .card-folded[data="card-folded-3"]::before{
-  border-top: 40px solid #4CAF50;
-  border-right: 40px solid #4CAF50;
+  border-top: 40px solid hsl(213deg 100% 70%);
+  border-right: 40px solid hsl(213deg 100% 70%);
 }
 .card-folded[data="card-folded-4"]{
-  background-color: #F44336;
+  background-color: hsl(4deg 100% 70%);
 }
 .card-folded[data="card-folded-4"]::after{
-  border-bottom: 20px solid #F44336;
-  border-left: 20px solid #F44336;
+  border-bottom: 20px solid hsl(4deg 100% 70%);
+  border-left: 20px solid hsl(4deg 100% 70%);
 }
 .card-folded[data="card-folded-4"]::before{
-  border-top: 40px solid #F44336;
-  border-right: 40px solid #F44336;
+  border-top: 40px solid hsl(4deg 100% 70%);
+  border-right: 40px solid hsl(4deg 100% 70%);
 }
 
 .card-folded h2 {
   font-size: 24px;
-  color: #fff;
+  color: hsl(195deg 50% 25%);
   font-weight: 400;
   letter-spacing: 1px;
   padding-top: 50px;
   padding-bottom: 20px;
 }
 .card-folded p {
-  color: #fff;
+  color: hsl(195deg 50% 25%);
   font-size: 14px;
   line-height: 140%;
   opacity: 0.9;
