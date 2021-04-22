@@ -184,7 +184,7 @@ body {
 .page-link:focus,
 .page-link:active{
   box-shadow: none !important;
-  background-color: #04aae2;
+  background-color: #04aae2!important;
 }
 
 .page-link:hover {
