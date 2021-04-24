@@ -159,13 +159,13 @@ body {
   padding-bottom: 100px;
   background-color: #04aae2;
 }
-.services-2-title {
+.section-title {
   color: #fff;
   font-weight: 700;
   font-size: 42px;
   text-align: center;
 }
-.services-2-p{
+.section-p{
   color: #fff;
   font-size: 16px;
   text-align: center;
@@ -267,6 +267,99 @@ body {
 }
 
 /* Services.services-cards Ends */
+
+ /* ********************* our pricing starts ******************************  */
+
+.pricing{
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  position:  relative;
+}
+.pricing::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #f7f7f9;
+}
+.pricing .container{
+  margin-top:80px;
+}
+.money{
+  font-size: 40px;
+  line-height: 1;
+  color: #606060;
+}
+.card{
+  transition: 0.4s ease;
+
+}
+.card-header{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #323f44!important;
+  padding: 25px 0!important;
+}
+.card-body{
+  padding: 30px 0!important;
+}
+.card-body li{
+  list-style-type: none;
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #606060;
+}
+.card-footer{
+  background: #fff!important;
+  padding: 30px 0!important;
+}
+.card-footer a{
+  text-decoration: none;
+  border: 1px solid #04aae2;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #04aae2;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.card:hover .card-footer a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #04aae2;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header, .card:hover .money{
+  color: #04aae2;
+}
+.card-second{
+  transform: translateY(-20px);
+}
+@media (max-width: 992px) {
+  .card-second{
+    margin-top:40px;
+  }
+}
+@media (max-width: 576px) {
+  .pricing{
+   padding:50px 0;
+  }
+}
+/* ********************* our pricing ends ****************************** */
+
 /* Footer Starts */
 
 .footer-logo{
@@ -480,17 +573,12 @@ body {
   .services-content-right h2{
     font-size: 20px;
   }
+  .section-title {
+  font-weight: 600;
+  font-size: 28px;
 }
-/* .services-2{
-  padding: 0 100px;
-  padding-bottom: 20px;
-  } */
+}
 
-  @media (min-width: 992px) {
-    body {
-      overflow-x: hidden;
-    }
-  }
   /* Mobile  Navigation */
 
   @media (max-width: 991px) {
