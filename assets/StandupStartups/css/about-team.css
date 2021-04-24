@@ -14,9 +14,6 @@
   padding: 50px 0;
   color: #1c1c38;
 }
-.team-dir{
-  
-}
 .team::before {
     content: "";
     position: absolute;
@@ -26,6 +23,9 @@
     right: 0;
     z-index: -1;
     background: linear-gradient(225deg, hsl(213deg 100% 70%) 50%, #fff 0%);
+  }
+  .dir-img{
+    margin-bottom:30px;
   }
 .dir-desc h4{
   font-size:22px;
