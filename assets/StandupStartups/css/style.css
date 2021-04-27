@@ -116,10 +116,6 @@ body {
   background-color: #04aae2;
 }
 .home .bg {
-  background-image: url(../img/hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   height: calc(100vh - 100px);
   z-index: 111;
   border-radius: 30px;
@@ -173,6 +169,12 @@ body {
   color: #333;
 }
 
+/* ********************* Home Carousel starts ******************************  */
+.carousel-control-next .fa, .carousel-control-prev .fa{
+  font-size: 24px;
+  color:#16c9f6;
+  /* ********************* Home Carousel ends ******************************  */
+}
 
 /* [ RESPONSIVE DESIGN STYLES ] */
 
