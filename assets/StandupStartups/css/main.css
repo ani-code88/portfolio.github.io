@@ -15,53 +15,12 @@ body {
   font-weight: 500;
   line-height: 1.6;
   position: relative;
-  background-size: cover;
-  background-position: center;
   height: 100%;
   width: 100%;
   background-color: #eef9fd;
 }
-.poppins-font {
-  font-family: 'Poppins', sans-serif;
-}
-.open-sans-font {
-  font-family: 'Open Sans', sans-serif;
-}
-.ft-wt-600 {
-  font-weight: 600;
-}
-.mb-30 {
-  margin-bottom: 30px;
-}
-.no-transform {
-  transform: none !important;
-}
-.custom-title {
-  padding-bottom: 22px;
-  font-size: 26px;
-}
 
-/*** Light Body *Deleted ***/
-
-
-/*** Buttons ***/
-
-/*** Page Title ***/
-.title-section {
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
-  padding: 80px 0;
-}
-.title-section h1 {
-  font-size: 56px;
-  font-weight: 900;
-  /* color: #fff; */
-  color: #111;
-  text-transform: uppercase;
-  margin: 0;
-}
-
+/*Social Media Icons Starts Here*/
 .social-icons{
   display: block;
   padding: 10px;
@@ -75,6 +34,7 @@ body {
   text-decoration: none;
   color: #27284f;
   margin: 0 12px;
+  opacity: 0.8;
 }
 .social-icons a .fa{
   display: block;
@@ -94,15 +54,7 @@ body {
   border-radius: 10px;
   background-color: #27284f;
 }
-
-/* [ HEADER ] */
-/*================================================== */
-
-/*** Desktop Navigation ***/
-
-
-/* [ Pages ] */
-/*================================================== */
+/*Social Media Icons Ends Here*/
 
 /*** Homepage ***/
 
@@ -142,6 +94,7 @@ body {
   margin: 18px 0 10px;
   position: relative;
   padding-left: 70px;
+  text-transform: uppercase;
 }
 .home .home-details h1::before {
   content: '';
@@ -151,6 +104,7 @@ body {
   height: 4px;
   width: 40px;
   border-radius: 10px;
+  background-color: #04aae2;
 }
 .home .home-details h1 span {
   color: #04aae2;
@@ -168,56 +122,95 @@ body {
   line-height: 35px;
   color: #333;
 }
-
-/* ********************* Home Carousel starts ******************************  */
-.carousel-control-next .fa, .carousel-control-prev .fa{
-  font-size: 24px;
-  color:#16c9f6;
-  /* ********************* Home Carousel ends ******************************  */
-}
-
-/* [ RESPONSIVE DESIGN STYLES ] */
-
-
-@media (max-width: 1350px) and (min-width: 992px) {
-  .container {
-    max-width: calc(100% - 195px);
-  }
-}
-@media (max-width: 1200px) {
-  .home .home-details h1 {
-    padding-left: 0;
-  }
-  .home .home-details h1::before {
-    display: none;
-  }
-}
-@media (max-width: 1200px) and (min-width: 992px) {
-  .home .home-details h1 {
-    font-size: 42px;
-    line-height: 52px;
-  }
-}
-@media (max-width: 1100px) and (min-width: 992px) {
-  .home .home-details > div {
-    max-width: 500px;
-  }
-}
-@media (min-width: 1600px) {
-  .home .home-details > div {
-    max-width: 600px;
-  }
-}
-@media (min-width: 992px) {
-  .home .home-details-container {
+.home .home-details-container {
     width: 100%;
     height: 100vh;
   }
-  body.home {
-    overflow: hidden;
+  /*Learn More Button Starts*/
+
+  .button::before,
+.button-icon{
+  background-color: #04aae2;
+}
+.button{
+  border: 1px solid #04aae2;
+}
+.button {
+  overflow: hidden;
+  display: inline-block;
+  line-height: 1.4;
+  border-radius: 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+  padding: 16px 70px 16px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  outline: none !important;
+}
+.button .button-text {
+  position: relative;
+  z-index: 2;
+  color: #04aae2;
+  transition: .3s ease-out all;
+}
+.button::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: .3s ease-out all;
+}
+.button:hover .button-text {
+  color: #ffffff;
+}
+.button:hover::before {
+  transform: translateX(0);
+}
+.button-icon {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+  /*Learn More Button Ends*/
+
+/* ********************* Home Carousel Starts ******************************  */
+.carousel-control-next .fa, .carousel-control-prev .fa{
+  font-size: 24px;
+  color:#16c9f6;
+}
+/* ********************* Home Carousel Ends ******************************  */
+
+/* [ RESPONSIVE DESIGN STYLES ] */
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .home .home-details > div {
+    max-width: 550px;
   }
 }
-/* Mobile  Navigation */
 
 @media (max-width: 991px) {
   .social-icons{
@@ -249,6 +242,7 @@ body.home .main-container {
 .home .home-details {
   padding: 0;
 }
+
 .main-img-mobile {
   border-radius: 50%;
   width: 270px;
@@ -261,26 +255,21 @@ body.home .main-container {
   font-size: 38px;
   line-height: 48px;
   margin: 29px 0 13px;
+  padding-left: 0;
+}
+.home .home-details h1::before {
+  display: none;
 }
 .home .home-details p {
   margin: 10px 0 23px;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 28px;
 }
-
-
-@media (max-width: 767px) {
-  .home .home-details p {
-    font-size: 14px;
-    line-height: 28px;
-  }
 }
-
 @media (max-width: 576px) {
   body {
     font-size: 14px;
-  }
-  
+  }  
   .main-content {
     padding-top: 85px;
   }
@@ -295,29 +284,6 @@ body.home .main-container {
     font-size: 29px;
     line-height: 39px;
     margin: 18px 0 13px;
-  }
-  .home .home-details h6 {
-    font-size: 19px;
-  }
-  .title-section {
-    padding: 16px 25px 14px;
-    background: #252525;
-    border-bottom: 1px solid #333;
-    margin-bottom: 36px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 11;
-    top: 0;
-  }
-  .title-section h1 {
-    font-size: 26px;
-  }
-  .title-bg {
-    display: none;
-  }
-  .custom-title {
-    font-size: 21px;
   }
   /* Social Media Icons for Home Page*/
   .social-icons{
@@ -339,3 +305,4 @@ body.home .main-container {
   .social-icons::before {
    display: none;
  }
+}

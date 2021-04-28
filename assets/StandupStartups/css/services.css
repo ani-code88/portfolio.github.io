@@ -16,25 +16,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-/*========================Some Common CSS Starts========================== */
-
-#menu li.active a,
-{
-  color: #fff;
-}
-.header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover,
-.header .icon-box h2{
-  background-color: #04aae2;
-}
-.poppins-font {
-  font-family: 'Poppins', sans-serif;
-}
-.open-sans-font {
-  font-family: 'Open Sans', sans-serif;
-}
-/*========================Some Common CSS Ends========================== */
-
 /* Top Header Logo and Contact Starts */
 .logo-contact{
   background-color: #eef9fd;
