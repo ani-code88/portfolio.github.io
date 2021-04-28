@@ -336,6 +336,10 @@
     padding: 19px 0 0 13px;
     width: 49px;
     height: 49px;
+    background-color: transparent;
+  }
+  #menuToggle > span{
+    background-color:#27284f;
   }
   .home #menuToggle {
     right: 5px;

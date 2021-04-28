@@ -16,25 +16,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-/*========================Some Common CSS Starts========================== */
-
-#menu li.active a,
-{
-  color: #fff;
-}
-.header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover,
-.header .icon-box h2{
-  background-color: #04aae2;
-}
-.poppins-font {
-  font-family: 'Poppins', sans-serif;
-}
-.open-sans-font {
-  font-family: 'Open Sans', sans-serif;
-}
-/*========================Some Common CSS Ends========================== */
-
 /* Top Header Logo and Contact Starts */
 
 .social-icons{
@@ -153,9 +134,11 @@ body {
 .post-content .entry-content p {
   margin: 15px 0 5px;
   color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
 }
 .post-content .entry-header h3 a {
   color: #fff;
+  /*font-size: 20px;*/
   font-size: 20px;
   font-weight: 600;
 }
@@ -373,5 +356,18 @@ body {
   body {
     font-size: 14px;
   }
+  .post-content {
+  padding: 6px;
+}
+  .post-content .entry-header h3 {
+  line-height: 18px;
+}
+.post-content .entry-content p {
+  font-size: 12px;
+  display: none;
+}
+.post-content .entry-header h3 a {
+  font-size: 13px;
+}
   
 }

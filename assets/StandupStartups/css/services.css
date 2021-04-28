@@ -106,6 +106,7 @@ body {
 }
 .services-title{
   margin: 70px 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 .services-title h1{
@@ -174,16 +175,16 @@ body {
 
 /* Services.services-cards Starts */
 
-.container .services-card{
+.services-2 .services-card{
   height: 310px;
 }
-.container .services-card .face{
+.services-2 .services-card .face{
   width: 100%;
   height: 200px;
   transition: 0.5s;
 }
 
-.container .services-card .face.face1{
+.services-2 .services-card .face.face1{
   position: relative;
   background: #333;
   display: flex;
@@ -192,36 +193,37 @@ body {
   z-index: 1;
   transform: translateY(100px);
 }
-.container .services-card:hover .face.face1{
+.services-2 .services-card:hover .face.face1{
   transform: translateY(0);
   
 }
-.container .services-card:hover .face.face1[data="serviceCard-1"]{
+.services-2 .services-card:hover .face.face1[data="serviceCard-1"]{
   background: #ff0057;
 }
-.container .services-card:hover .face.face1[data="serviceCard-2"]{
+.services-2 .services-card:hover .face.face1[data="serviceCard-2"]{
   background: #27284f;
 }
-.container .services-card:hover .face.face1[data="serviceCard-3"]{
+.services-2 .services-card:hover .face.face1[data="serviceCard-3"]{
   background: #FFC107;
 }
-.container .services-card:hover .face.face1[data="serviceCard-4"]{
+.services-2 .services-card:hover .face.face1[data="serviceCard-4"]{
   background: #4CAF50;
 }
-.container .services-card .face.face1 .content{
+.services-2 .services-card .face.face1 .content{
   opacity: 0.9;
   transition: 0.5s;
+  text-align:center;
 }
 
-.container .services-card:hover .face.face1 .content{
+.services-2 .services-card:hover .face.face1 .content{
   opacity: 1;
 }
 
-.container .services-card .face.face1 .content img{
+.services-2 .services-card .face.face1 .content img{
   max-width: 100px;
 }
 
-.container .services-card .face.face1 .content h3{
+.services-2 .services-card .face.face1 .content h3{
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -229,7 +231,7 @@ body {
   font-size: 1.5em;
 }
 
-.container .services-card .face.face2{
+.services-2 .services-card .face.face2{
   position: relative;
   background: #fff;
   display: flex;
@@ -241,15 +243,16 @@ body {
   transform: translateY(-100px);
 }
 
-.container .services-card:hover .face.face2{
+.services-2 .services-card:hover .face.face2{
   transform: translateY(0);
 }
 
-.container .services-card .face.face2 .content p{
+.services-2 .services-card .face.face2 .content p{
   margin: 0;
   padding: 0;
   color: #000;
 }
+/*-------Services Cards Read More Button   CSS <Disabled>---------
 
 .container .services-card .face.face2 .content a{
   margin: 15px 0 0;
@@ -264,7 +267,7 @@ body {
 .container .services-card .face.face2 .content a:hover{
   background: #333;
   color: #fff;
-}
+}----------------------------*/
 
 /* Services.services-cards Ends */
 

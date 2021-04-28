@@ -2,7 +2,7 @@
 .card-folded {
   display: inline-block;
   width: 100%;
-  padding: 0rem 1rem 4.5rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
   background-color: hsl(195deg 100% 70%);
   position: relative;
   transition: 0.3s;
