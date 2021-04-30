@@ -11,6 +11,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to bottom, #eef9fd, #dff3fb);
+    overflow-x: hidden;
 }
 
 * {
@@ -92,7 +93,7 @@ body {
 /* Top Header Logo and Contact Ends */
 
 
-/*========================services Content Start========================== */
+/*========================Portfolio Content Start========================== */
 
 .portfolio {
     width: 100%;
@@ -163,8 +164,8 @@ body {
     width: 100%;
     /*background-color: #117a8b;*/
     background-image: linear-gradient( 
-272deg
- , #11626f, #118b7a);
+        272deg
+        , #11626f, #118b7a);
     padding: 50px 0;
 }
 
@@ -178,8 +179,8 @@ body {
 .card-deck .card{
   /*background-color: #11626f;*/
   background-image: linear-gradient( 
-45deg
- , #11626f, #118b7a);
+    45deg
+    , #11626f, #118b7a);
   border: 1px solid #08444e;
   position: relative;
   z-index: 1;
@@ -220,7 +221,6 @@ body {
     position: absolute;
     display: block;
     background-color:#08444e;
-    /*height:100%;*/
     opacity: 0;
     transition: all 0.3s;
     z-index: -1;
@@ -229,24 +229,16 @@ body {
     right:50%;
     bottom: 0;
 }
-/*.btn-primary:hover {
-    color: #fff;
-    background-color: rgb(4, 170, 226, 0.8);
-    border-color: rgb(4, 170, 226, 0.8);
-  }*/
-  .btn-primary:hover::before{
-    /*top:0;*/
+.btn-primary:hover::before{
     left:0;
     right:0;
-    /*bottom: 0;*/
     opacity: 1;
-  }
+}
 /*Projects Ends*/
-/*clients Starts*/
 
+/*clients Starts*/
 .clients {
     width: 100%;
-    /*background-color: #262c2d;*/
     padding: 50px 0;
 }
 .clients .projects-title h2{
@@ -254,6 +246,203 @@ body {
 }
 /*Clients Ends*/
 
+/*==============================================*/
+
+/*Meet Our Startups Starts*/
+.startups {
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgba(0,0,0,0.06);
+}
+
+.startups h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.startups .cs-card{
+    min-height: 90%;
+    border:2px solid #c5c5c5;
+    background: linear-gradient(145deg, #fbffff, #d4d8e6);
+    transition: 0.5s;
+    margin-bottom: 20px; 
+    box-shadow: -2px 12px 20px -10px rgb(0, 0, 0, 0.75);
+}
+.startups .cs-card:hover .cs-card-content a h3{
+    color: #04aae2;
+}
+.startups .cs-card:hover{
+    border:2px solid #04aae2;
+}
+.startups .cs-card:hover img{
+    transform:scale(1.2);
+}
+.startups .cs-card-content{
+  padding: 0 16px 30px;
+}
+.startups .cs-card-content a{
+    display: block;
+    text-decoration: none;
+}
+.startups .cs-card-content h3{
+  font-size: 18px;
+  font-weight: bold;
+  color:#000;
+  transition: 0.3s;
+}
+.startups .cs-card-content p{
+  font-size: 13px;
+  color:#000;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.startups .cs-card-img img{
+  width:70%;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+@media(max-width:600px) {
+    .startups h2{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .startups .cs-card-content h3{
+        font-size: 15px;
+    }
+    .startups .cs-card-content p{
+        font-size: 11px;
+    }
+}
+/*Meet Our Startups Ends*/
+
+/*Meet With Founders Starts*/
+.founders {
+    width: 100%;
+    padding: 50px 0;
+}
+.founders h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.founders .cs-card{
+    min-height: 90%;
+    border-radius: 5px;
+    border:2px solid #c5c5c5;
+    background: linear-gradient(145deg, #fbffff, #d4d8e6);
+    transition: 0.5s;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+.founders .cs-card:hover .cs-card-content a h3{
+    color: #04aae2;
+}
+.founders .cs-card:hover{
+    border:2px solid #04aae2;
+}
+.founders .cs-card-img{
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    border:2px solid rgba(0,0,0,0.3);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.founders .cs-card:hover .cs-card-img{
+    border:2px solid #04aae2;
+}
+.founders .cs-card:hover img{
+    transform:scale(1.2);
+}
+.founders .cs-card-content a{
+    display: block;
+    text-decoration: none;
+}
+.founders .cs-card-content h3{
+  font-size: 18px;
+  font-weight: bold;
+  color:#000;
+  transition: 0.3s;
+}
+.founders .cs-card-content p{
+  font-size: 13px;
+  color:#000;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.founders .cs-card-img img{
+  width:70%;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+@media(max-width:600px) {
+    .founders h2{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .founders .cs-card-content h3{
+        font-size: 15px;
+    }
+    .founders .cs-card-content p{
+        font-size: 11px;
+    }
+}
+/*Meet With Founders Ends*/
+/*==============================================*/
+
+/*Join Us Form Starts*/
+
+.cs-join-form{
+  width:100%;
+  padding: 50px 0;
+  color:#fff;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.85) 0%, rgba(1,109,149,1) 48%, rgba(0,212,255,0.85) 100%);
+}
+.cs-join-form-title button{
+    border:none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+.cs-join-form-title button:hover{
+    background-color: #bd2130;
+}
+#cs-form-content{
+    height:0;
+    opacity: 0;
+    transition: all 1s;
+    overflow:hidden;
+}
+
+.join-btn{
+    border:none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+.join-btn:hover{
+    background-color: #bd2130;
+}
+/*Join Us Form Ends*/
 
 /*Testimonials Starts*/
 .testimonial {
@@ -695,8 +884,8 @@ body {
         z-index: 1;
         transform-origin: 5px 0;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            opacity 0.55s ease;
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
     }
 
     #menuToggle>span:first-child {

@@ -123,3 +123,13 @@
 
 
 })(jQuery);
+function showCsForm() {
+	var joinUsForm = document.getElementById("cs-form-content");
+	if (joinUsForm.style.height=="auto") {
+		joinUsForm.style.height="0";
+		joinUsForm.style.opacity="0";
+	}else{
+		joinUsForm.style.height="auto";
+		joinUsForm.style.opacity="1";
+	}
+}
