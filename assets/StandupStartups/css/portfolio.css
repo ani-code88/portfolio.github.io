@@ -405,6 +405,7 @@ body {
 .cs-join-form{
   width:100%;
   padding: 50px 0;
+  margin-bottom: 80px;
   color:#fff;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,0.85) 0%, rgba(1,109,149,1) 48%, rgba(0,212,255,0.85) 100%);
