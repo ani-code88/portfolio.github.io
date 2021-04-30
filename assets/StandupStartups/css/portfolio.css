@@ -310,10 +310,10 @@ body {
         font-weight: 600;
     }
     .startups .cs-card-content h3{
-        font-size: 15px;
+        font-size: 18px;
     }
     .startups .cs-card-content p{
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 /*Meet Our Startups Ends*/
@@ -334,7 +334,7 @@ body {
 .founders .cs-card{
     min-height: 90%;
     border-radius: 5px;
-    border:2px solid #c5c5c5;
+    border:2px solid rgba(0,0,0,0.1);
     background: linear-gradient(145deg, #fbffff, #d4d8e6);
     transition: 0.5s;
     margin-bottom: 20px;
@@ -353,7 +353,7 @@ body {
     align-items: center;
     width:100px;
     height:100px;
-    border:2px solid rgba(0,0,0,0.3);
+    border:2px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     transition: 0.5s;
 }
