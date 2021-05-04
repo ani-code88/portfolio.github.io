@@ -11,17 +11,19 @@
   justify-content: space-between;
   align-items: center;
 }
-.contact-top a{
+.reg-startup a{
   text-decoration: none;
-  color: #27284f;
-  font-size: 12px;
-}
-.contact-top .fa{
-  margin-right: 15px;
-  font-size: 12px;
-}
-.contact-top a:hover{
+  font-size: 14px;
   color: #04aae2;
+  padding: 8px 16px;
+  display: block;
+  transition: 0.3s;
+  font-weight: 300;
+  background-color: #27284F;
+  color:#fff;
+}
+.reg-startup a:hover{
+  background-color:#04aae2;
 }
 .logo{
   border-radius: 100px;
@@ -258,9 +260,7 @@
   .logo{
     margin-left: 0;
   }
-  .contact-top{
-  margin: 0 auto;
-  }
+  
   #menuToggle {
     right: 10px;
     top: 4px;

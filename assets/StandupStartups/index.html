@@ -93,16 +93,15 @@
             <div class="logo">
                 <a href="index.html"><img src="img/logo.svg" alt="" width="100%"></a>
             </div>
-            <div class="contact-top">
-                <a href="tel:+91-1234567890"><i class="fa fa-phone"></i><span>+91-1234567890</span></a>
-            </div>
         </div>
-        <div class="social-icons">
+        <!-- Social Media Icon at bottom on home page (Displayed-none) -->
+        <div class="social-icons d-none">
             <a href="https://www.facebook.com/standupstartups/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/invites/contact/?i=imu99a7w56oh&utm_content=krxfprp" target="_blank"><i class="fa fa-instagram"></i></a>
             <a href="https://twitter.com/StandupStartups" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://www.linkedin.com/company/standup-startups" target="_blank"><i class="fa fa-linkedin"></i></a>
         </div>
+        <!-- Social Media Icon at bottom on home page (Displayed-none) -->
         <div class="color-block d-none d-lg-block"></div>
         <div class="row no-gutters home-details-container align-items-center">
             <div class="col-lg-4 bg position-fixed d-none d-lg-block">
@@ -138,10 +137,83 @@
                         <span class="button-text">Learn More</span>
                         <span class="button-icon fa fa-arrow-right"></span>
                     </a>
+                    <button onclick="document.getElementById('login-model').style.display='block'" class="reg-startup-btn">Register Your Startup</button>
                 </div>
             </div>
         </div>
     </section>
+    <div id="login-model" class="modal">
+            <form class="modal-content animate" href="login.html">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login-model').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <div class="container">
+        <h2 class="text-center py-4 reg-startup-title">Register Now </h2>
+    </div>
+                </div>
+                <div class="container" id="cs-form-content">
+        <div class="row">
+            <div class="col-sm-6 col-12 mb-3">
+                <label for="founder-name">Name</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Founder Name" id="founder-name">
+            </div>
+            <div class="col-sm-6 col-12">
+                <label for="designation">Designation</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Designation" id="designation">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-sm-6 col-12 mb-3">
+                <label for="service-area">Service Area</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Service Area" id="service-area">
+            </div>
+            <div class="col-sm-6 col-12">
+                <label for="location">Location</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Your Location" id="location">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-sm-6 col-12 mb-3">
+                <label for="mob-no">Mobile No</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Mobile Number" id="mob-no">
+            </div>
+            <div class="col-sm-6 col-12">
+                <label for="e-mail">E-mail</label>
+                <input type="email" class="form-control form-control-sm" placeholder="Your Email" id="e-mail">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-sm-6 col-12 mb-3">
+                <label for="password">Password</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Enter Password" id="password">
+            </div>
+            <div class="col-sm-6 col-12">
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Re-enter Password" id="confirm-pwd">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-sm-6 col-12 mb-3">
+                <label for="query">Any Query</label>
+                <textarea type="mail" class="form-control form-control-sm" rows="3" id="query"></textarea>
+            </div>
+            <div class="col-sm-6 col-12">
+                <label for="website">Website</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Your Website" id="website">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <button type="submit" class="join-btn w-100">Let's Go</button>
+            </div>
+        </div>
+
+    </div>
+            </form>
+        </div>
     <!-- Main Content Ends -->
     <!-- Template JS Files -->
     <script src="js/jquery-3.5.0.min.js"></script>
