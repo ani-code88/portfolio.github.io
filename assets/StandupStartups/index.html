@@ -93,6 +93,33 @@
             <div class="logo">
                 <a href="index.html"><img src="img/logo.svg" alt="" width="100%"></a>
             </div>
+            <div class="login">
+                <button href="#" preventDefault onclick="document.getElementById('login-model').style.display='block'">Login</button>
+            </div>
+        </div>
+        <div id="login-model" class="modal">
+            <form class="modal-content animate p-5" href="login.html">
+                <span onclick="document.getElementById('login-model').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="headingcontainer">
+                    <div class="container">
+                        <h2 class="text-center py-4 reg-startup-title">User Login </h2>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mb-3">
+                        <label for="user-name">User Name</label>
+                        <input type="text" class="form-control form-control-sm" id="user-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="password">
+                    </div>
+                    <div>
+                        <button type="submit" class="login-btn w-100">Login</button>
+                        <a href="#" class="forgot-pwd">Forgot Password</a>
+                    </div>
+                </div>
+            </form>
         </div>
         <!-- Social Media Icon at bottom on home page (Displayed-none) -->
         <div class="social-icons d-none">
@@ -132,88 +159,88 @@
                     <img src="img/img-mobile.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="illustration" />
                     <h1><span>Exponential Growth</span> With Seamless Collaboration
                     </h1>
-                    <p>Standup startup is the emerging company with the services in the category field of marketing, business development and business legal framework. We believe in customer satisfaction and our service is rated good by your customers.</p>
+                    <p>Standup startup is the emerging company with the services in the category field of marketing, business development and business legal framework. We believe in customer satisfaction and our service is rated good by our customers.</p>
                     <a class="button" href="about.html">
                         <span class="button-text">Learn More</span>
                         <span class="button-icon fa fa-arrow-right"></span>
                     </a>
-                    <button onclick="document.getElementById('login-model').style.display='block'" class="reg-startup-btn">Register Your Startup</button>
+                    <button onclick="document.getElementById('register-model').style.display='block'" class="reg-startup-btn">Register Your Startup</button>
                 </div>
             </div>
         </div>
     </section>
-    <div id="login-model" class="modal">
-            <form class="modal-content animate" href="login.html">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('login-model').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    <div class="container">
-        <h2 class="text-center py-4 reg-startup-title">Register Now </h2>
-    </div>
+    <div id="register-model" class="modal">
+        <form class="modal-content animate p-5" href="login.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('register-model').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="container">
+                    <h2 class="text-center py-4 reg-startup-title">Register Now </h2>
                 </div>
-                <div class="container" id="cs-form-content">
-        <div class="row">
-            <div class="col-sm-6 col-12 mb-3">
-                <label for="founder-name">Name</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Founder Name" id="founder-name">
             </div>
-            <div class="col-sm-6 col-12">
-                <label for="designation">Designation</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Designation" id="designation">
-            </div>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="founder-name">Name</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Founder Name" id="founder-name">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="designation">Designation</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Designation" id="designation">
+                    </div>
+                </div>
 
-        <div class="row mt-4">
-            <div class="col-sm-6 col-12 mb-3">
-                <label for="service-area">Service Area</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Service Area" id="service-area">
-            </div>
-            <div class="col-sm-6 col-12">
-                <label for="location">Location</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Your Location" id="location">
-            </div>
-        </div>
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="service-area">Service Area</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Service Area" id="service-area">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Your Location" id="location">
+                    </div>
+                </div>
 
-        <div class="row mt-4">
-            <div class="col-sm-6 col-12 mb-3">
-                <label for="mob-no">Mobile No</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Mobile Number" id="mob-no">
-            </div>
-            <div class="col-sm-6 col-12">
-                <label for="e-mail">E-mail</label>
-                <input type="email" class="form-control form-control-sm" placeholder="Your Email" id="e-mail">
-            </div>
-        </div>
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="mob-no">Mobile No</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Mobile Number" id="mob-no">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" class="form-control form-control-sm" placeholder="Your Email" id="e-mail">
+                    </div>
+                </div>
 
-        <div class="row mt-4">
-            <div class="col-sm-6 col-12 mb-3">
-                <label for="password">Password</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Enter Password" id="password">
-            </div>
-            <div class="col-sm-6 col-12">
-                <label for="confirm-pwd">Confirm Password</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Re-enter Password" id="confirm-pwd">
-            </div>
-        </div>
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="reg-password">Password</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Enter Password" id="reg-password">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="confirm-pwd">Confirm Password</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Re-enter Password" id="confirm-pwd">
+                    </div>
+                </div>
 
-        <div class="row mt-4">
-            <div class="col-sm-6 col-12 mb-3">
-                <label for="query">Any Query</label>
-                <textarea type="mail" class="form-control form-control-sm" rows="3" id="query"></textarea>
-            </div>
-            <div class="col-sm-6 col-12">
-                <label for="website">Website</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Your Website" id="website">
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12">
-                <button type="submit" class="join-btn w-100">Let's Go</button>
-            </div>
-        </div>
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="query">Any Query</label>
+                        <textarea type="mail" class="form-control form-control-sm" rows="3" id="query"></textarea>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="website">Website</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Your Website" id="website">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <button type="submit" class="join-btn w-100">Let's Go</button>
+                    </div>
+                </div>
 
+            </div>
+        </form>
     </div>
-            </form>
-        </div>
     <!-- Main Content Ends -->
     <!-- Template JS Files -->
     <script src="js/jquery-3.5.0.min.js"></script>

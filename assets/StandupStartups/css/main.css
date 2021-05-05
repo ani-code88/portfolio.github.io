@@ -19,7 +19,26 @@ body {
   width: 100%;
   background-color: #eef9fd;
 }
-
+.login button{
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border:1px solid #04aae2;
+  background-color: #04aae2;
+  color:#fff;
+  border-radius: 4px;
+}
+.login button:hover{
+  background-color: transparent;
+  color:#04aae2;
+  text-decoration: none;
+  cursor: pointer;
+}
+.forgot-pwd{
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
 /*** Homepage ***/
 
 .home .color-block {
@@ -178,6 +197,7 @@ body {
   background-color: transparent;
   color:#04aae2;
   text-decoration: none;
+  cursor: pointer;
 }
 /* ********************* Home Carousel Starts ******************************  */
 .carousel-control-next .fa, .carousel-control-prev .fa{
@@ -252,6 +272,11 @@ body.home .main-container {
   body {
     font-size: 14px;
   }  
+  .login button{
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 50px;
+  }
   .main-content {
     padding-top: 85px;
   }
@@ -332,7 +357,7 @@ body.home .main-container {
     color:#000;
 }
 
-.join-btn{
+.join-btn, .login-btn{
   border:none;
     padding: 12px 20px;
     background-color: #dc3545;
@@ -341,7 +366,7 @@ body.home .main-container {
     transition: 0.5s;
     border-radius: 6px;
 }
-.join-btn:hover{
+.join-btn:hover, .login-btn:hover{
   background-color: #bd2130;
 }
 .modal label{
@@ -356,23 +381,6 @@ body.home .main-container {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
-/*.modal button {
-  background-color: #04aae2;
-  color: white;
-  padding: 6px 12px;
-  border-radius:4px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-right:10px;
-}
-
-.modal button:hover {
-  opacity: 0.8;
-}
-*/
 /* Extra styles for the cancel button */
 .modal .cancelbtn {
   width: auto;
@@ -386,25 +394,10 @@ body.home .main-container {
 .modal-footer button:hover{
     background-color: #0493c3;
 }
-/* Center the image and position the close button */
-.modal .imgcontainer {
+.modal .headingcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
-}
-
-.modal img .avatar {
-  width: 30%;
-  border-radius: 50%;
-}
-
-.modal .container {
-  padding: 16px;
-}
-
-.modal span.psw {
-  float: right;
-  padding-top: 16px;
 }
 
 /* The Modal (background) */
@@ -427,7 +420,9 @@ body.home .main-container {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;  /*Could be more or less, depending on screen size */
+  padding: 50px
+  width:80%;
 }
 
 /* The Close Button (x) */
@@ -464,11 +459,7 @@ body.home .main-container {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  .modal span.psw {
-     display: block;
-     float: none;
-  }
+@media screen and (max-width: 576px) {
   .modal .cancelbtn {
      width: 100%;
   }
