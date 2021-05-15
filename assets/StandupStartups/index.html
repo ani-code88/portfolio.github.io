@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Standup Startups | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Standup Startups" />
+    <meta name="template" content="homepage" />
+    <link rel="canonical" href="http://www.standupstartups.com">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <!-- Custom CSS Files -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="home">
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block">
+            <li class="icon-box active">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-paper-plane"></i>
+                <a href="services.html">
+                    <h2>Services</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-phone"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-graduation-cap"></i>
+                <a href="internship.html">
+                    <h2>Internship</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="services.html"><i class="fa fa-paper-plane"></i><span>Services</span></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i><span>Portfolio</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-phone"></i><span>Contact</span></a></li>
+                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                    <li><a href="internship.html"><i class="fa fa-graduation-cap"></i><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="container-fluid main-container container-home p-0">
+        <div class="logo-contact">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.svg" alt="" width="100%"></a>
+            </div>
+            <div class="login">
+                <button href="#" preventDefault onclick="document.getElementById('login-model').style.display='block'">Login</button>
+            </div>
+        </div>
+        <div id="login-model" class="modal">
+            <form class="modal-content animate p-5" href="login.html">
+                <span onclick="document.getElementById('login-model').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="headingcontainer">
+                    <div class="container">
+                        <h2 class="text-center py-4 reg-startup-title">User Login </h2>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mb-3">
+                        <label for="user-name">User Name</label>
+                        <input type="text" class="form-control form-control-sm" id="user-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="password">
+                    </div>
+                    <div>
+                        <button type="submit" class="login-btn w-100">Login</button>
+                        <a href="#" class="forgot-pwd">Forgot Password</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Social Media Icon at bottom on home page (Displayed-none) -->
+        <div class="social-icons d-none">
+            <a href="https://www.facebook.com/standupstartups/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=imu99a7w56oh&utm_content=krxfprp" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/StandupStartups" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/standup-startups" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <!-- Social Media Icon at bottom on home page (Displayed-none) -->
+        <div class="color-block d-none d-lg-block"></div>
+        <div class="row no-gutters home-details-container align-items-center">
+            <div class="col-lg-4 bg position-fixed d-none d-lg-block">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active w-100">
+                            <img src="img/new/1.png" width="100%">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="img/new/2.png" width="100%">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="img/new/3.png" width="100%">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="img/new/4.png" width="100%">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="img/new/5.png" width="100%">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="img/new/6.png" width="100%">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+                <div>
+                    <img src="img/img-mobile.png" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="illustration" />
+                    <h1><span>Exponential Growth</span> With Seamless Collaboration
+                    </h1>
+                    <p>Standup startup is the emerging company with the services in the category field of marketing, business development and business legal framework. We believe in customer satisfaction and our service is rated good by our customers.</p>
+                    <a class="button" href="about.html">
+                        <span class="button-text">Learn More</span>
+                        <span class="button-icon fa fa-arrow-right"></span>
+                    </a>
+                    <button onclick="document.getElementById('register-model').style.display='block'" class="reg-startup-btn">Register Your Startup</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="register-model" class="modal">
+        <form class="modal-content animate p-5" href="#">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('register-model').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="container">
+                    <h2 class="text-center py-4 reg-startup-title">Register Now </h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="founder-name">Name</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Founder Name" id="founder-name">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="designation">Designation</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Designation" id="designation">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="service-area">Service Area</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Service Area" id="service-area">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Your Location" id="location">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="mob-no">Mobile No</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Mobile Number" id="mob-no">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" class="form-control form-control-sm" placeholder="Your Email" id="e-mail">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="reg-password">Password</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Enter Password" id="reg-password">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="confirm-pwd">Confirm Password</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Re-enter Password" id="confirm-pwd">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-6 col-12 mb-3">
+                        <label for="query">Any Query</label>
+                        <textarea type="mail" class="form-control form-control-sm" rows="3" id="query"></textarea>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="website">Website</label>
+                        <input type="text" class="form-control form-control-sm" placeholder="Your Website" id="website">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <button type="submit" class="join-btn w-100">Let's Go</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <!-- Main Content Ends -->
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Template JS Files -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
