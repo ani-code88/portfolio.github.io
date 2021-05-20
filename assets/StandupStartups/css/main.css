@@ -318,24 +318,40 @@ body {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  /*padding-top: 60px;*/
+  margin-top: 60px;
 }
 
 /* Modal Content/Box */
-.modal-content {
+.login-modal-content {
+  width: 30%;
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%;  /*Could be more or less, depending on screen size */
   padding: 50px
   width:80%;
 }
-
+.modal-content {
+  width: 90%;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  padding: 50px
+  width:80%;
+}
 /* The Close Button (x) */
 .modal .close {
   position: absolute;
   right: 25px;
   top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+.login-modal .close {
+  position: absolute;
+  right: 36%;
+  top:50px;
   color: #000;
   font-size: 35px;
   font-weight: bold;
@@ -366,6 +382,9 @@ body {
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 576px) {
+  .modal-content,.login-modal-content {
+  width: 100%;
+}
   .modal .cancelbtn {
    width: 100%;
  }
@@ -609,8 +628,9 @@ body.home .main-container {
 }
 .about-content-right p{
   color: #1c1c38;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.5;
+  line-height: 1.8;
 }
 .about-content-right a{
   display: inline-block;
@@ -653,6 +673,7 @@ body.home .main-container {
   position: relative;
   transition: 0.3s;
   border-radius: 4px;
+  min-height: 325px;
 }
 .card-folded .img{
   display: block;
@@ -746,9 +767,16 @@ body.home .main-container {
   margin-bottom:30px;
 }
 .dir-desc h4{
-  font-size:22px;
+  font-size:24px;
+  font-weight: 800;
   color:#000;
   margin-bottom:10px;
+  margin-bottom: 20px;
+}
+.dir-desc h4 span{
+  font-size:16px;
+  opacity: 0.8;
+  font-weight: 600;
 }
 .dir-desc p{
   color:#000;
@@ -853,7 +881,7 @@ body.home .main-container {
   opacity: 0.6;
 }
 
-.our-team .social {
+.our-team .social{
   width: 100%;
   padding: 0;
   margin: 0;
@@ -863,16 +891,22 @@ body.home .main-container {
   left: 0;
   transition: all 0.5s ease 0s;
 }
-
+.dir-desc .social{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease 0s;
+}
 .our-team:hover .social {
   bottom: 0;
 }
 
-.our-team .social li {
+.our-team .social li, .dir-desc .social li {
   display: inline-block;
 }
 
-.our-team .social li a {
+.our-team .social li a, .dir-desc .social li a {
   display: block;
   padding: 10px;
   font-size: 17px;
@@ -880,7 +914,10 @@ body.home .main-container {
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
-.our-team .social li a:hover {
+.dir-desc .social li a{
+  color:#FF5722;
+}
+.our-team .social li a:hover, .dir-desc .social li a:hover {
   color: #04AAE2;
   /* background-color: #f7f5ec; */
 }
@@ -1469,8 +1506,9 @@ body.home .main-container {
 
 .portfolio-content-right p {
   color: #1c1c38;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.5;
+  line-height: 2;
 }
 
 .portfolio-content-right a {
