@@ -19,7 +19,7 @@
 .reg-startup a{
   text-decoration: none;
   font-size: 14px;
-  color: #0D94FB;
+  color: #04aae2;
   padding: 8px 16px;
   display: block;
   transition: 0.3s;
@@ -28,7 +28,7 @@
   color:#fff;
 }
 .reg-startup a:hover{
-  background-color:#0D94FB;
+  background-color:#04aae2;
 }
 
 /* Custom Css Ends*/
@@ -42,7 +42,7 @@
 .header ul.icon-menu li.icon-box:hover,
 .btn,
 .header .icon-box h2{
-  background-color: #0D94FB;
+  background-color: #04aae2;
 }
 @media (min-width: 992px) {
 
@@ -219,7 +219,7 @@
   padding-left: 30px;
 }
 #menu li:hover span {
-  color: #0D94FB;
+  color: #04aae2;
 }
 
 #menu li:last-child::after {
