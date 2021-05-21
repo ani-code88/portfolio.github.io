@@ -1,6 +1,6 @@
 .logo-contact{
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   padding: 0 70px;
   z-index: 200;
@@ -19,7 +19,7 @@
 .reg-startup a{
   text-decoration: none;
   font-size: 14px;
-  color: #04aae2;
+  color: #0D94FB;
   padding: 8px 16px;
   display: block;
   transition: 0.3s;
@@ -28,7 +28,7 @@
   color:#fff;
 }
 .reg-startup a:hover{
-  background-color:#04aae2;
+  background-color:#0D94FB;
 }
 
 /* Custom Css Ends*/
@@ -42,7 +42,7 @@
 .header ul.icon-menu li.icon-box:hover,
 .btn,
 .header .icon-box h2{
-  background-color: #04aae2;
+  background-color: #0D94FB;
 }
 @media (min-width: 992px) {
 
@@ -219,7 +219,7 @@
   padding-left: 30px;
 }
 #menu li:hover span {
-  color: #04aae2;
+  color: #0D94FB;
 }
 
 #menu li:last-child::after {
