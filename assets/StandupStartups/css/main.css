@@ -662,24 +662,25 @@ body {
 }
 .about-2-title {
   color: #1c1c38;
+  font-weight: 700;
   font-size: 32px;
   text-align: center;
   padding: 50px 0;
 }
+
 .card-folded {
   display: inline-block;
   width: 100%;
-  padding: 0rem 1rem 1rem 1rem;
-  background-color: hsl(195deg 100% 70% / 20%);
+  padding: 0.5rem 1rem 1rem 1rem;
   position: relative;
   transition: 0.3s;
   border-radius: 4px;
-  min-height: 325px;
+  min-height: 320px;
 }
 .card-folded .img{
   display: block;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   text-align: center;
   padding: 15px;
   margin: 0 auto;
@@ -688,22 +689,12 @@ body {
 .card-folded .img img{
   display: block;
   width: 100%;
-  background-color: hsl(194.9, 100%, 90%);
-  padding: 5px;
-  border-radius: 50%;
 }
 .card-folded:hover{
   box-shadow: 10px 10px 40px rgba(0,0,0,0.1);
 }
-.card-folded[data="card-folded-2"]{
-  background-color: hsl(45deg 100% 70% / 20%);
-}
-.card-folded[data="card-folded-3"]{
-  background-color: hsl(213deg 100% 70% / 20%);
-}
-.card-folded[data="card-folded-4"]{
-  background-color: hsl(4deg 100% 70% / 20%);
-}
+
+
 
 
 .card-folded h2 {
@@ -713,12 +704,15 @@ body {
   letter-spacing: 1px;
   padding-top: 10px;
   padding-bottom: 15px;
+  text-align: center;
 }
 .card-folded p {
   color: hsl(195deg 50% 25%);
   font-size: 14px;
   line-height: 140%;
+  font-weight: 400;
   opacity: 0.9;
+  text-align: center;
 }
 .card-folded a{
   position: absolute;
@@ -745,17 +739,22 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
-  background-color: rgba(4, 170, 226, 0.2);
+  /*background-color: rgba(4, 170, 226, 0.2);*/
+  background-image: url(../img/wave.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
   position: relative;
 }
 .team h2{
+  font-weight: 700;
   text-align: center;
   font-size: 32px;
   padding: 50px 0;
   color: #1c1c38;
 }
 .team::before {
-  content: "";
+  /*content: "";*/
   position: absolute;
   top: 0;
   bottom: 0;
@@ -764,26 +763,8 @@ body {
   z-index: -1;
   background: linear-gradient(225deg, rgba(102, 171, 255, 0.2) 50%, #fff 0%);
 }
-.dir-img{
-  margin-bottom:30px;
-}
-.dir-desc h4{
-  font-size:24px;
-  font-weight: 800;
-  color:#000;
-  margin-bottom:10px;
-  margin-bottom: 20px;
-}
-.dir-desc h4 span{
-  font-size:16px;
-  opacity: 0.8;
-  font-weight: 600;
-}
-.dir-desc p{
-  color:#000;
-  opacity: 0.7;
-  line-height: 2;
-}
+
+
 .team-gallary{
   display: flex;
   width: 100%;
@@ -808,7 +789,7 @@ body {
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
-  background-color: #f7f5ec;
+  background-color: #dce8ff;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -816,7 +797,7 @@ body {
   border-radius: 3px;
 }
 .our-team:hover{
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 .our-team .picture {
   display: inline-block;
