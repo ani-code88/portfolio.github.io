@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
   height: 100%;
   width: 100%;
-  /*background-color: #eef9fd;*/
   background-image: linear-gradient(to bottom, #eef9fd, #dff3fb);
 }
 *{
@@ -442,6 +441,15 @@ body.home .main-container {
 @media (max-width: 576px) {
   body {
     font-size: 14px;
+  }  
+  .home{
+    background-image: url(../img/mobile-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(238, 249, 253, 0.9);
+    background-blend-mode: screen;
+    height: 100vh;
   }  
   .login button{
     padding: 4px 8px;
