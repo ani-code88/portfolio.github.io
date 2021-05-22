@@ -739,21 +739,22 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
-  background-image: url(../img/wave.svg);
+  background-color: #2b2d2d;
+  background-blend-mode: screen;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
 }
 .team .row{
-    background-color: #dce8ff;
+    background-color: rgba(255, 255, 255, 0.08);
   }
 .team h2{
   font-weight: 700;
   text-align: center;
   font-size: 32px;
   padding: 50px 0;
-  color: #1c1c38;
+  color: #e9f6fb;
 }
 
 
@@ -782,7 +783,7 @@ body {
 .our-team {
   padding: 30px 0 15px;
   margin-bottom: 20px;
-  background-color: #dce8ff;
+  /*background-color: #dce8ff;*/
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -837,7 +838,7 @@ body {
   height: auto;
   border-radius: 50%;
   transform: scale(1);
-  box-shadow: 0 0 0 10px #f7f5ec;
+  box-shadow: 0 0 0 10px rgba(251, 251, 251, 0.1);
   transition: all 0.9s ease 0s;
 }
 
@@ -846,7 +847,7 @@ body {
   transform: scale(0.7);
 }
 .team-content{
-  color: #000;
+  color: #e7e8e8;
 }
 .team-content h2{
   padding: 0;
