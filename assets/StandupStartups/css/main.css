@@ -739,7 +739,7 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
-  background-color: #2b2d2d;
+  background-color: rgba(4, 170, 226, 0.2);
   background-blend-mode: screen;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -747,17 +747,15 @@ body {
   position: relative;
 }
 .team .row{
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #f7f5ec;
   }
 .team h2{
   font-weight: 700;
   text-align: center;
   font-size: 32px;
   padding: 50px 0;
-  color: #e9f6fb;
+  color: #1c1c38;
 }
-
-
 
 .team-gallary{
   display: flex;
@@ -783,13 +781,13 @@ body {
 .our-team {
   padding: 30px 0 15px;
   margin-bottom: 20px;
-  /*background-color: #dce8ff;*/
   text-align: center;
   overflow: hidden;
   position: relative;
   transition: 0.5s linear;
   border-radius: 3px;
   height: 100%;
+  background-color: #f7f5ec;
 }
 .our-team:hover{
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -838,7 +836,7 @@ body {
   height: auto;
   border-radius: 50%;
   transform: scale(1);
-  box-shadow: 0 0 0 10px rgba(251, 251, 251, 0.1);
+  box-shadow: 0 0 0 10px #f7f5ec;
   transition: all 0.9s ease 0s;
 }
 
@@ -847,7 +845,7 @@ body {
   transform: scale(0.7);
 }
 .team-content{
-  color: #e7e8e8;
+  color: #000;
 }
 .team-content h2{
   padding: 0;
