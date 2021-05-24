@@ -1,4 +1,4 @@
-.logo-contact{
+.top-logo-bar{
   position: fixed;
   top: 0;
   left: 0;
@@ -10,6 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
+}
+.changeBgOnScroll{
+  background-color: #fbfeff;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.2);
 }
 .logo{
   border-radius: 100px;
@@ -245,7 +250,7 @@
 }
 }
 @media (max-width: 576px) {
-  .logo-contact{
+  .top-logo-bar{
     padding: 0 10px;
   }
   .logo{

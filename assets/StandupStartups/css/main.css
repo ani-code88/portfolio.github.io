@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, #eef9fd, #dff3fb);
+  background-color: #ececec;
 }
 *{
   margin: 0;
@@ -24,9 +24,6 @@ body {
 
 /* ------------ Some Common CSS Starts------------------ */
 /*Social Media Icons For All Pages. Also Incudes Responsiveness [Start] */
-.logo-contact{
-  background-color: #eef9fd;
-}
 .social-icons{
   display: block;
   padding: 10px;
@@ -603,50 +600,59 @@ body {
 .about{
   width: 100%;
   height: 100vh;
+  background-image: url(../img/test/Flat-Mountains.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: color-burn;
+  padding: 80px 0 40px;
 }
 .about-title{
-  margin: 70px 0;
+  padding-bottom: 70px;
   text-align: center;
 }
 .about-title h1{
   display: inline;
   font-size: 62px;
   font-weight: 900;
-  color: #1c1c38;
+  color: #01141b;
   text-align: center;
   position: relative;
 }
 .about-title span{
   color: #04aae2;
 }
-.about-content-right{
-  padding-left: 65px;
-  padding-right: 40px; 
-}
+
 .about-content-right h2{
-  color: #1c1c38;
-  font-size: 24px;
+  color: #04aae2;
+  font-weight: 600;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 .about-content-right p{
-  color: #1c1c38;
-  font-size: 16px;
-  opacity: 0.5;
-  line-height: 1.8;
+  color: rgb(36 41 43);
+  font-size: 18px;
+  opacity: 1;
+  line-height: 1.7;
 }
 .about-content-right a{
   display: inline-block;
   text-decoration: none;
-  padding: 6px 12px;
-  border: 2px solid #04aae2;
-  border-radius: 35px;
-  color: #04aae2;
+  padding: 8px 12px;
+  border: 2px solid #e23c04;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #e23c04;
   margin-top: 16px;
   transition: 0.3s;
 }
 .about-content-right a:hover{
-  border-radius: 35px;
-  color: #1c1c38;
-  background-color: #04aae2;
+  border-radius: 2px;
+  color: #e23c04;
+  background-color: transparent;
 }
 .about-content-left img{
   border-radius: 5px;
@@ -689,9 +695,16 @@ body {
 .card-folded .img img{
   display: block;
   width: 100%;
+  transition: 0.3s;
 }
 .card-folded:hover{
-  box-shadow: 10px 10px 40px rgba(0,0,0,0.1);
+  /*box-shadow: 10px 10px 40px rgba(0,0,0,0.1);*/
+}
+.card-folded:hover > .img img{
+  filter: drop-shadow(2px 4px 10px #778796);
+}
+.card-folded:hover > h2{
+  color:#04aae2;
 }
 
 
@@ -705,6 +718,7 @@ body {
   padding-top: 10px;
   padding-bottom: 15px;
   text-align: center;
+  transition: 0.3s;
 }
 .card-folded p {
   color: hsl(195deg 50% 25%);
@@ -739,16 +753,13 @@ body {
   width: 100%;
   height: auto;
   padding-bottom: 70px;
-  background-color: rgba(4, 170, 226, 0.2);
-  background-blend-mode: screen;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
   position: relative;
+  background-image: url(../img/test/ourteambg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.team .row{
-    background-color: #f7f5ec;
-  }
 .team h2{
   font-weight: 700;
   text-align: center;
@@ -756,11 +767,27 @@ body {
   padding: 50px 0;
   color: #1c1c38;
 }
-
+.team button{
+  border:1px solid #04aae2;
+  background-color: transparent;
+  color: #04aae2;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 40px;
+}
+.team button:hover {
+  background-color: #04aae2;
+  color: #fff;
+}
 .team-gallary{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 @media (max-width: 992px) {
   .team-gallary{
@@ -779,7 +806,7 @@ body {
   }
 }
 .our-team {
-  padding: 30px 0 15px;
+  padding: 30px 0 40px;
   margin-bottom: 20px;
   text-align: center;
   overflow: hidden;
@@ -787,7 +814,7 @@ body {
   transition: 0.5s linear;
   border-radius: 3px;
   height: 100%;
-  background-color: #f7f5ec;
+  /*background-color: #f7f5ec;*/
 }
 .our-team:hover{
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -856,7 +883,7 @@ body {
   padding: 0;
   font-size: 14px;
   opacity: 0.6;
-  margin-bottom: 0;
+  
 }
 
 .our-team .social{
@@ -959,16 +986,17 @@ body {
 
 .blog {
   width: 100%;
-  margin-top: 70px;
+  padding-top: 70px;
   height: auto;
-}
-.blog-header {
-  width: 100%;
-  height: 50vh;
   background-image: url('../img/blog-header2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.blog-header {
+  width: 100%;
+  height: 50vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -995,6 +1023,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   opacity: 0.6;
+  margin-top: 16px;
 }
 
 .main-content {
