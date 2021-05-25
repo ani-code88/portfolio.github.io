@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   height: 100%;
   width: 100%;
-  background-color: #ececec;
+  background-color: #fdfeff;
 }
 *{
   margin: 0;
@@ -99,13 +99,16 @@ body {
   background-color: #04aae2;
 }
 .home .bg {
-  height: calc(100vh - 100px);
+ /* height: calc(100vh - 100px);*/
   z-index: 111;
   border-radius: 30px;
   left: 40px;
-  top: 73px;
+  /*top: 73px;*/
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #eef9fd;
   box-shadow: 0 0 7px rgba(0,0,0,.3);
+  padding: 20px 0;
 }
 .home .container-home {
   display: flex;
@@ -336,9 +339,11 @@ body {
 }
 /* The Close Button (x) */
 .modal .close {
-  position: absolute;
+  /*position: absolute;
   right: 25px;
-  top: 0;
+  top: 0;*/
+  margin-top: -45px;
+  margin-right: -30px;
   color: #000;
   font-size: 35px;
   font-weight: bold;
@@ -600,13 +605,6 @@ body {
 .about{
   width: 100%;
   height: 100vh;
-  background-image: url(../img/test/Flat-Mountains.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(255,255,255,0.7);
-  background-blend-mode: color-burn;
   padding: 80px 0 40px;
 }
 .about-title{
@@ -659,6 +657,13 @@ body {
   width: 400px;
   box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
   opacity: 0.8;
+}
+.about-header-img{
+  justify-content: center;
+  align-items: center;
+}
+.about-header-img img{
+  width:100%;
 }
 
 /*Why Choose Us Section Starts Here*/
@@ -767,7 +772,7 @@ body {
   padding: 50px 0;
   color: #1c1c38;
 }
-.team button{
+/*.team button{
   border:1px solid #04aae2;
   background-color: transparent;
   color: #04aae2;
@@ -778,11 +783,20 @@ body {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 40px;
-}
-.team button:hover {
+}*/
+/*.team button:hover {
   background-color: #04aae2;
   color: #fff;
+}*/
+.splide__pagination__page.is-active {
+    background: #04aae2;
 }
+.splide__arrow {
+    background: #e0f7ff;
+}
+.splide__arrow {
+    top: 65%;
+  }
 .team-gallary{
   display: flex;
   width: 100%;
@@ -814,6 +828,7 @@ body {
   transition: 0.5s linear;
   border-radius: 3px;
   height: 100%;
+  max-width:200px;
   /*background-color: #f7f5ec;*/
 }
 .our-team:hover{
@@ -1516,56 +1531,28 @@ body {
 
 .projects {
   width: 100%;
-  /*background-color: #117a8b;*/
-  background-image: linear-gradient( 
-    272deg
-    , #11626f, #118b7a);
+  background-color: #f8f1ff;
   padding: 50px 0;
 }
 
 .projects-title h2{
-  color: #fff;
+  color: #04aae2;
   font-weight: 700;
   font-size: 42px;
   text-align: center;
   padding-bottom: 20px;
 }
 .card-deck .card{
-  background-image: linear-gradient( 
-    45deg
-    , #11626f, #118b7a);
-  border: 1px solid #08444e;
+  background-color: #012a38;
+  /*border: 1px solid #08444e;*/
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-.card-deck .card::before{
-  content: '';
-  position: absolute;
-  display: block;
-  width:200px;
-  height:200px;
-  border-radius: 50%;
-  background-color: rgba(17, 122, 139, 0.3);
-  top:60%;
-  left:-20%;
-  z-index: 1;
-}
-.card-deck .card::after{
-  content: '';
-  position: absolute;
-  display: block;
-  width:200px;
-  height:200px;
-  border-radius: 50%;
-  background-color: rgba(17, 98, 111, 0.25);
-  bottom:60%;
-  right:-20%;
-  z-index: 1;
-}
+
 .projects .btn-primary{
-  background-color: #11626f;
-  border: 1px solid #08444e;
+  background-color: #056688;
+  border: 1px solid #056688;
   position: relative;
   z-index: 2;
 }
@@ -1605,11 +1592,11 @@ body {
 .startups {
   width: 100%;
   padding: 50px 0;
-  background-color: rgba(0,0,0,0.06);
+  background-color: #2f8dad;
 }
 
 .startups h2{
-  color: #000;
+  color: #e7fbff;
   font-weight: 700;
   font-size: 42px;
   text-align: center;
@@ -1617,17 +1604,15 @@ body {
 }
 .startups .cs-card{
   min-height: 90%;
-  border:2px solid #c5c5c5;
-  background: linear-gradient(145deg, #fbffff, #d4d8e6);
+  border-bottom: 3px solid #fff;
   transition: 0.5s;
   margin-bottom: 20px; 
-  box-shadow: -2px 12px 20px -10px rgb(0, 0, 0, 0.75);
-}
-.startups .cs-card:hover .cs-card-content a h3{
-  color: #04aae2;
+  background-color: #f0fbff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+
 }
 .startups .cs-card:hover{
-  border:2px solid #04aae2;
+  border-bottom: 3px solid #F44336;
 }
 .startups .cs-card:hover img{
   transform:scale(1.2);
@@ -1642,7 +1627,7 @@ body {
 .startups .cs-card-content h3{
   font-size: 18px;
   font-weight: bold;
-  color:#000;
+  color:#2e555d;
   transition: 0.3s;
 }
 .startups .cs-card-content p{
@@ -1652,8 +1637,16 @@ body {
   opacity: 0.7;
   line-height: 1.8;
 }
+.startups .cs-card-img{
+  height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .startups .cs-card-img img{
-  width:70%;
+  width:100%;
   margin: 0 auto;
   transition: 0.3s;
 }
@@ -1689,13 +1682,13 @@ body {
   min-height: 90%;
   border-radius: 5px;
   border:2px solid transparent;
-  background: linear-gradient(0deg, #ddd6f3, #faaca8);
-  transition: 0.5s;
+  background: linear-gradient(0deg, #8ecee4, rgb(4, 170, 226, 0.85));
+  transition: 0.3s;
   margin-bottom: 20px;
   padding: 16px;
 }
 .founders .cs-card:hover .cs-card-content a h3{
-  color: #04aae2;
+  color: #000;
 }
 .founders .cs-card:hover{
   border:2px solid #04aae2;
@@ -1705,15 +1698,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100px;
+  width:150px;
   height:100px;
   border:2px solid transparent;
   border-radius: 50%;
   transition: 0.5s;
 }
-.founders .cs-card:hover .cs-card-img{
-  border:2px solid #04aae2;
-}
+
 .founders .cs-card:hover img{
   transform:scale(1.2);
 }
@@ -1724,18 +1715,18 @@ body {
 .founders .cs-card-content h3{
   font-size: 18px;
   font-weight: bold;
-  color:#000;
+  color:#fff;
   transition: 0.3s;
 }
 .founders .cs-card-content p{
   font-size: 13px;
-  color:#000;
+  color:#fff;
   font-weight: 500;
-  opacity: 0.7;
+  opacity: 0.8;
   line-height: 1.8;
 }
 .founders .cs-card-img img{
-  width:70%;
+  width:100%;
   margin: 0 auto;
   transition: 0.3s;
 }
@@ -2020,20 +2011,9 @@ body {
 }
 .services-2 .services-card:hover .face.face1{
   transform: translateY(0);
-  
+  background: #007392;
 }
-.services-2 .services-card:hover .face.face1[data="serviceCard-1"]{
-  background: #ff0057;
-}
-.services-2 .services-card:hover .face.face1[data="serviceCard-2"]{
-  background: #27284f;
-}
-.services-2 .services-card:hover .face.face1[data="serviceCard-3"]{
-  background: #FFC107;
-}
-.services-2 .services-card:hover .face.face1[data="serviceCard-4"]{
-  background: #4CAF50;
-}
+
 .services-2 .services-card .face.face1 .content{
   opacity: 0.9;
   transition: 0.5s;
