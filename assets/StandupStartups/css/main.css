@@ -543,7 +543,7 @@ body {
   opacity: 1;
 }
 .footer-services{
-  text-align: center;
+  text-align: left;
 }
 .footer-services ul{
   list-style-type: none;
@@ -555,6 +555,13 @@ body {
   margin-bottom: 10px;
   opacity: 0.6;
 }
+.footer-services ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.footer-services ul li a:hover{
+  color: rgba(0,0,0,0.7);
+}
 .footer h1{
   font-size: 20px;
   margin-bottom: 10px;
@@ -564,14 +571,14 @@ body {
   font-size: 13px;
 }
 .Quick-Links{
-  text-align: center;
+  text-align: left;
 }
 .Quick-Links a{
   display: block;
   text-decoration: none;
   padding: 3px 5px;
   color: #000;
-  text-align: center;
+  text-align: left;
   opacity: 0.6;
 }
 .Quick-Links a:hover{
@@ -1131,7 +1138,10 @@ body {
   transition: .3s;
 
 }
-
+.page-item.active .page-link {
+    background-color: #04aae2;
+    border-color: #04aae2;
+}
 .page-link:focus,
 .page-link:active {
   box-shadow: none !important;
