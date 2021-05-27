@@ -33,34 +33,310 @@ a{
 	width: 100%;
 	height: 80vh;
 	background: linear-gradient(
-45deg
-, #6169e3, #f79b63) center center no-repeat;
-    background-size: cover;
+		45deg
+		, #6169e3, #f79b63) center center no-repeat;
+	background-size: cover;
 }
 .carousel-inner{
 	height: 100%;
 }
 .carousel-inner img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
+}
+.slide-content-img{
+	text-align: right;
+}
+.slide-content{
+	height:100%;
+	display: flex;
+	align-items: center;
+}
+.carousel-control-next{
+	justify-content: flex-end;
+}
+.carousel-control-prev{
+	justify-content: flex-start;
+}
+.slide-content-text{
+	margin-top:4rem;
+}
+.slide-content-text h1{
+	padding:1rem 0;
+}
+/*Common Style*/
+
+.home-services, .home-working-process{
+	padding-bottom: 50px;
+	min-height: 100vh;
+}
+.home .section-title{
+	padding: 0.875rem 0 ;
+	position: relative;
+	width: 50%;
+}
+.home .section-title::before{
+	content: '';
+	position: absolute;
+	top:0;
+	right: -20px;
+	transform: skewX(-20deg);
+	width: 50px;
+	height: 100%;
+	z-index: 1;
+	height: 100%;
+}
+.home .section-title h2{
+	color: #1f2471;
+	font-size: 2.5rem;
+	text-align: center;
+}
+.home .row{
+	padding: 2rem 0;
+}
+.home .card{
+	padding: 26px;
+	border-radius: 10px;
+	background-color: #fff;
+	min-height: 323px;
+	margin: 1rem 0;
+}
+/*---------------------------------*/
+
+.home-services{
+	background-image: url(../img/home/bg3.png);
+	background-color: #e88b69;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.home-services .section-title{
+	background-color: #efebfd;
+}
+.home-services .section-title::before{
+	background-color: #1f2471;
+}
+.home-services .card{
+	padding: 1.5rem 0.875rem;
+	transition: all 0.5s;
+	border-radius: 10px;
+	background-color: #fff;
+	min-height: 250px;
+	margin: 1rem 0;
+}
+.home-services .card:hover{
+	box-shadow: 0 0 15px rgba(33, 33, 33, 0.5); 
+}
+.card-body{
+	text-align: center;
+	padding: 1.25rem 0 0 0;
+}
+.home-services .card-img-top{
+	width: 100px;
+	height: auto;
+	margin: 0 auto;
+}
+.home-services .card-title{
+	color: #1f2471;
+	display: block;
+	min-height: 60px;
+	font-size: 1.2rem;
+}
+.home-services .btn{
+	color: #fff;
+    background-color: #896eff;
+    border-color: #896eff;
+    transition: 0.3s;
+}
+.home-services .btn:hover{
+    background-color: #6a48ff;
+    border-color: #5f3bff;
+}
+@media (max-width:576px){
+	html{
+		font-size: 13px;
+	}
+	.home .section-title{
+		width: 90%;
+	}
+}
+
+
+
+/*---------------------------------*/
+
+.home-working-process{
+	background-color: #fff;
+}
+.home-working-process .section-title{
+	background-color: rgba(31, 36, 113, 0.2);
+}
+.home-working-process .section-title::before{
+	background-color: #1f2471;
+}
+.home-working-process .card-body{
+	margin-top: 1.5rem;
+	padding-bottom: 0;
+}
+.home-working-process .card{
+	padding: 15% 4% 2%;
+	border:none;
+	min-height: 100%;
+	transition: 0.3s;
+}
+
+.home-working-process .card-1:hover{
+	background-color: rgba(253, 87, 109, 0.2);
+}
+.home-working-process .card-2:hover{
+	background-color: rgba(252, 166, 7, 0.2);
+}
+.home-working-process .card-3:hover{
+	background-color: rgba(93, 105, 231, 0.2);
+}
+.home-working-process .card-4:hover{
+	background-color: rgba(2, 158, 118, 0.2);
+}
+.card-img-wrapper{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 70px;
+	height: 90px;
+	margin: 0 auto;
+}
+.home-working-process .card-title{
+	color:#1f2471;
+	margin-bottom: 1rem;
+	font-size: 1.3rem;
+}
+.home-working-process p{
+	color:rgba(31, 36, 113, 0.8);
+	text-align: justify;
+	display: block;
+	margin: 0;
+}
+.home-working-process .card .btn{
+	background-color: #896eff;
+    border-color: #896eff;
+	margin-top: 2rem;
+}
+@media (max-width:576px){
+	.home-working-process .card{
+		width: 90%;
+		margin: 0 auto;
+		padding: 26px 26px;
+		margin: 1rem auto;
+		min-height: 270px;
+	}
+	.home-working-process p{
+		text-align: justify;
+		display: block;
+	}
+}
+
+/*Why Choose Us*/
+.home-why-choose-us .card-body{
+	padding-bottom: 0;
+}
+.home-why-choose-us .card{
+	padding: 15% 4% 2%;
+	border:none;
+	min-height: 100%;
+	transition: 0.3s;
+}
+
+.home-why-choose-us .section-title{
+	background-color: #efebfd;
+}
+.home-why-choose-us .section-title::before{
+	background-color: #1f2471;
+}
+.home-why-choose-us .card{
+	border: none;
+}
+.home-why-choose-us .card-body{
+	padding-top:0;
+}
+.home-why-choose-us .card .card-img-wrapper{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border-top:5px solid #000;
+	padding: 15%;
+}
+.home-why-choose-us .card-1 .card-img-wrapper{
+	border-top:5px solid #258b7b;
+}
+.home-why-choose-us .card-2 .card-img-wrapper{
+	border-top:5px solid #248698;
+}
+.home-why-choose-us .card-3 .card-img-wrapper{
+	border-top:5px solid #4b6e9f;
+}
+.home-why-choose-us .card-4 .card-img-wrapper{
+	border-top:5px solid #5a557d;
+}
+.home-why-choose-us .card .card-img-wrapper img{
+	position: relative;
+	filter: invert(48%) hue-rotate(207deg);
+	-webkit-animation: slide-top 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	animation: slide-top 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+/*.home-why-choose-us .card-1 .card-img-wrapper img{
+	animation-delay: 500ms;
+}*/
+.home-why-choose-us .card-2 .card-img-wrapper img{
+	animation-direction: alternate-reverse;
+	animation-delay: 300ms;
+}
+.home-why-choose-us .card-3 .card-img-wrapper img{
+	animation-delay: 500ms;
+}
+.home-why-choose-us .card-4 .card-img-wrapper img{
+	animation-direction: alternate-reverse;
+	animation-delay: 600ms;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  .slide-content-img{
-  	text-align: right;
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
-  .slide-content{
-  	height:100%;
-  	display: flex;
-  	align-items: center;
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  .carousel-control-next{
-  	justify-content: flex-end;
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
-  .carousel-control-prev{
-  	justify-content: flex-start;
-  }
-  .slide-content-text{
-  	margin-top:4rem;
-  }
-  .slide-content-text h1{
-  	padding:1rem 0;
-  }
+}
+.home-why-choose-us .card-1 .card-title{
+	color: #258b7b;
+}
+.home-why-choose-us .card-2 .card-title{
+	color: #248698;
+}
+.home-why-choose-us .card-3 .card-title{
+	color: #4b6e9f;
+}
+.home-why-choose-us .card-4 .card-title{
+	color: #5a557d;
+}
+
+/*
+color-1: #258b7b
+color-2: #248698
+color-3: #4b6e9f
+color-4: #5a557d
+*/
