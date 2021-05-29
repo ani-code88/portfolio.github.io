@@ -13,7 +13,9 @@ body{
 a{
 	text-decoration: none;
 }
-
+.top-bar .row{
+	padding: 0.5rem!important;
+}
 .navbar-quoteBtn a{
 	display: inline-block;
 	padding: 0.875rem 1.2rem;
@@ -22,14 +24,20 @@ a{
 	margin-left:1rem;
 	font-size: 1rem;
 }
-.top-bar i{
-	padding:0.625rem; 
+.top-bar span{
+	display: inline-block;
+	font-size: 1rem;
+}
+.top-bar span:first-child{
+	margin-right: 1rem;
 }
 .topbar-social-icons{
 	text-align: right;
 }
-.topbar-social-icons .fa{
+.top-bar .fa{
 	color: #000;
+	font-size: 1rem;
+	padding:0.625rem 0.625rem 0.625rem 0; 
 }
 .main-header{
 	width: 100%;
@@ -97,6 +105,7 @@ a{
 .home .row{
 	padding: 2rem 0;
 }
+
 .home .card{
 	padding: 26px;
 	border-radius: 10px;
@@ -704,3 +713,166 @@ color-4: #5a557d
  	border-top:1px solid #fff;
  	border-left:1px solid #fff;
  }
+
+ /*contact Us Page*/
+.form-control{
+	box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+}
+ .contact-header{
+
+ }
+ .contact .row{
+	padding: 2rem 0;
+}
+.contact-header{
+	position: relative;
+	background-image: url(../img/about/bnr1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	z-index: 0;
+	color: #fff;
+	padding: 2.5rem 4rem 4rem;
+}
+.contact-header:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #8b71fd;
+	opacity: 0.8;
+	z-index: -1;
+}
+.contact-header h1{
+	font-size: 3.7rem;
+}
+.contact-header a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);
+}
+.contact-header a:hover{
+	color:#fff;
+}
+
+.contact-sec h4{
+	font-size: 2rem;
+	font-weight: 700;
+	color: #1f2471;
+}
+.contact-sec p{
+	display: block;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #1f2471;
+	opacity: 0.8;
+}
+.custom-submit-btn{
+	background-color: #673AB7;
+	color:#fff;
+}
+.custom-submit-btn:hover{
+	background-color: #7f4adc;
+	color:#fff;
+}
+.custom-submit-btn:focus{
+	background-color: #492982;
+	color:#fff;
+}
+
+/*Blog Page*/
+
+.blog .row{
+	padding: 2rem 0;
+}
+.blog-header{
+	position: relative;
+	background-image: url(../img/about/bnr1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	z-index: 0;
+	color: #fff;
+	padding: 2.5rem 4rem 4rem;
+}
+.blog-header:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #8b71fd;
+	opacity: 0.8;
+	z-index: -1;
+}
+.blog-header h1{
+	font-size: 3.7rem;
+}
+.blog-header a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);
+}
+.blog-header a:hover{
+	color:#fff;
+}
+.recent-post-sec h4{
+	display: block;
+	padding-bottom: 1rem;
+	color: #1f2471;
+	margin-bottom: 2rem;
+	text-align: center;
+	border-bottom: 2px solid #1f2471;
+}
+.recent-post-card{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom:1px solid #000;
+	margin-bottom:0.5rem;
+	cursor: pointer;
+}
+.recent-post-img{
+	height: 120px;
+}
+.recent-post-img img{
+	width: 100%;
+	height: 100%;
+}
+.recent-post-title {
+	padding-left: .5rem;
+}
+.post-thumbnail-card{
+	margin: 1rem auto;
+	border-bottom:1px solid rgba(0,0,0,0.4);
+}
+.thumbnail-img{
+	width: 100%;
+	height: auto;
+}
+.thumbnail-date span{
+	font-style: italic;
+	font-size: 12px;
+	display:block;
+	padding: 0.5rem 0;
+}
+.thumbnail-body{
+	padding: 0.5rem 0;
+}
+.thumbnail-card-btns{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.read-more-btn a{
+	text-decoration: none;
+}
+.thumbnail-share-btn span:nth-child(1){
+	font-style: italic;
+	opacity: 0.8;
+}
+.thumbnail-share-btn .fa{
+	padding: 0 0.5rem;
+}
