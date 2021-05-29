@@ -211,11 +211,11 @@ a{
 /*---------------------------------*/
 
 .home-services{
-	background-image: url(../img/home/bg1.png);
-	/*background-color: #e88b69;*/
+	/*background-image: url(../img/home/bg1.png);
+	background-color: #e88b69;
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 .home-services .section-title{
 	background-color: rgba(31, 36, 113, 0.1);
@@ -793,15 +793,13 @@ color-4: #5a557d
 	opacity: 0.8;
 }
 .custom-submit-btn{
-	background-color: #673AB7;
+	/*background-color: #673AB7;*/
 	color:#fff;
+	background-color: #93ad28;
+    border-color: #5f7118;
 }
 .custom-submit-btn:hover{
-	background-color: #7f4adc;
-	color:#fff;
-}
-.custom-submit-btn:focus{
-	background-color: #492982;
+	background-color: #5f7118;
 	color:#fff;
 }
 
