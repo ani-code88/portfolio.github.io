@@ -13,16 +13,30 @@ body{
 a{
 	text-decoration: none;
 }
+#top-navigation{
+	background-color:#fbf7ed;
+}
+.changeHeaderBgOnScroll{
+  background-color: #fbfeff;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.2);
+}
+.header-top{
+	position: fixed;
+	width: 100%;
+	top:0;
+	/*background-color: green;*/
+	z-index: 10000;
+}
+.top-bar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4rem 0.875rem;
+	background-color: #90a927;
+	color:#fdfff0;
+}
 .top-bar .row{
 	padding: 0.5rem!important;
-}
-.navbar-quoteBtn a{
-	display: inline-block;
-	padding: 0.875rem 1.2rem;
-	background-color: gray;
-	color:#fff;
-	margin-left:1rem;
-	font-size: 1rem;
 }
 .top-bar span{
 	display: inline-block;
@@ -32,18 +46,49 @@ a{
 	margin-right: 1rem;
 }
 .topbar-social-icons{
-	text-align: right;
+	text-align: left;
+	display: inline-block;
 }
 .top-bar .fa{
-	color: #000;
+	color: #fdfff0;
 	font-size: 0.875rem;
 	padding:0.625rem 0.625rem 0.625rem 0; 
 }
+.navbar-brand img{
+	width: 90px;
+	height: 90px;
+}
+.navbar-quoteBtn a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.875rem 1.2rem;
+	background-color: #adc531;
+	color:#fff;
+	margin-left:1rem;
+	font-size: 1rem;
+}
+.navbar-quoteBtn a:hover{
+	cursor: pointer;
+	background-color: #b1c832;
+}
+.navbar-quoteBtn a:focus{
+	background-color: #90a927;
+}
+.nav-link{
+	color: rgba(0, 76, 63, 0.7)!important;
+}
+.navbar .active{
+	color: #004c3f;
+	font-weight: 700;
+}
+.main-header, .about-header, .blog-header, .contact-header, .services-header{
+	margin-top:11rem;
+}
 .main-header{
 	width: 100%;
-	min-height: 80vh;
-	background: linear-gradient(45deg, #6169e3, #f79b63) center center no-repeat;
-	background-size: cover;
+	height: 80vh;
+	/*background: linear-gradient(45deg, #6169e3, #f79b63) center center no-repeat;*/
+	background-color: #fbf7ed;
 	padding-bottom: 3rem;
 }
 .carousel-inner{
@@ -72,7 +117,30 @@ a{
 }
 .slide-content-text h1{
 	padding:1rem 0;
+	color: #282f01;
 }
+.slide-content-text p{
+	color: #282f01;
+	opacity: 0.8;
+}
+.slide-content .slide-btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	margin-top:1rem;
+	border-radius: 4px;
+	background-color: transparent;
+	border: 2px solid #8fa826;
+	color: #8fa826;
+	transition: 0.3s;
+}
+.slide-content .slide-btn:hover{
+	background-color: #8fa826;
+	color: #fff;
+}
+.carousel-indicators li{
+	background-color: #00A3B3!important;
+} 
 /*Common Style*/
 
 .home-services, .home-working-process, .home-why-choose-us{
@@ -105,6 +173,10 @@ a{
 .home .row{
 	padding: 2rem 0;
 }
+.slide-content .row{
+	padding: 0;
+}
+
 
 .home .card{
 	padding: 26px;
@@ -113,7 +185,22 @@ a{
 	min-height: 323px;
 	margin: 1rem 0;
 }
+@media (max-width: 992px){
+	.main-header{
+	height: auto;
+}
+.navbar-quoteBtn a{
+	margin: 1rem 0 0 0;
+	padding: 0.4rem 0.8rem;
+}
+}
 @media (max-width: 576px){
+	.top-bar span{
+	font-size: 0.7rem;
+}
+.top-bar .fa{
+	font-size: 0.7rem;
+}
 .slide-content-text {
     margin-top: 0;
 }
@@ -403,7 +490,7 @@ color-4: #5a557d
 /*Footer*/
 .footer{
 	padding-top: 1rem;
-	background-color: #009688;
+	background-color: #304a4f;
 	color:#fff;
 }
 .footer a{
@@ -433,11 +520,16 @@ color-4: #5a557d
 	display: block;
 	margin: 0 0 0.5rem
 }
+.footer-contact-form .btn-primary {
+    color: #fff;
+    background-color: #93ad28;
+    border-color: #5f7118;
+}
 .footer-bottom{
 	text-align: center;
 	line-height: 1.5;
 	font-size: 13px;
-	background-color: #000;
+	background-color: #25383c;
 	width: 100%;
 	padding: 0.5rem;
 }
@@ -450,7 +542,7 @@ color-4: #5a557d
 .about .row{
 	padding: 2rem 0;
 }
-.about-header{
+.common-header{
 	position: relative;
 	background-image: url(../img/about/bnr1.jpg);
 	background-position: center;
@@ -460,25 +552,25 @@ color-4: #5a557d
 	color: #fff;
 	padding: 2.5rem 4rem 4rem;
 }
-.about-header:before{
+.common-header:before{
 	content: '';
 	position: absolute;
 	top:0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: #8b71fd;
+	background-color: #90a927;
 	opacity: 0.8;
 	z-index: -1;
 }
-.about-header h1{
+.common-header h1{
 	font-size: 3.7rem;
 }
-.about-header a{
+.common-header a{
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.7);
 }
-.about-header a:hover{
+.common-header a:hover{
 	color:#fff;
 }
 
@@ -539,7 +631,7 @@ color-4: #5a557d
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: #fdcf71;
+	background-color: #304b51;
 	opacity: 0.8;
 	z-index: -1;
 }
@@ -616,47 +708,12 @@ color-4: #5a557d
 .services .row{
 	padding: 2rem 0;
 }
-.services-header{
-	position: relative;
-	background-image: url(../img/about/bnr1.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: overlay;
-	z-index: 0;
-	color: #fff;
-	padding: 2.5rem 4rem 4rem;
-}
-.services-header:before{
-	content: '';
-	position: absolute;
-	top:0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: #8b71fd;
-	opacity: 0.8;
-	z-index: -1;
-}
-.services-header h1{
-	font-size: 3.7rem;
-}
-.services-header a{
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-header a:hover{
-	color:#fff;
-}
 
 /*services Section*/
 
 
 .services-sec{
-	/*background-image: url(../img/home/bg1.png);*/
 	background-color: #fff3ef;
-	/*background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;*/
 	line-height: 190%;
 }
 .services-sec .section-title{
@@ -718,42 +775,8 @@ color-4: #5a557d
 .form-control{
 	box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
 }
- .contact-header{
-
- }
  .contact .row{
 	padding: 2rem 0;
-}
-.contact-header{
-	position: relative;
-	background-image: url(../img/about/bnr1.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: overlay;
-	z-index: 0;
-	color: #fff;
-	padding: 2.5rem 4rem 4rem;
-}
-.contact-header:before{
-	content: '';
-	position: absolute;
-	top:0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: #8b71fd;
-	opacity: 0.8;
-	z-index: -1;
-}
-.contact-header h1{
-	font-size: 3.7rem;
-}
-.contact-header a{
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.7);
-}
-.contact-header a:hover{
-	color:#fff;
 }
 
 .contact-sec h4{
@@ -786,37 +809,6 @@ color-4: #5a557d
 
 .blog .row{
 	padding: 2rem 0;
-}
-.blog-header{
-	position: relative;
-	background-image: url(../img/about/bnr1.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: overlay;
-	z-index: 0;
-	color: #fff;
-	padding: 2.5rem 4rem 4rem;
-}
-.blog-header:before{
-	content: '';
-	position: absolute;
-	top:0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: #8b71fd;
-	opacity: 0.8;
-	z-index: -1;
-}
-.blog-header h1{
-	font-size: 3.7rem;
-}
-.blog-header a{
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.7);
-}
-.blog-header a:hover{
-	color:#fff;
 }
 .recent-post-sec h4{
 	display: block;
