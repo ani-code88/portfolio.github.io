@@ -81,9 +81,7 @@ a{
 	color: #004c3f;
 	font-weight: 700;
 }
-.main-header, .about-header, .blog-header, .contact-header, .services-header{
-	margin-top:11rem;
-}
+
 .main-header{
 	width: 100%;
 	height: 80vh;
@@ -142,7 +140,9 @@ a{
 	background-color: #00A3B3!important;
 } 
 /*Common Style*/
-
+.main-header, .about-header, .blog-header, .contact-header, .services-header{
+	margin-top:11rem;
+}
 .home-services, .home-working-process, .home-why-choose-us{
 	padding-bottom: 50px;
 	min-height: 100vh;
@@ -210,13 +210,6 @@ a{
 }
 /*---------------------------------*/
 
-.home-services{
-	/*background-image: url(../img/home/bg1.png);
-	background-color: #e88b69;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;*/
-}
 .home-services .section-title{
 	background-color: rgba(31, 36, 113, 0.1);
 }
