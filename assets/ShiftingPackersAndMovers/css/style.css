@@ -621,7 +621,7 @@ header {
 .top-breadcrumb-bar {
   width: 100%;
   height: auto;
-  background-color: #353535;
+  background-color: #343a40;
 }
 
 .top-breadcrumb-bar a,
@@ -956,5 +956,57 @@ color: #2296da;
 @media (max-width: 768px){
   .form-row{
     padding: 2rem 0;
+  }
+}
+
+/* Home Shifting Page */
+.single-service-wrapper{
+  line-height: 28px;
+}
+.single-service-wrapper{
+  padding: 4rem 5rem;
+}
+.single-service-title h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212121;
+  padding: 1rem 0;
+}
+.inquery-form h2{
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #2296da;
+  color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.inquery-form input::placeholder, .inquery-form textarea::placeholder{
+  color: #c0c0c0;
+}
+.single-service-bold-para{
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.single-service-wrapper ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.single-service-wrapper ul li{
+  padding-left: 2rem;
+}
+.single-service-wrapper ul li:before {
+  content: "\f18e"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -2rem; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color: #2296da;
+}
+@media (max-width:768px){
+  .single-service-wrapper{
+    padding: 4rem 1rem;
   }
 }
