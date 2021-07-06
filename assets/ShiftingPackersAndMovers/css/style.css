@@ -827,6 +827,7 @@ header {
   background-color: #2296da;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 .get-quote-banner::before{
   position: absolute;
@@ -865,7 +866,15 @@ color: #2296da;
 .get-quote-img img{
   border-radius: 20px;
 }
-
+@media (max-width:768px){
+  .get-quote-banner::before {
+    width: 90%;
+    height: 100%;
+    transform: skewX(-35deg);
+    background-color: #0a0001;
+    border-radius: 50%;
+}
+}
 /* Contact Us Page */
 .contact-sec{
   padding: 4rem 0;
