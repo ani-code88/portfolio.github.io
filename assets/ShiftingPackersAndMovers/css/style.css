@@ -225,7 +225,9 @@ header {
   .header-content h1 {
     font-size: 2rem;
   }
-
+  .heading-top-small {
+    font-size: 2rem;  
+  }
   .section-heading p {
     max-width: 95%;
   }
