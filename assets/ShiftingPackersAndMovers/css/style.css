@@ -459,7 +459,7 @@ header {
 .why-choose-section-content p {
   line-height: 190%;
   text-align: justify;
-  margin: 1.5rem 0;
+  /* margin: 1.5rem 0; */
 }
 
 .why-choose-img img {
@@ -473,7 +473,7 @@ header {
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
 
@@ -544,7 +544,7 @@ header {
 }
 
 .clients-logo {
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: #f8f8f8;
   min-height: 130px;
   max-height: 130px;
@@ -554,6 +554,7 @@ header {
 }
 .clients-logo img{
   width: 100%;
+  max-width: 160px;
 }
 /* Our Services Page */
 .our-services{
