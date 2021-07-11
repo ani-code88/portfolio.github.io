@@ -147,6 +147,7 @@ header {
 .border-bottom{
   border-color: #505050!important;
 }
+
 .bg-light {
   background-color: #353535 !important;
 }
@@ -173,6 +174,10 @@ header {
 
 .nav-order-btn .btn:hover {
   background-color: #2296da;
+}
+.navbar-brand img, .footer-logo img{
+  width: 100px;
+  height: auto;
 }
 .header-slider{
   height: 90vh;
@@ -399,39 +404,6 @@ header {
 .services-single-card:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
-
-.hovered-card .single-card-img {
-  background-color: #249be0;
-}
-
-.hovered-card .single-card-img .fa {
-  color: #fff;
-}
-
-.services-single-card:hover .single-card-img {
-  background-color: #249be0;
-}
-
-.services-single-card:hover .single-card-img .fa {
-  color: #fff;
-}
-
-.bg-numbering {
-  font-size: 12rem;
-  font-weight: 700;
-  position: absolute;
-  color: #f0f0f0;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-@media (max-width:768px){
-  .bg-numbering{
-    font-size: 9rem;
-  }
-}
-
 /* Our Process */
 .our-process-wrapper {
   background-color: rgba(36, 155, 224, 0.1);
@@ -576,7 +548,7 @@ header {
 /* Our Clients Section */
 .clients-wrapper, .our-team-wrapper {
   background-color: #191919;
-  background-color: #ff623e;
+  /* background-color: #ff623e; */
 }
 
 .clients-wrapper .section-heading h2 {
@@ -735,17 +707,15 @@ header {
   min-height: 500px;
 }
 .about-2-left img{
-  display: inline-block;
-  position: relative;
-  width: 260px;
-  border-radius: 2px;
-  border: 4px solid #bae6ff;
+  width: 100%;
+  /* border-radius: 2px; */
+  /* border: 4px solid #bae6ff; */
 }
-.about-2-left img:last-child{
+/* .about-2-left img:last-child{
   position: absolute;
   top: 90px;
   left: 130px;
-}
+} */
 .about-2-right h2{
   font-size: 2rem;
   font-weight: 700;
@@ -758,7 +728,7 @@ header {
   font-style: italic;
 }
 @media (max-width:600px){
-  .about-2-left{
+  /* .about-2-left{
     height: 350px;
   }
   .about-2-left img{
@@ -767,7 +737,7 @@ header {
   .about-2-left img:last-child{
     top: 30px;
     left: 130px;
-  }
+  } */
   .about-2-right h2{
     font-size: 2rem;
   }
@@ -909,7 +879,8 @@ font-weight: 600;
 color: #2296da;
 }
 .get-quote-img img{
-  border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
 @media (max-width:768px){
   .get-quote-banner::before {
@@ -972,19 +943,10 @@ color: #2296da;
 }
 
 .services-page .single-card-img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
-
-.services-page .single-card-img .fa {
-  font-size: 4rem;
-}
-.services-page .bg-numbering {
-  font-size: 10rem;
-  left: 10px;
-}
-
 /* Pick Up & Drop Form Page */
 .pickup-drop-form{
   min-height: 100vh;
