@@ -263,7 +263,7 @@ header {
   .header-content {
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 10%;
     margin: 100px auto 0;
   }
 
