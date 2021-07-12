@@ -501,6 +501,12 @@ header .bg-dark{
 .testimonial-wrapper {
   background-color: rgba(36, 155, 224, 0.1);
 }
+#testimonial-slider .item{
+  min-height: 265px;
+}
+.testi-content {
+  height: 100%;
+}
 
 /* Owl Carousel Style */
 .owl-theme .owl-nav [class*=owl-] {
