@@ -295,6 +295,10 @@ header .bg-dark{
   text-align: justify;
   margin: 1.5rem 0;
 }
+.about-section-content h3{
+  color: #ff613d;
+  font-weight: 700;
+}
 
 .order-form {
   background-color: #001623;
@@ -519,7 +523,7 @@ header .bg-dark{
   cursor: pointer;
   border-radius: 3px;
   transition: all 0.3s;
-}
+} 
 
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: #656565;
