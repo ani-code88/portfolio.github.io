@@ -31,13 +31,16 @@
   display: inline-block;
   margin: 8px auto 0;
   text-align: center;
-  width: 17%;
+  width: 22%;
 }
 .person-img {float: left;}
 .person-txt {
   display: block;
   margin-top: 12px;
   overflow: hidden;
+}
+.person-img{
+  max-width: 120px;
 }
 .aboutus-bottom-txt > p {
   font-size: 16px;

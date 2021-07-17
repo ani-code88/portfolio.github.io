@@ -99,7 +99,7 @@ top: 48%;
   top: 35%;
 }
 .person-area {
-  width: 21%;
+  width: 30%;
 }
 .team-area-main .slider.slider-nav.slick-initialized.slick-slider,.home-two .team-area-main .slider.slider-nav.slick-initialized.slick-slider  {
   width: 388px;
@@ -247,7 +247,7 @@ top: 48%;
   width: 100%;
 }
 .person-area {
-  width: 28%;
+  width: 50%;
 }
 .indicator-style .owl-carousel .owl-nav .owl-prev {
   left: 0px;
@@ -584,7 +584,7 @@ top: 48%;
   width: 100%;
 }
 .person-area {
-  width: 72%;
+  width: 100%;
 }
 .project-single {
   margin-bottom: 30px;

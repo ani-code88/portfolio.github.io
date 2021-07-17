@@ -275,6 +275,7 @@
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
+	  autoplay:true,
 	  fade: true,
 	  asNavFor: '.slider-nav'
 	});
@@ -282,6 +283,7 @@
 	  slidesToShow: 5,
 	  slidesToScroll: 1,
 	  asNavFor: '.slider-for',
+	  autoplay:true,
 	  dots: false,
 	  centerMode: true,
 	  arrows: true,
@@ -450,18 +452,24 @@
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  arrows: false,
+	  autoplay:true,
+	  loop:true,
+	  autoplaySpeed:1000,
 	  fade: true,
 	  asNavFor: '.slider-nav-team'
 	});
 	$('.slider-nav-team').slick({
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
+	  loop:true,
 	  asNavFor: '.slider-for-team',
 	  dots: false,
+	  autoplaySpeed:1000,
 	  vertical: true,
 	  centerMode: false,
 	  focusOnSelect: true,
 	  focusOnSelect: true,
+	  autoplay:true,
 	  prevArrow: '<div class="slick-prev"><i class="icofont-simple-left" aria-hidden="true"></i></div>',
       nextArrow: '<div class="slick-next"><i class="icofont-simple-right" aria-hidden="true"></i></div>',
       responsive: [{
