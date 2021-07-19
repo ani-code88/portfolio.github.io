@@ -450,6 +450,11 @@ header .bg-dark {
   color: var(--mp-primary);
 }
 
+#msg{
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
 /* Services Section */
 
 .services-cards {

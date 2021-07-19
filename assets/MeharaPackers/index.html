@@ -10,7 +10,9 @@
   <!-- <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Owl Carousel -->
@@ -19,6 +21,7 @@
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/style.css" />
   <title>Home | Mehera Packers & Movers</title>
+
 </head>
 
 <body class="home">
@@ -63,13 +66,15 @@
       </div>
     </nav>
     <!-- WE HAVE MADE MOVING AND PACKING HASSLE-FREE FOR YOU!!! -->
-     <section class="hero">
-       <div class="hero-content">
-         <h1>We Provide Fastest & Affordable Relocation Services</h1>
-         <p class="d-block mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cexcepturi facilis totam optio hic laborum ducimus blanditiis nostrum. Obcaecati maxime magnam ipsum corporis sint natus perferendis in pariatur voluptatibus voluptates aperiam, officiis deserunt atque?</p>
-         <a href="#">Explore More</a>
-       </div>
-     </section>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>We Provide Fastest & Affordable Relocation Services</h1>
+        <p class="d-block mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cexcepturi facilis totam
+          optio hic laborum ducimus blanditiis nostrum. Obcaecati maxime magnam ipsum corporis sint natus perferendis in
+          pariatur voluptatibus voluptates aperiam, officiis deserunt atque?</p>
+        <a href="#">Explore More</a>
+      </div>
+    </section>
 
   </header>
 
@@ -81,64 +86,50 @@
           <div class="col-12">
             <div class="order-form">
               <h2>Request A Quote</h2>
-              <form method="post" autocomplete="off" name="get-quote-form" class="p-4">
+              <form method="post" autocomplete="off" name="get-quote-form" class="p-4" id="get-quote-form">
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" name="Name" class="form-control" aria-label="Default"
+                  <input type="text" name="name" class="form-control" aria-label="Default"
                     aria-describedby="inputGroup-sizing-default" placeholder="Full Name" value="">
                 </div>
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" name="Mobile" class="form-control" aria-label="Default"
-                    aria-describedby="inputGroup-sizing-default" placeholder="Mobile No"  value="">
+                  <input type="text" name="mobile" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Mobile No" value="">
                 </div>
                 <div class="d-flex">
                   <div class="input-group input-group-lg mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" name="Pickup-location" class="form-control" aria-label="Default"
-                      aria-describedby="inputGroup-sizing-default" placeholder="Move From"  value="">
+                    <input type="text" name="pickup-location" class="form-control" aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default" placeholder="Move From" value="">
                   </div>
                   <div class="input-group input-group-lg mb-3 ml-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" name="Drop-Location" class="form-control" aria-label="Default"
-                      aria-describedby="inputGroup-sizing-default" placeholder="Move To"  value="">
+                    <input type="text" name="drop-location" class="form-control" aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default" placeholder="Move To" value="">
                   </div>
                 </div>
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-comment" aria-hidden="true"></i></span>
                   </div>
-                  <textarea class="form-control" name="Requirements" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-                    rows="3" placeholder="Requirements: eg. Bed, Car, Bike, Sofa Set etc"  value=""></textarea>
+                  <textarea class="form-control" name="requirements" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" rows="3"
+                    placeholder="Requirements: eg. Bed, Car, Bike, Sofa Set etc" value=""></textarea>
                 </div>
                 <!-- <a href="#"  class="btn btn-submit">Submit</a> -->
-                <input type="submit" name="submit" class="btn btn-submit" value="Submit" />
+                <!-- <input type="submit" name="submit" class="btn btn-submit" value="Submit" /> -->
+                <button type="submit" id="btnSubmit" class="btn btn-submit">Submit</button>
+                <div id="msg" class="text-success"></div>
               </form>
-              
-              <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwugrNaEJ4OzhRFof6y6qg5JEMMigbGPI3P6YzFJN8sSxx8_K3VAHZNfV6R9SwSjn09/exec'
-            const form = document.forms['get-quote-form']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { 
-                method: 'POST', 
-                headers: {
-        'Content-Type': 'text/plain;charset=utf-8',
-    },
-                body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
             </div>
           </div>
         </div>
@@ -152,15 +143,19 @@
               <div class="sub-section-heading">
                 <h3>Welcome To Mehara Packers And Movers</h3>
               </div>
-              <p>Mehara Packers And Movers is initiated by Mr. Syuresh Kumar Mehara in 2015. We are one of the largest private sector integrated, well-reputed, and leading companies in India that deliver high-quality relocation solutions to their customers. With around 10+ years of experience in this relocation industry, Mehara Packers And Movers has created a niche for itself as one of the best Movers and packers companies in India.
+              <p>Mehara Packers And Movers is initiated by Mr. Syuresh Kumar Mehara in 2015. We are one of the largest
+                private sector integrated, well-reputed, and leading companies in India that deliver high-quality
+                relocation solutions to their customers. With around 10+ years of experience in this relocation
+                industry, Mehara Packers And Movers has created a niche for itself as one of the best Movers and packers
+                companies in India.
               </p>
             </div>
           </div>
-        <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-end">
-          <div class="about-section-img">
-            <img class="ml-auto" src="img/Mehara/home-about.png" alt="" width="100%" height="auto">
+          <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-end">
+            <div class="about-section-img">
+              <img class="ml-auto" src="img/Mehara/home-about.png" alt="" width="100%" height="auto">
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -178,8 +173,11 @@
                   <img src="img/services/home-shifting.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="home-shifting.html" class="d-block"><h4>Home Shifting</h4></a>
-                  <p> Mehara Packers And Movers has solved the issue for you. We, as a moving company, offer best-in-class Home goods transport services.</p>
+                  <a href="home-shifting.html" class="d-block">
+                    <h4>Home Shifting</h4>
+                  </a>
+                  <p> Mehara Packers And Movers has solved the issue for you. We, as a moving company, offer
+                    best-in-class Home goods transport services.</p>
                 </div>
               </div>
             </div>
@@ -189,8 +187,11 @@
                   <img src="img/services/office-shifting.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="office-shifting.html" class="d-block"><h4>Office And Hotel Shifting</h4></a>
-                  <p>Mehara Packers And Movers has years of experience of office relocation service. We have moved office spaces of many prestigious customers in past.</p>
+                  <a href="office-shifting.html" class="d-block">
+                    <h4>Office And Hotel Shifting</h4>
+                  </a>
+                  <p>Mehara Packers And Movers has years of experience of office relocation service. We have moved
+                    office spaces of many prestigious customers in past.</p>
                 </div>
               </div>
             </div>
@@ -200,8 +201,11 @@
                   <img src="img/services/car-bike-loading.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="vehicle-relocation.html" class="d-block"><h4>Car & Bike Relocation</h4></a>
-                  <p>We at Mehara Packers And Movers serve the most reliable and efficient car and bike relocation service.We ensure the safety of your vehicles.</p>
+                  <a href="vehicle-relocation.html" class="d-block">
+                    <h4>Car & Bike Relocation</h4>
+                  </a>
+                  <p>We at Mehara Packers And Movers serve the most reliable and efficient car and bike relocation
+                    service.We ensure the safety of your vehicles.</p>
                 </div>
               </div>
             </div>
@@ -211,8 +215,11 @@
                   <img src="img/services/packing-unpacking.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="packing-unpacking.html" class="d-block"><h4>Packing And Unpacking</h4></a>
-                  <p>Mehara Packers And Movers understands the value of your time and money. In today’s busy world, no one has the time and energy for packing of items while moving.</p>
+                  <a href="packing-unpacking.html" class="d-block">
+                    <h4>Packing And Unpacking</h4>
+                  </a>
+                  <p>Mehara Packers And Movers understands the value of your time and money. In today’s busy world, no
+                    one has the time and energy for packing of items while moving.</p>
                 </div>
               </div>
             </div>
@@ -222,8 +229,11 @@
                   <img src="img/services/international-shifting.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="international-shifting.html" class="d-block"><h4>Local & International Shifting</h4></a>
-                  <p>We have tie up with all countries to deliver yours Home goods on time in any country with space reserved in worlds leading cargo and commercial airlines.</p>
+                  <a href="international-shifting.html" class="d-block">
+                    <h4>Local & International Shifting</h4>
+                  </a>
+                  <p>We have tie up with all countries to deliver yours Home goods on time in any country with space
+                    reserved in worlds leading cargo and commercial airlines.</p>
                 </div>
               </div>
             </div>
@@ -233,8 +243,11 @@
                   <img src="img/services/loading-unloading.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="single-card-content p-3">
-                  <a href="loading-unloading.html" class="d-block text-right"><h4>Loading And Unloading</h4></a>
-                  <p>We helps you with all your loading and unloading services, from the start until the end of your shifting. We carry out goods in a very organized manner.</p>
+                  <a href="loading-unloading.html" class="d-block text-right">
+                    <h4>Loading And Unloading</h4>
+                  </a>
+                  <p>We helps you with all your loading and unloading services, from the start until the end of your
+                    shifting. We carry out goods in a very organized manner.</p>
                 </div>
               </div>
             </div>
@@ -250,33 +263,33 @@
       </div>
       <div class="container process-flow">
         <div class="row">
-         <div class="col-12 col-md-6 col-lg-4">
-           <div class="process-card process-card-1 d-flex align-items-center flex-column">
-             <div class="process-icon">
-              <i class="fa fa-phone"></i>
-             </div>
-               <h5 class="mt-4">Call Us</h5>
-               <p>Call us and Book our service</p>
-           </div>
-         </div>
-         <div class="col-12 col-md-6 col-lg-4">
-          <div class="process-card process-card-2 d-flex align-items-center flex-column">
-            <div class="process-icon">
-             <i class="fa fa-archive" aria-hidden="true"></i>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="process-card process-card-1 d-flex align-items-center flex-column">
+              <div class="process-icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <h5 class="mt-4">Call Us</h5>
+              <p>Call us and Book our service</p>
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="process-card process-card-2 d-flex align-items-center flex-column">
+              <div class="process-icon">
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              </div>
               <h5 class="mt-4">Packing</h5>
               <p>We will pack your things</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="process-card d-flex align-items-center flex-column">
-            <div class="process-icon">
-             <i class="fa fa-truck" aria-hidden="true"></i>
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="process-card d-flex align-items-center flex-column">
+              <div class="process-icon">
+                <i class="fa fa-truck" aria-hidden="true"></i>
+              </div>
               <h5 class="mt-4">Delivery</h5>
               <p>We will deliver you safely</p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -306,7 +319,8 @@
               <div class="why-choose-pills-single mb-2">
                 Flexible Work Schedule
               </div>
-              <p>We understand the emotions attached to the goods you are moving. So, just sit back & relax, we will handle rest.
+              <p>We understand the emotions attached to the goods you are moving. So, just sit back & relax, we will
+                handle rest.
               </p>
               <div class="why-choose-pills-single mb-2">
                 Affordable Price Rates
@@ -314,7 +328,7 @@
               <p>We offer the best of the moving services, comes with a pocket-friendly bill.
               </p>
               <div>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-7">
@@ -336,28 +350,30 @@
           <div class="owl-carousel owl-theme" id="testimonial-slider">
             <div class="item">
               <div class="testi-content rounded">
-                <p>"I appreciate their Mehara Packers And Movers 
-                  pricing as I met them after being quoted 
+                <p>"I appreciate their Mehara Packers And Movers
+                  pricing as I met them after being quoted
                   almost double by every second company</p>
-                  <h5>- Mohit Sharma</h5>
+                <h5>- Mohit Sharma</h5>
               </div>
             </div>
             <div class="item">
               <div class="testi-content rounded">
-                <p>"The team was realLy efficient and what I Like most is I was kept updated at every step of 
+                <p>"The team was realLy efficient and what I Like most is I was kept updated at every step of
                   move. You are best packers movers in India</p>
-                  <h5>- Manish Rathore</h5>
+                <h5>- Manish Rathore</h5>
               </div>
             </div>
             <div class="item">
               <div class="testi-content rounded">
-                <p>Thank you for an excellent service. The team was professional, maintained hygiene and excellent service standards.</p>
+                <p>Thank you for an excellent service. The team was professional, maintained hygiene and excellent
+                  service standards.</p>
                 <h5>- Hemant Saini</h5>
               </div>
             </div>
             <div class="item">
               <div class="testi-content rounded">
-                <p>I have been looking for a professional and reliable packer and mover that can take the responsibility of moving my goods and leave me relaxed. I am really satisfied with the services.</p>
+                <p>I have been looking for a professional and reliable packer and mover that can take the responsibility
+                  of moving my goods and leave me relaxed. I am really satisfied with the services.</p>
                 <h5>- Ravi Gaur</h5>
               </div>
             </div>
@@ -395,52 +411,52 @@
                 <img src="img/clients/client-4.png" alt="">
               </div>
             </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-5.png" alt="">
-                </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-5.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-6.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-6.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-7.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-7.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-8.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-8.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-9.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-9.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-10.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-10.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-11.png" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-11.png" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-12.jpg" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-12.jpg" alt="">
               </div>
-              <div class="item">
-                <div class="clients-logo shadow rounded">
-                  <img src="img/clients/client-13.svg" alt="">
-                </div>
+            </div>
+            <div class="item">
+              <div class="clients-logo shadow rounded">
+                <img src="img/clients/client-13.svg" alt="">
               </div>
-            
+            </div>
+
           </div>
         </div>
       </div>
@@ -456,13 +472,18 @@
                 <img src="img/logo.png" alt="">
               </div>
               <div class="footer-para">
-                <p>Mehara Packers And Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in touch with us today!!</p>
+                <p>Mehara Packers And Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in touch
+                  with us today!!</p>
               </div>
               <div class="footer-social-icons d-inline-flex align-items-center mb-4 mb-md-0">
-                <a href="https://www.facebook.com/standupstartups/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/standup_startups/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/StandupStartups" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/company/standup-startups" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/standupstartups/" target="_blank"><i class="fa fa-facebook"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/standup_startups/" target="_blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+                <a href="https://twitter.com/StandupStartups" target="_blank"><i class="fa fa-twitter"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/standup-startups" target="_blank"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -516,8 +537,10 @@
       </div>
     </div>
   </main>
-  <a href="https://api.whatsapp.com/send?phone=918306008154" target="_blank" class="whatsapp-chat"><i class="fa fa-whatsapp"></i></a>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <a href="https://api.whatsapp.com/send?phone=918306008154" target="_blank" class="whatsapp-chat"><i
+      class="fa fa-whatsapp"></i></a>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <!-- Owl Carousel Script -->
@@ -525,13 +548,13 @@
   <script>
     $(document).ready(function () {
 
-       // Header Slider Script
-       $("#header-slider").owlCarousel({
+      // Header Slider Script
+      $("#header-slider").owlCarousel({
         loop: true,
         margin: 0,
         responsiveClass: true,
         autoplay: true,
-        autoplayTimeout:2000,
+        autoplayTimeout: 2000,
         nav: false,
         navText: ["<div class='nav-button owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-button owl-next'><i class='fa fa-chevron-right'></i></div>"],
         dots: false,
@@ -593,7 +616,24 @@
       });
     });
   </script>
-
+  <script>
+    jQuery('#get-quote-form').on('submit', function (e) {
+      e.preventDefault();
+      jQuery('#msg').html('Please wait...');
+      jQuery('#btnSubmit').attr('disabled', true);
+      jQuery.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbwQ7pVgCo2cuWFLHv-uVK5f8sRdTGEgl5A77bcbkuKrNmBRP4OwsvJujSH5DX6B86zHAw/exec',
+        type: 'post',
+        data: jQuery('#get-quote-form').serialize(),
+        success: function (result) {
+          jQuery('#get-quote-form')[0].reset();
+          jQuery('#msg').html('Thank You! Your data has received. We will contact you shortly.');
+          jQuery('#btnSubmit').attr('disabled', false);
+          //window.location.href='';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
