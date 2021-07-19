@@ -37,7 +37,30 @@ body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
 }
-
+.whatsapp-chat{
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006816;
+  text-decoration: none;
+  z-index: 1000;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 30px;
+}
+.whatsapp-chat:hover{
+  color: #fff;
+  background-color: #028d20;
+}
+@media (max-width:700px){
+  .whatsapp-chat{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 header {
   width: 100%;
   height: auto;
