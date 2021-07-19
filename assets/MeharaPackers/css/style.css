@@ -424,7 +424,7 @@ header .bg-dark {
   background-color: #e9ebff;
 }
 
-.order-form input {
+.order-form input:not(type="submit") {
   background-color: #ffffff;
 }
 

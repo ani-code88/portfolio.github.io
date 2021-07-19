@@ -81,19 +81,19 @@
           <div class="col-12">
             <div class="order-form">
               <h2>Request A Quote</h2>
-              <form action="" class="p-4">
+              <form method="post" autocomplete="off" name="get-quote-form" class="p-4">
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" class="form-control" aria-label="Default"
+                  <input type="text" name="Name" class="form-control" aria-label="Default"
                     aria-describedby="inputGroup-sizing-default" placeholder="Full Name">
                 </div>
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" class="form-control" aria-label="Default"
+                  <input type="text" name="Mobile" class="form-control" aria-label="Default"
                     aria-describedby="inputGroup-sizing-default" placeholder="Mobile No">
                 </div>
                 <div class="d-flex">
@@ -101,14 +101,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Default"
+                    <input type="text" name="Pickup-location" class="form-control" aria-label="Default"
                       aria-describedby="inputGroup-sizing-default" placeholder="Move From">
                   </div>
                   <div class="input-group input-group-lg mb-3 ml-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Default"
+                    <input type="text" name="Drop-Location" class="form-control" aria-label="Default"
                       aria-describedby="inputGroup-sizing-default" placeholder="Move To">
                   </div>
                 </div>
@@ -116,11 +116,24 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-comment" aria-hidden="true"></i></span>
                   </div>
-                  <textarea class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                  <textarea class="form-control" name="Requirements" aria-label="Default" aria-describedby="inputGroup-sizing-default"
                     rows="3" placeholder="Requirements: eg. Bed, Car, Bike, Sofa Set etc"></textarea>
                 </div>
-                <a href="#" class="btn btn-submit">Submit</a>
+                <!-- <a href="#"  class="btn btn-submit">Submit</a> -->
+                <input type="submit" name="submit" class="btn btn-submit" value="Submit" />
               </form>
+              
+              <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwugrNaEJ4OzhRFof6y6qg5JEMMigbGPI3P6YzFJN8sSxx8_K3VAHZNfV6R9SwSjn09/exec'
+            const form = document.forms['get-quote-form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
             </div>
           </div>
         </div>
