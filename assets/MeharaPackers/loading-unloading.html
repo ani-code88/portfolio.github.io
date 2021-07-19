@@ -77,29 +77,32 @@
             </div>
             <div class="col-12 col-lg-6">
               <div class="inquery-form">
+                <form method="post" autocomplete="off" name="get-quote-form" class="p-4" id="get-quote-form">
                 <h2>Inquiry Form</h2>
                 <div class="form-group input-group-lg">
-                  <input type="text" class="form-control" placeholder="Your Full Name" id="userName">
+                  <input type="text" class="form-control" placeholder="Your Full Name" id="userName" name="Full-Name" required>
                 </div>
                 <div class="form-group input-group-lg">
-                  <input type="text" class="form-control" placeholder="Your Phone" id="userPhone">
+                  <input type="tel" class="form-control" placeholder="Your Phone" id="userPhone" name="Mobile-No" required>
                 </div>
                 <div class="form-group input-group-lg">
-                  <input type="email" class="form-control" placeholder="Your Email" id="userEmail">
+                  <input type="email" class="form-control" placeholder="Your Email" id="userEmail" name="Email-Id" required>
                 </div>
                 <div class="form-group input-group-lg">
-                  <input type="text" class="form-control" placeholder="Move From" id="moveFrom">
+                  <input type="text" class="form-control" placeholder="Move From" id="moveFrom" name="Pickup-Location" required>
                 </div>
                 <div class="form-group input-group-lg">
-                  <input type="text" class="form-control" placeholder="Move To" id="moveTo">
+                  <input type="text" class="form-control" placeholder="Move To" id="moveTo" name="Drop-Location" required>
                 </div>
                 <div class="form-group input-group-lg">
-                  <textarea class="form-control" placeholder="Write Your Requirements" rows="5" id="requirements"></textarea>
+                  <textarea class="form-control" placeholder="Write Your Requirements" rows="5" id="requirements" name="Requirements" required></textarea>
                 </div>
                 <div class="form-group">
-                  <button class="btn btn-lg btn-primary" onclick="document.getElementById('send-msg').style.display='block'">Send</button>
-                  <p class="text-success mt-3" style="display: none;" id="send-msg">Thank You! We will contact you shortly</p>
+                  <button type="submit" id="btnSubmit" class="btn btn-lg btn-primary">Submit</button>
+                  
                 </div>
+                <div class="text-success mt-3" id="msg"></div>
+                </form>
               </div>
             </div>
           </div>
@@ -177,10 +180,11 @@
       </div>
     </div>
   </div>
-
+  <a href="https://api.whatsapp.com/send?phone=919636084055" target="_blank" class="whatsapp-chat"><i
+    class="fa fa-whatsapp"></i></a>
 
   <!-- -------------------------------------Script---------------------------------------------------------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>

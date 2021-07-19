@@ -60,9 +60,9 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
-        <div class="nav-order-btn my-2 my-lg-0 ml-lg-4">
+        <!-- <div class="nav-order-btn my-2 my-lg-0 ml-lg-4">
           <a class="btn my-2 my-sm-0" href="#home-order-form">Order Now</a>
-        </div>
+        </div> -->
       </div>
     </nav>
     <!-- WE HAVE MADE MOVING AND PACKING HASSLE-FREE FOR YOU!!! -->
@@ -72,7 +72,7 @@
         <p class="d-block mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cexcepturi facilis totam
           optio hic laborum ducimus blanditiis nostrum. Obcaecati maxime magnam ipsum corporis sint natus perferendis in
           pariatur voluptatibus voluptates aperiam, officiis deserunt atque?</p>
-        <a href="#">Explore More</a>
+        <a href="about.html">Explore More</a>
       </div>
     </section>
 
@@ -91,39 +91,46 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" name="name" class="form-control" aria-label="Default"
-                    aria-describedby="inputGroup-sizing-default" placeholder="Full Name" value="">
+                  <input type="text" name="Full-Name" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Full Name" value="" required>
                 </div>
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-phone" aria-hidden="true"></i></span>
                   </div>
-                  <input type="text" name="mobile" class="form-control" aria-label="Default"
-                    aria-describedby="inputGroup-sizing-default" placeholder="Mobile No" value="">
+                  <input type="text" name="Mobile-No" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Mobile No" value="" required>
+                </div>
+                <div class="input-group input-group-lg mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="text" name="Email-Id" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" placeholder="Email Id" value="" required>
                 </div>
                 <div class="d-flex">
                   <div class="input-group input-group-lg mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" name="pickup-location" class="form-control" aria-label="Default"
-                      aria-describedby="inputGroup-sizing-default" placeholder="Move From" value="">
+                    <input type="text" name="Pickup-Location" class="form-control" aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default" placeholder="Move From" value="" required>
                   </div>
                   <div class="input-group input-group-lg mb-3 ml-2">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" name="drop-location" class="form-control" aria-label="Default"
-                      aria-describedby="inputGroup-sizing-default" placeholder="Move To" value="">
+                    <input type="text" name="Drop-Location" class="form-control" aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default" placeholder="Move To" value="" required>
                   </div>
                 </div>
                 <div class="input-group input-group-lg mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-comment" aria-hidden="true"></i></span>
                   </div>
-                  <textarea class="form-control" name="requirements" aria-label="Default"
+                  <textarea class="form-control" name="Requirements" aria-label="Default"
                     aria-describedby="inputGroup-sizing-default" rows="3"
-                    placeholder="Requirements: eg. Bed, Car, Bike, Sofa Set etc" value=""></textarea>
+                    placeholder="Requirements: eg. Bed, Car, Bike, Sofa Set etc" value="" required></textarea>
                 </div>
                 <!-- <a href="#"  class="btn btn-submit">Submit</a> -->
                 <!-- <input type="submit" name="submit" class="btn btn-submit" value="Submit" /> -->
@@ -539,7 +546,6 @@
   </main>
   <a href="https://api.whatsapp.com/send?phone=919636084055" target="_blank" class="whatsapp-chat"><i
       class="fa fa-whatsapp"></i></a>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
@@ -616,7 +622,7 @@
       });
     });
   </script>
-  <script>
+  <!-- <script>
     jQuery('#get-quote-form').on('submit', function (e) {
       e.preventDefault();
       jQuery('#msg').html('Please wait...');
@@ -633,7 +639,8 @@
         }
       });
     });
-  </script>
+  </script> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

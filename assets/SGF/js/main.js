@@ -24,7 +24,7 @@
 	$('.tailer-active').owlCarousel({
 	  loop: true,
 	  margin: 30,
-	  autoplay: false,
+	  autoplay: true,
 	  nav: true,
 	  dots:false,
 	  navText:["<i class='icofont icofont-long-arrow-left'></i>","<i class='icofont icofont-long-arrow-right'></i>"],
@@ -51,7 +51,7 @@
 	$('.tailer-active-two').owlCarousel({
 	  loop: true,
 	  margin: 30,
-	  autoplay: false,
+	  autoplay: true,
 	  nav: true,
 	  dots:false,
 	  navText:["<i class='icofont icofont-long-arrow-left'></i>","<i class='icofont icofont-long-arrow-right'></i>"],

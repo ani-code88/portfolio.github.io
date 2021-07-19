@@ -63,6 +63,7 @@
     </section>
     <!-- Contact Section -->
     <section class="contact-sec">
+      <form method="post" autocomplete="off" name="contact-us-form" class="p-4" id="contact-us-form">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-12">
@@ -73,7 +74,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-user"></i></span>
                   </div>
-                  <input type="text" class="form-control" placeholder="Your Name" id="userName" name="username">
+                  <input type="text" class="form-control" placeholder="Your Name" id="User-Name" name="User-Name" required>
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -81,7 +82,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-tag"></i></span>
                   </div>
-                  <input type="text" class="form-control" placeholder="Your Subject" id="userSubject" name="username">
+                  <input type="text" class="form-control" placeholder="Your Subject" id="User-Subject" name="User-Subject" required>
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -89,7 +90,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                   </div>
-                  <input type="text" class="form-control" placeholder="Email Address" id="userEmail" name="username">
+                  <input type="text" class="form-control" placeholder="Email Address" id="User-Email" name="User-Email" required>
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -97,7 +98,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-phone-square"></i></span>
                   </div>
-                  <input type="text" class="form-control" placeholder="Phone No." id="userPhone" name="username">
+                  <input type="text" class="form-control" placeholder="Phone No." id="User-PhoneNo" name="User-PhoneNo" required>
                 </div>
               </div>
               <div class="col-12">
@@ -105,7 +106,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-comment"></i></span>
                   </div>
-                  <textarea class="form-control" rows="3" id="msg" placeholder="Message"></textarea>
+                  <textarea class="form-control" rows="3" id="User-Message" name="User-Message" placeholder="Your Message" required></textarea>
                 </div>
               </div>
               <div class="col-12 send-btn">
@@ -113,8 +114,9 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-paper-plane"></i></span>
                   </div>
-                  <input type="button" class="form-control" id="send" placeholder="Send" value="Send">
+                  <button type="submit" id="btnSend" class="form-control btn-primary">Submit</button>
                 </div>
+                <div id="contactFormMsg" class="text-success d-block"></div>
               </div>
             </div>
           </div>
@@ -149,6 +151,7 @@
           </div>
         </div>
       </div>
+      </form>
     </section>
     <section class="google-map-section">
       <div class="embed-map">
@@ -273,12 +276,31 @@
       </div>
     </div>
   </div>
-
+  <a href="https://api.whatsapp.com/send?phone=919636084055" target="_blank" class="whatsapp-chat"><i
+    class="fa fa-whatsapp"></i></a>
 
   <!-- -------------------------------------Script---------------------------------------------------------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+  <script>
+    jQuery('#contact-us-form').on('submit', function (e) {
+      e.preventDefault();
+      jQuery('#msg').html('Please wait...');
+      jQuery('#btnSend').attr('disabled', true);
+      jQuery.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbyJbi2cJhek0N7sp14l0zPB7KUCsC3r8NBVLZjrMrz1R-jybGJTjNwoSf9aHvEdtEWFyQ/exec',
+        type: 'post',
+        data: jQuery('#contact-us-form').serialize(),
+        success: function (result) {
+          jQuery('#contact-us-form')[0].reset();
+          jQuery('#contactFormMsg').html('Thank You! Your data has received. We will contact you shortly.');
+          jQuery('#btnSend').attr('disabled', false);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
