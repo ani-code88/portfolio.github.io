@@ -39,8 +39,8 @@ body {
 }
 .whatsapp-chat{
   position: fixed;
-  bottom: 4px;
-  right: 4px;
+  bottom: 10px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
