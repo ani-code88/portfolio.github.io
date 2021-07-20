@@ -117,7 +117,7 @@ header::before {
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 60%;
   z-index: 100;
   padding: 2rem;
   border-radius: 5px;
@@ -437,10 +437,18 @@ header .bg-dark {
 .order-form .input-group-text .fa {
   font-size: 1.5rem;
   color: var(--mp-primary);
+  color: #414141;
+  color: rgba(29, 42, 244, 0.8);
 }
-
+.order-form .input-group-prepend {
+  min-width: 60px;
+}
 .order-form .input-group-text {
   background-color: #e9ebff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .order-form input:not(type="submit") {
@@ -976,12 +984,21 @@ header .bg-dark {
 /* Get A Quote Banner */
 .get-quote-banner {
   padding: 4rem 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
+    163deg,
+    rgba(29, 42, 244, 1) 0%,
+    rgba(18, 169, 247, 1) 45%,
+    rgba(4, 207, 251, 1) 100%
+  ); */
+  background:  url(../img/get-qutote.jpg), linear-gradient(
     163deg,
     rgba(29, 42, 244, 1) 0%,
     rgba(18, 169, 247, 1) 45%,
     rgba(4, 207, 251, 1) 100%
   );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -989,7 +1006,7 @@ header .bg-dark {
 
 .get-quote-banner::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   top: 0;
   left: 0;
   width: 60%;
@@ -1000,11 +1017,12 @@ header .bg-dark {
 }
 
 .get-quote-content h3 {
-  color: #fff;
+  color: #000;
+  font-weight: 700;
 }
 
 .get-quote-content p {
-  color: #badaec;
+  color: #363636;
   margin: 1rem 0;
 }
 
@@ -1015,12 +1033,12 @@ header .bg-dark {
 .get-quote-cta span {
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
+  color: #5a5a5a;
 }
 
 .get-quote-cta a {
   text-decoration: none;
-  color: rgba(4, 207, 251, 1);
+  color: rgb(0, 165, 202);
   font-size: 2rem;
   font-weight: 600;
 }
