@@ -692,5 +692,17 @@
 		items: 1,
 		navText:["<i class='icofont-simple-left'></i>","<i class='icofont-simple-right'></i>"]
 	});
+	// certificates Slider Script
+      $("#certificates-carousel").owlCarousel({
+      	loop: true,
+      	margin: 0,
+      	responsiveClass: true,
+      	autoplay: true,
+      	autoplayTimeout: 2000,
+      	nav: true,
+      	navText: ["<div class='nav-button owl-prev'><i class='fa fa-chevron-left'></i></div>", "<div class='nav-button owl-next'><i class='fa fa-chevron-right'></i></div>"],
+      	dots: false,
+      	items:3,
+      });
  
 })(jQuery);

@@ -3075,16 +3075,20 @@ ul.pstr_rating {
 
 .clients-logo {
   /* padding: 2rem; */
-  background-color: #f8f8f8;
-  min-height: 130px;
-  max-height: 130px;
+  /*background-color: #f8f8f8*/;
+  min-height: 200px;
+  max-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .clients-logo img {
   width: 100%;
   max-width: 160px;
+}
+
+.service-text ul li{
+min-width: 150px;
 }
