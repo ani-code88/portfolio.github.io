@@ -3092,3 +3092,6 @@ ul.pstr_rating {
 .service-text ul li{
 min-width: 150px;
 }
+.servce-img h5{
+  font-family: 'Roboto', sans-serif;
+}
