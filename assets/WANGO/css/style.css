@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.top-bar{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #357FBC;
+}
+.left-search{
+    display: inline-block;
+    /* background-color: aqua; */
+}
+.left-search input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.875rem;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.171);
+    color: #fff;
+}
+.left-search input::placeholder{
+    color: #fff;
+    font-size: 0.875rem;
+   
+}
+.left-search input:focus{
+    outline: none;
+}
+.contact-mail, .contact-phone, .top-lan{
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: #357FBC;
+}
+.contact-phone{
+    border-left: 1px solid rgba(255, 255, 255, 0.219);
+    border-right: 1px solid rgba(255, 255, 255, 0.219);
+}
+.contact-mail .fa, .contact-phone .fa{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    display: block;
+    margin-right: 0.8rem;
+}
+.contact-mail a, .contact-phone a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+}
+.navbar-brand img{
+    max-width: 200px;
+}
+.navigation-menu .container{
+    padding: 0;
+}
+.navigation-menu .navbar{
+    border-radius: 8px;
+}
+.navbar-nav .active .nav-link{
+    color: #357FBC!important;
+    font-weight: 700;
+}
+.bg-light {
+    background-color: #fff!important;
+}
+.hero{
+    min-height: 90vh;
+    width: 100%;
+    background-color: aquamarine;
+    background: url(../img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-content{
+    color: #fff;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 5rem;
+    font-weight: 800;
+}
+.hero-content h1 span{
+    color: #E46C0A;
+}
+.hero-content p{
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    display: block;
+}
+.hero-content a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #357FBC;
+    color: #fff;
+    border: 1px solid #357FBC;
+    font-weight: 700;
+}
+.hero-content a:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #357FBC;
+    border: 1px solid #357FBC;
+}
+@media (max-width:992px){
+    .top-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    .hero-content p{
+        font-size: 2rem;
+        padding: 0;
+    }
+    .hero-content{
+        text-align: center;
+        padding: 2rem 0.5rem;
+    }
+    .navigation-menu .navbar{
+        border-radius: 0;
+    }
+    .navbar-brand img{
+        max-width: 100px;
+    }
+
+}
+
+/* Business Solution Section */
+/* .business-solutions{
+    padding: 3rem 9rem;
+} */
+.business-solutions .nav-item{
+    transform: skewX(-20deg);
+    margin: 0.5rem 0.2rem;
+}
+.business-solutions .nav-item span{
+    display: block;
+    transform: skewX(20deg);
+}
+.business-solutions .nav-link{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #357FBC;
+    border-radius: 0;
+}
+.business-solutions .nav-item .active{
+   background-color: #357FBC;
+}
+.business-solutions .tab-pane .card{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #000;
+    background-color: #f2f4f8;
+    border: none;
+    margin-bottom: 1rem;
+}
+.business-solutions .tab-pane .card:hover{
+    text-decoration: none;
+    background-color: #e6e8ec;
+}
+.business-solutions .tab-pane h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.business-solutions .tab-pane .card-icon .fa{
+    font-size: 2.5rem;
+}
+.business-solutions .tab-pane .card p{
+    color: #525252;
+    text-align: justify;
+    line-height: 22px;
+}
+.business-solutions .card-arrow, .infrastructure-services .card-arrow{
+    color: blue;
+}
+
+/* ------------ */
+.infrastructure-services .tab-pane .card{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #000;
+    background-color: #f2f4f8;
+    border: none;
+    margin-bottom: 1rem;
+}
+.infrastructure-services .tab-pane .card:hover{
+    text-decoration: none;
+    background-color: #e6e8ec;
+}
+.infrastructure-services .tab-pane h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.is-img{
+    max-width: 100px;
+}
+.infrastructure-services .nav-link{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: 5px solid #868686;
+    border-radius: 0;
+    padding: 0.5rem 2rem;
+}
+.infrastructure-services .nav-item .active{
+    background-color: transparent;
+    color: #357FBC;
+    border-bottom: 5px solid #357FBC;
+}
+
+/* --------Industries------ */
+.industries .card{
+display: block;
+padding: 1.25rem;
+position: relative;
+border: 2px solid #2c6a9c;
+}
+.industries .card .card-title{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 2px solid #2c6a9c;
+    position: absolute;
+    top: -35px;
+}
+.industries .card .card-title h3{
+    /* display: inline-block; */
+    color: #2c6a9c;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.industries .card .card-body{
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+
+.support img{
+    max-width: 200px;
+}
+
+/* ------------------Partners--------- */
+.partners .item .partners-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners .item img{
+    max-width: 100px;
+}
+
+
+/* -------------Common--------- */
+
+.section-title h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* ---------Responsiveness----------- */
+@media (min-width: 1200px){
+    .business-solutions,
+.infrastructure-services,
+.industries,
+.support{
+    padding: 2rem 150px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px ){
+    .business-solutions,
+.infrastructure-services,
+.industries,
+.support{
+    padding: 2rem 80px;
+}
+.section-title h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px ){
+    .business-solutions,
+.infrastructure-services,
+.industries,
+.support{
+    padding: 2rem 40px;
+}
+}
+
+@media (min-width: 100px ) and (max-width: 767px ){
+    .business-solutions,
+.infrastructure-services,
+.industries,
+.support{
+    padding: 3rem 20px;
+}
+.section-title h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+.all-section .nav-link{
+    font-size: 1rem;
+}
+.partners .item img{
+    max-width: 50px;
+}
+}
