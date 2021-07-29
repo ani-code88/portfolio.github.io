@@ -1,79 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.3s;
-}
-.top-bar{
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #357FBC;
-}
-.left-search{
-    display: inline-block;
-    /* background-color: aqua; */
-}
-.left-search input{
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0.875rem;
-    border-radius: 40px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.171);
-    color: #fff;
-}
-.left-search input::placeholder{
-    color: #fff;
-    font-size: 0.875rem;
-   
-}
-.left-search input:focus{
-    outline: none;
-}
-.contact-mail, .contact-phone, .top-lan{
-    padding: 1rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 0.875rem;
-    color: #fff;
-    background-color: #357FBC;
-}
-.contact-phone{
-    border-left: 1px solid rgba(255, 255, 255, 0.219);
-    border-right: 1px solid rgba(255, 255, 255, 0.219);
-}
-.contact-mail .fa, .contact-phone .fa{
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    display: block;
-    margin-right: 0.8rem;
-}
-.contact-mail a, .contact-phone a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 0.875rem;
-}
-.navbar-brand img{
-    max-width: 200px;
-}
-.navigation-menu .container{
-    padding: 0;
-}
-.navigation-menu .navbar{
-    border-radius: 8px;
-}
-.navbar-nav .active .nav-link{
-    color: #357FBC!important;
-    font-weight: 700;
-}
-.bg-light {
-    background-color: #fff!important;
-}
+
 .hero{
     min-height: 90vh;
     width: 100%;
@@ -209,7 +134,7 @@
     background-color: #e6e8ec;
 }
 .infrastructure-services .tab-pane h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 1rem;
 }
@@ -249,7 +174,7 @@ border: 2px solid #2c6a9c;
 .industries .card .card-title h3{
     /* display: inline-block; */
     color: #2c6a9c;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .industries .card .card-body{
@@ -273,66 +198,44 @@ border: 2px solid #2c6a9c;
 }
 
 
-/* -------------Common--------- */
-
-.section-title h2{
+/* --------------Support----------- */
+.support .section-title h2{
     font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 2rem 0;
+    text-align: start;
 }
 
-/* ---------Responsiveness----------- */
-@media (min-width: 1200px){
-    .business-solutions,
-.infrastructure-services,
-.industries,
-.support{
-    padding: 2rem 150px;
-}
-}
 
-@media (min-width: 992px) and (max-width: 1199px ){
-    .business-solutions,
-.infrastructure-services,
-.industries,
-.support{
-    padding: 2rem 80px;
+/* ----------------Footer--------- */
+footer .footer-top-section{
+    background-color: #f5faff;
 }
-.section-title h2{
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 2rem 0;
+footer .contact .fa{
+    margin-right: 0.5rem;
 }
+footer .social-media{
+    border-top: 2px solid #2c6a9c;
+    padding-top: 2rem;
+    margin-top: 2rem;
 }
-
-@media (min-width: 768px) and (max-width: 991px ){
-    .business-solutions,
-.infrastructure-services,
-.industries,
-.support{
-    padding: 2rem 40px;
-}
-}
-
-@media (min-width: 100px ) and (max-width: 767px ){
-    .business-solutions,
-.infrastructure-services,
-.industries,
-.support{
-    padding: 3rem 20px;
-}
-.section-title h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 2rem 0;
-}
-.all-section .nav-link{
+footer .social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #b3ddff;
+    margin-right: 1rem;
     font-size: 1rem;
+    border: 2px solid #2c6a9c;
+    color: #2c6a9c;
 }
-.partners .item img{
-    max-width: 50px;
+footer .social-media a:hover{
+    background-color: #fff;
 }
+footer .resources a, footer .infrastructure-service a, footer .business-solution a{
+    color: #000;
+}
+footer .resources a:hover, footer .infrastructure-service a:hover, footer .business-solution a:hover{
+    color: #2c6a9c;
 }

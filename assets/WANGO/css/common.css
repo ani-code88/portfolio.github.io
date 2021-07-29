@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top-bar{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #357FBC;
+}
+.left-search{
+    display: inline-block;
+}
+.left-search input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.875rem;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.171);
+    color: #fff;
+}
+.left-search input::placeholder{
+    color: #fff;
+    font-size: 0.875rem;
+   
+}
+.left-search input:focus{
+    outline: none;
+}
+.contact-mail, .contact-phone, .top-lan{
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: #357FBC;
+}
+.contact-phone{
+    border-left: 1px solid rgba(255, 255, 255, 0.219);
+    border-right: 1px solid rgba(255, 255, 255, 0.219);
+}
+.contact-mail .fa, .contact-phone .fa{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    display: block;
+    margin-right: 0.8rem;
+}
+.contact-mail a, .contact-phone a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+}
+.navbar-brand img{
+    max-width: 200px;
+}
+.navigation-menu .container{
+    padding: 0;
+}
+.navigation-menu .navbar{
+    border-radius: 8px;
+}
+.navbar-nav .active .nav-link{
+    color: #357FBC!important;
+    font-weight: 700;
+}
+.bg-light {
+    background-color: #fff!important;
+}
+
+/* -------------Common--------- */
+
+.section-title h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.business-solutions,
+.infrastructure-services,
+.industries,
+.support{
+    padding: 2rem 0;
+}
+
+/* Font Weight */
+.fw-400{
+    font-weight: 400;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+
+/* Font Sizes */
+.font-16{
+    font-size: 1rem;
+}
+.font-18{
+    font-size: 1.125rem;
+}
+.font-20{
+    font-size: 1.25rem;
+}
+.font-22{
+    font-size: 1.375rem;
+}
+.font-24{
+    font-size: 1.5rem;
+}
+.font-28{
+    font-size: 1.75rem;
+}
+.font-32{
+    font-size: 2rem;
+}
+.font-40{
+    font-size: 2.5rem;
+}
+.font-48{
+    font-size: 3rem;
+}
+.font-64{
+    font-size: 4rem;
+}
+.font-80{
+    font-size: 5rem;
+}
+
+/* Paddings All*/
+.wango-p-1{
+    padding: 1rem;
+}
+.wango-p-2{
+    padding: 2rem;
+}
+.wango-p-3{
+    padding: 3rem;
+}
+.wango-p-4{
+    padding: 4rem;
+}
+.wango-p-5{
+    padding: 5rem;
+}
+.wango-p-6{
+    padding: 6rem;
+}
+
+/* Padding Y-Axis */
+.wango-py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.wango-py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.wango-py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.wango-py-4{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Padding X-Axis */
+.wango-px-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.wango-px-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.wango-px-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.wango-px-4{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}

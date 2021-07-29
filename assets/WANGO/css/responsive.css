@@ -1,0 +1,32 @@
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px ){
+
+.section-title h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px ){
+
+}
+
+@media (min-width: 100px ) and (max-width: 767px ){
+.section-title h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+.all-section .nav-link{
+    font-size: 1rem;
+}
+.partners .item img{
+    max-width: 50px;
+}
+}
