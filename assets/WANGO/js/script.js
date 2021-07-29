@@ -21,3 +21,7 @@
           }
         }
       });
+
+      $(document).on('click', '.mega-dropdown .dropdown-menu', function (e) {
+        e.stopPropagation();
+      });

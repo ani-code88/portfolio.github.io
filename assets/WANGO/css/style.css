@@ -1,4 +1,5 @@
-
+/* Primary Color: #3282C1
+Complementary Color: #E46C0A */
 .hero{
     min-height: 90vh;
     width: 100%;
@@ -18,7 +19,7 @@
     font-weight: 800;
 }
 .hero-content h1 span{
-    color: #E46C0A;
+    color: var(--wango-orange);
 }
 .hero-content p{
     font-size: 2rem;
@@ -29,16 +30,16 @@
     display: inline-block;
     text-decoration: none;
     padding: 1rem 2rem;
-    background-color: #357FBC;
+    background-color: var(--wango-blue);
     color: #fff;
-    border: 1px solid #357FBC;
+    border: 1px solid var(--wango-blue);
     font-weight: 700;
 }
 .hero-content a:hover{
     text-decoration: none;
     background-color: #fff;
-    color: #357FBC;
-    border: 1px solid #357FBC;
+    color: var(--wango-blue);
+    border: 1px solid var(--wango-blue);
 }
 @media (max-width:992px){
     .top-bar{
@@ -50,12 +51,13 @@
         font-size: 3rem;
     }
     .hero-content p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0;
     }
     .hero-content{
         text-align: center;
-        padding: 2rem 0.5rem;
+        padding: 2rem 0;
+        margin-top: 3rem;
     }
     .navigation-menu .navbar{
         border-radius: 0;
@@ -79,14 +81,14 @@
     transform: skewX(20deg);
 }
 .business-solutions .nav-link{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     background-color: transparent;
-    border: 2px solid #357FBC;
+    border: 2px solid var(--wango-blue);
     border-radius: 0;
 }
 .business-solutions .nav-item .active{
-   background-color: #357FBC;
+   background-color: var(--wango-blue);
 }
 .business-solutions .tab-pane .card{
     display: block;
@@ -111,14 +113,24 @@
 }
 .business-solutions .tab-pane .card p{
     color: #525252;
-    text-align: justify;
+    text-align: start;
     line-height: 22px;
 }
 .business-solutions .card-arrow, .infrastructure-services .card-arrow{
-    color: blue;
+    color: var(--wango-blue);
 }
 
 /* ------------ */
+.infrastructure-services{
+    background-color: #3282c1;
+}
+.infrastructure-services .section-title h2{
+    color: #fff;
+}
+.infrastructure-services .section-title h2:before, 
+.infrastructure-services .section-title h2:after{
+    background-color: #fff;
+}
 .infrastructure-services .tab-pane .card{
     display: block;
     text-decoration: none;
@@ -142,44 +154,46 @@
     max-width: 100px;
 }
 .infrastructure-services .nav-link{
-    color: #000;
+    color: #e4e4e4;
     font-size: 1.2rem;
     font-weight: 600;
     background-color: transparent;
-    border-bottom: 5px solid #868686;
+    border-bottom: 5px solid #ffffff;
     border-radius: 0;
     padding: 0.5rem 2rem;
 }
 .infrastructure-services .nav-item .active{
     background-color: transparent;
-    color: #357FBC;
-    border-bottom: 5px solid #357FBC;
+    color: #fff;
+    border-bottom: 5px solid var(--wango-orange);
 }
 
 /* --------Industries------ */
 .industries .card{
 display: block;
-padding: 1.25rem;
+padding: 2.5rem 1.25rem;
 position: relative;
-border: 2px solid #2c6a9c;
 }
+.solutions__square--bar {
+    border: 0;
+    border-bottom: 5px solid;
+    margin-bottom: 15px;
+    width: 50px;
+    border-bottom-color: #00bebc;
+}
+
 .industries .card .card-title{
     display: inline-block;
-    padding: 0.5rem 1rem;
     background-color: #fff;
-    border: 2px solid #2c6a9c;
-    position: absolute;
-    top: -35px;
 }
 .industries .card .card-title h3{
-    /* display: inline-block; */
-    color: #2c6a9c;
+    color: #000;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .industries .card .card-body{
-    margin-top: 1rem;
-    padding-left: 0;
+    padding: 0;
+    color: #636363;
 }
 
 
@@ -199,21 +213,32 @@ border: 2px solid #2c6a9c;
 
 
 /* --------------Support----------- */
-.support .section-title h2{
-    font-size: 2rem;
-    text-align: start;
+.support .section-sub-title h2{
+    color: var(--wango-orange);
 }
 
+.about-wango{
+    background-color: #ffeddf;
+}
 
 /* ----------------Footer--------- */
+footer{
+    background-color: #141414;
+}
 footer .footer-top-section{
-    background-color: #f5faff;
+    /* background-color: #f5faff; */
+    color: #fff;
+    border-bottom: 1px solid #303030;
+}
+.footer-bottom-section{
+    color: #fff;
 }
 footer .contact .fa{
     margin-right: 0.5rem;
+    color: var(--wango-orange);
 }
 footer .social-media{
-    border-top: 2px solid #2c6a9c;
+    border-top: 2px solid var(--wango-orange);
     padding-top: 2rem;
     margin-top: 2rem;
 }
@@ -227,15 +252,26 @@ footer .social-media a{
     background-color: #b3ddff;
     margin-right: 1rem;
     font-size: 1rem;
-    border: 2px solid #2c6a9c;
-    color: #2c6a9c;
+    border: 2px solid var(--wango-blue);
+    color: var(--wango-blue);
 }
 footer .social-media a:hover{
     background-color: #fff;
 }
 footer .resources a, footer .infrastructure-service a, footer .business-solution a{
-    color: #000;
+    color: #f3f3f3;
 }
 footer .resources a:hover, footer .infrastructure-service a:hover, footer .business-solution a:hover{
-    color: #2c6a9c;
+    color: var(--wango-blue);
+}
+
+/* ------------------- */
+.dropdown {
+    position: static !important;
+}
+  
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top: 0px !important;
+    width: 100% !important;
 }
