@@ -214,7 +214,23 @@
       clickable: true
     }
   });
-
+/**
+ * Fixing Horizontal Behaviour in small devices
+ */
+ window.addEventListener('resize', () => {
+  let userScreenWidth = window.outerWidth;
+  let x = document.querySelectorAll(".row");
+  if(userScreenWidth>= 768){
+    for(let i=0; i<x.length; i++){
+      x[i].classList.remove("no-gutters");
+    }
+  }
+  else{
+    for(let i=0; i<x.length; i++){
+      x[i].classList.add("no-gutters");
+    }
+  }
+});
   /**
    * Animation on scroll
    */
