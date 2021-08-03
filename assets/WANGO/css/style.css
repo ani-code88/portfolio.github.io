@@ -334,3 +334,47 @@ footer .resources a:hover, footer .infrastructure-service a:hover, footer .busin
     margin-top: 0px !important;
     width: 100% !important;
 }
+
+
+/* --------------- */
+.drop-down-content a{
+    display: block;
+    word-wrap: break-word;
+    padding: 0.5rem 0;
+    color: var(--wango-blue);
+}
+.drop-down-content a:hover{
+    color: var(--wango-orange);
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: transparent;
+}
+.drop-down-content .dropdown-title{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-bottom: 1px solid #dee2e6;
+}
+.drop-down-content .dropdown-subtitle{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555558;
+}
+.footer__copyright{
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: #000;
+    padding: 0.5rem 0;
+    text-align: center;
+}
