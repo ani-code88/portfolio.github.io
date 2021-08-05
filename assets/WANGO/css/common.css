@@ -63,7 +63,7 @@ a:hover {
     background-color: #131313;
 }
 .top-bar {
-    padding: 1rem;
+    padding: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +78,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 0.875rem;
+    padding: 0.5rem;
     border-radius: 40px;
     border: none;
     background-color: rgba(255, 255, 255, 0.171);
@@ -87,7 +87,7 @@ a:hover {
 
 .left-search input::placeholder {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 
 }
 
@@ -98,12 +98,12 @@ a:hover {
 .contact-mail,
 .contact-phone,
 .top-lan {
-    padding: 1rem;
+    padding: 0.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #fff;
     background-color: var(--wango-blue);
     background-color: transparent;
@@ -117,7 +117,7 @@ a:hover {
 .contact-mail .fa,
 .contact-phone .fa {
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1rem;
     display: block;
     margin-right: 0.8rem;
 }
@@ -156,7 +156,54 @@ a:hover {
 .bg-light {
     background-color: #fff !important;
 }
-
+.dropdown {
+    position: static !important;
+}
+.dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    margin-top: 0px !important;
+    width: 100% !important;
+}
+.drop-down-content a{
+    display: block;
+    word-wrap: break-word;
+    padding: 0.5rem 0;
+    color: var(--wango-blue);
+}
+.drop-down-content a:hover{
+    color: var(--wango-orange);
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: transparent;
+}
+.drop-down-content .dropdown-title{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-bottom: 1px solid #dee2e6;
+}
+.drop-down-content .dropdown-subtitle{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555558;
+}
+.top-breadcrumb a, .top-breadcrumb span{
+color: #fff;
+}
+.top-breadcrumb span{
+    padding: 0 0.35rem;
+}
 /* -------------Common--------- */
 .section-title{
     text-align: center;
@@ -339,8 +386,8 @@ a:hover {
 }
 
 .wango-px-4 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 4rem!important;
+    padding-right: 4rem!important;
 }
 
 /* ----------------Color--------- */
@@ -361,4 +408,18 @@ a:hover {
 }
 .wango-blue{
     color: var(--wango-blue);
+}
+
+/* ----Line Height--------- */
+.lh-22{
+    line-height: 22px;
+}
+.lh-24{
+    line-height: 24px;
+}
+.lh-26{
+    line-height: 26px;
+}
+.lh-28{
+    line-height: 28px;
 }
