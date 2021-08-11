@@ -832,10 +832,12 @@ p.copy-right a:hover {
     width: 90%;
     text-align: center;
 }
-
-/*.team-grids:hover div.team-info {
+.team-info-jaipur {
+    bottom: -155px;
+}
+.team-grids:hover div.team-info-jaipur {
 	bottom: 0px;
-}*/
+}
 
 .team-grids:hover {
 	border-color: #76daff;
