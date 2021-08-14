@@ -2034,3 +2034,10 @@ address p {
         line-height: 24px;
     }
 }
+.read-more-home{
+    color: #000!important;
+}
+.read-more-home:hover{
+    color: #fff!important;
+
+}
