@@ -1,0 +1,313 @@
+/* ^-------------------------------------------------------------------------- */
+/* ^                Common Style Sheet For All insights Pages                */
+/* ^-------------------------------------------------------------------------- */
+
+/* ! ------------- All Pages Top Breadcrumb ------------- */
+.breadcrumb {
+  margin: 0;
+  padding: 0 0.5rem;
+  align-items: center;
+}
+
+.breadcrumb-item a,
+.breadcrumb .active {
+  font-size: 0.75rem;
+}
+
+
+/* ! ------------- Insights Page Header ------------- */
+.insights-header {
+  height: auto;
+  width: 100%;
+  background: url(../img/industries-bg.jpg), linear-gradient(110deg, rgb(236, 236, 255, 0.85) 40%, transparent);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-blend-mode: overlay;
+  z-index: 1;
+}
+
+.insights-header-content {
+  max-width: 700px;
+  padding: 3rem;
+}
+
+.insights-header h1 {
+  font-size: 4rem;
+  line-height: 140%;
+  font-weight: 300;
+}
+
+.insights-header span {
+  display: block;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+/* ! Responsive Media Queries */
+@media (max-width:767px) {
+  .insights-header h1 {
+    font-size: 2rem;
+    line-height: 140%;
+    font-weight: 300;
+  }
+
+  .insights-header span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .insights-header-content {
+    max-width: 700px;
+    padding: 3rem 0.5rem;
+  }
+}
+
+
+/* --------------------- Scroll Spy */
+/* Insights-scroll-spy */
+.scrollspy-nav {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #111111;
+  z-index: 1000;
+}
+
+.scrollspy-nav .scrollspy-link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+  font-weight: bold;
+  margin: 0px 10px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.scrollspy-nav .scrollspy-link:hover,
+.scrollspy-nav .scrollspy-link:active {
+  color: #d80505;
+}
+
+
+.scrollspy-nav .scrollspy-indicator {
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: #d80505;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s, left 0.1s;
+}
+
+.scrollspy-section {
+  min-height: 100vh;
+  padding: 5rem 3rem;
+}
+
+.insights-scroll-spy .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: inline-block;
+  background-color: #000e26;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  color: #ecf3ff;
+}
+
+/* .................. */
+.latestinsightSection {
+  position: relative;
+}
+
+.latestinsightSection {
+  color: #000;
+}
+
+.latestinsightSection .authorImg img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.latestinsightSection .jumbotron h1 {
+  color: #fff !important;
+}
+
+.latestinsightSection .jumbotron span {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fff !important;
+}
+
+.latestinsightSection .jumbotron p {
+  color: #fff !important;
+}
+
+.latestinsightSection .authorName {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.latestinsightSection .articleDate {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.latestinsightSection .jumbotron .authorName {
+  color: #fff;
+}
+
+.latestinsightSection .jumbotron .articleDate {
+  color: #fff;
+}
+
+.latestinsightSection .hrDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.latestinsightSection .topSmallHeading {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.latestinsightSection .card {
+  margin-bottom: 1rem;
+}
+
+.latestinsightSection .card .card-title {
+  font-size: 1rem;
+  color: #070707 !important;
+  font-weight: 500;
+}
+
+.latestinsightSection .card .card-title:hover {
+  color: #578ae9 !important;
+}
+
+.latestinsightSection .card .card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #494949 !important;
+}
+
+.latestinsightSection .card .authorImg img {
+  width: 40px;
+  height: 40px;
+}
+
+.latestinsightSection .card .authorName {
+  color: #5f5f5f !important;
+  font-size: 14px;
+}
+
+.latestinsightSection .card .articleDate {
+  color: #5f5f5f !important;
+}
+
+.latestinsightSection .jumbotron {
+  background-image: url("../img/latest-blog-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* ................... Customer success stories */
+
+.customerStoriesSection .read-more {
+  color: #d86202;
+}
+
+.customerStoriesSection .card:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #f16e02;
+}
+
+.customerStoriesSection .card:hover.read-more {
+  border-bottom-color: #f16e02;
+}
+
+.customerStoriesSection .heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+/* ......Blog Section */
+.blog-card {
+  padding: 1.5rem;
+}
+
+.blog-post-date {
+  font-size: 0.75rem;
+}
+
+.blog-post-title {
+  color: #343434;
+  display: block;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.blog-post-detail {
+  font-size: 1rem;
+  margin-top: .5rem;
+  text-transform: none;
+}
+
+/* ......Events Section */
+.event-card {
+  padding: 1.5rem;
+  background-color: #f1f6ff;
+  border: 4px solid #fff;
+}
+
+.event-date {
+  font-size: 0.75rem;
+}
+
+.event-title {
+  color: #343434;
+  display: block;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.event-detail {
+  font-size: 1rem;
+  margin-top: .5rem;
+  text-transform: none;
+}
+
+.event-card .learn-more {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #578ae9;
+  border: 2px solid #578ae9;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.event-card .learn-more:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}

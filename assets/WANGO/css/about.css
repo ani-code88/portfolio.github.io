@@ -1,0 +1,167 @@
+/* ^-------------------------------------------------------------------------- */
+/* ^                Style Sheet For All About Pages                */
+/* ^-------------------------------------------------------------------------- */
+
+/* ! ------------- All Pages Top Breadcrumb ------------- */
+.breadcrumb {
+    margin: 0;
+    padding: 0 0.5rem;
+    align-items: center;
+}
+
+.breadcrumb-item a,
+.breadcrumb .active {
+    font-size: 0.75rem;
+}
+
+
+ /* ! ------------- About Header ------------- */
+.about-header {
+    height: auto;
+    width: 100%;
+    background: url(../img/industries-bg.jpg) ,linear-gradient(110deg, rgb(236, 236, 255, 0.85) 40%, transparent);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-blend-mode: overlay;
+    z-index: 1;
+}
+
+.about-header-content {
+    max-width: 700px;
+    padding: 3rem;
+}
+
+.about-header h1 {
+    font-size: 4rem;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+.about-header span {
+    display: block;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+/* ! Responsive Media Queries */
+@media (max-width:767px) {
+    .about-header h1 {
+        font-size: 2rem;
+        line-height: 140%;
+        font-weight: 300;
+    }
+
+    .about-header span {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    .about-header-content {
+        max-width: 700px;
+        padding: 3rem 0.5rem;
+    }
+}
+
+
+
+
+  /* --------------------- Scroll Spy */
+  /* .about-scroll-spy */
+  .scrollspy-nav {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #111111;
+    z-index: 1000;
+  }
+  
+  .scrollspy-nav .scrollspy-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    transition: 0.3s ease;
+    font-weight: bold;
+    margin: 0px 10px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+  
+  .scrollspy-nav .scrollspy-link:hover, .scrollspy-nav .scrollspy-link:active {
+    color: #d80505;
+  }
+
+  
+  .scrollspy-nav .scrollspy-indicator {
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #d80505;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s, left 0.1s;
+  }
+  
+  .scrollspy-section {
+    min-height: 100vh;
+    padding: 5rem 3rem;
+  }
+  .about-scroll-spy .title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #000e26;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    color: #ecf3ff;
+  }
+
+  /* .................. */
+  .aboutWangoMspSection{
+      position: relative;
+      background:  linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,0) 100%), url(../img/hero.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+.aboutWangoMspSection {
+    color: #000;
+}
+.coreValuesSection{
+    background-color: #f7f7f7;
+}
+.socialResponsibilitySection{
+    background-color: #ffe8bd;
+}
+.aboutWangoMspSection li,
+.coreValuesSection li,
+.trustSection li,
+.diversityAndInclutionSection li{
+    margin-left: 20px;
+    line-height: 28px;
+}
+.aboutWangoMspSection li::before,
+.coreValuesSection li::before,
+.trustSection li::before,
+.diversityAndInclutionSection li::before{
+    background-color: #95098a;
+    content: ' ';
+    display: inline-block;
+    height: 8px;
+    margin-left: -20px;
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+    width: 8px;
+}
+.diversityAndInclutionSection{
+    background-color: #f7e4ff;
+}
