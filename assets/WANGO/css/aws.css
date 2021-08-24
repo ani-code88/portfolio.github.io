@@ -7,15 +7,13 @@ Orange #ff7300 */
   padding: 0 0.5rem;
   align-items: center;
 }
-
 .breadcrumb-item a,
 .breadcrumb .active {
   font-size: 0.75rem;
 }
 
-/* ^ Top Header */
-.aws-header {
-  /* min-height: 100vh; */
+/* ^ Main Header */
+.main-header {
   height: auto;
   width: 100%;
   background: url(../img/industries-bg.jpg),
@@ -29,18 +27,18 @@ Orange #ff7300 */
   z-index: 1;
 }
 
-.aws-header-content {
+.main-header-content {
   max-width: 700px;
   padding: 3rem;
 }
 
-.aws-header h1 {
+.main-header-content .main_title {
   font-size: 4rem;
   line-height: 140%;
   font-weight: 300;
 }
 
-.aws-header span {
+.main-header-content span {
   display: block;
   margin-top: 4rem;
   font-size: 1.5rem;
@@ -48,76 +46,26 @@ Orange #ff7300 */
 }
 
 @media (max-width: 767px) {
-  .aws-header h1 {
+  .main-header-content .main_title {
     font-size: 2rem;
     line-height: 140%;
     font-weight: 300;
   }
 
-  .aws-header span {
+  .main-header-content span {
     display: block;
     margin-top: 1rem;
     font-size: 1rem;
     line-height: 1.25;
   }
 
-  .aws-header-content {
+  .main-header-content {
     max-width: 700px;
     padding: 3rem 0.5rem;
   }
 }
-.aws-page .scrollspy-section h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: left;
-  padding: 2rem 0;
-  position: relative;
-  display: block;
-  color: var(--wango-orange);
-  color: #000;
-  width: fit-content;
-  font-family: 'Lora', serif;
-}
-.aws-page .scrollspy-section h2::before{
-  width: 28px;
-  height: 5px;
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  background-color: var(--wango-orange);
-}
-.aws-page .scrollspy-section h2::after {
-  width: 100px;
-  height: 1px;
-  display: block;
-  content: "";
-  position: relative;
-  margin-top: 15px;
-  left: 0;
-  background-color: var(--wango-orange);
-}
-/* ^ Main Scrollspy Bar */
-.scrollspy-section {
-  position: relative;
-  padding: 5rem 3rem;
-  display: flex;
-  align-items: center;
-}
-@media (max-width:767px){
-  .scrollspy-section{
-    padding: 5rem 0.5rem;
-  }
-}
-.scroll-spy-section .navbar-nav {
-  flex-direction: row;
-}
 
-.scroll-spy-section .nav-item {
-  padding: 0.5rem;
-}
-/* Custom Scroll Spy */
+/* ^ Main Scrollspy NavBar */
 .scrollspy-nav {
   height: auto;
   display: flex;
@@ -129,7 +77,6 @@ Orange #ff7300 */
   background: #111111;
   z-index: 1000;
 }
-
 .scrollspy-nav .scrollspy-link {
   text-decoration: none;
   color: #ffffff;
@@ -139,7 +86,6 @@ Orange #ff7300 */
   padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
-
 @media (max-width: 600px){
   .scrollspy-nav .scrollspy-link {
     font-weight: normal;
@@ -148,7 +94,6 @@ Orange #ff7300 */
     font-size: 0.7rem;
 }
 }
-
 .scrollspy-nav .scrollspy-link:hover,
 .scrollspy-nav .scrollspy-link:active {
   color: #d80505;
@@ -163,8 +108,51 @@ Orange #ff7300 */
   left: 0;
   transition: width 0.3s, left 0.1s;
 }
-
-/* ^ Scrollspy Content */
+/* Scroll spy Section */
+.scrollspy-section {
+  position: relative;
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width:767px){
+  .scrollspy-section{
+    padding: 5rem 0.5rem;
+  }
+}
+/* all sections main title (h2) */
+.scrollspy-section .section_title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 2rem;
+  position: relative;
+  display: block;
+  color: var(--wango-orange);
+  color: #000;
+  width: fit-content;
+  font-family: 'Lora', serif;
+}
+.scrollspy-section .section_title::before{
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  background-color: var(--wango-orange);
+}
+.scrollspy-section .section_title::after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 15px;
+  left: 0;
+  background-color: var(--wango-orange);
+}
 
 /* ^ Overview Section */
 .overviewSection{
@@ -199,7 +187,7 @@ Orange #ff7300 */
   }
 }
 /* ^ Solution Section */
-#accordion{
+.accordion{
   box-shadow: 0 4px 20px #c9c9c9;
 }
 
@@ -218,13 +206,13 @@ Orange #ff7300 */
   position: relative;
   font-weight: 600;
 }
-#accordion .card{
+.accordion .card{
   border: none;
 }
-#accordion .card-header{
+.accordion .card-header{
   padding: 0;
 }
-#accordion .card-body{
+.accordion .card-body{
   background-color: #fff;
   border: none;
   color: rgba(0, 0, 0, 0.8);
@@ -253,24 +241,10 @@ Orange #ff7300 */
 }
 
 /* ^ Use Cases Section */
-.aws-page .useCaseSection {
+.useCaseSection {
   position: relative;
   background-color: #ffffec;
 }
-
-.aws-page #use-cases::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: -200px;
-  width: 75%;
-  z-index: -1;
-  background-color: rgba(13, 73, 185, 0.842);
-  transform: skew(-10deg);
-}
-
 .use-cases-right .heading{
   display: flex;
   align-items: center;
@@ -304,11 +278,8 @@ Orange #ff7300 */
 .use-cases-right .content{
   padding-left: 80px;
 }
-.aws-page #use-cases .use-cases-left h2,
-.aws-page #use-cases .use-cases-left span,
-.aws-page #use-cases .use-cases-left p {
-  color: #fff;
-}
+
+
 
 /* ^ Resources Section */
 .resourceSection{
@@ -330,80 +301,29 @@ Orange #ff7300 */
   padding: 0;
   border-radius: 0;
 }
+.resourceSection .card-img img{
+  width: 100%;
+  height: 100%;
+  }
 .resourceSection .card h5{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 .resourceSection .card p{
   font-size: 15px;
   font-weight: 400;
-}
-.resourceSection .card-img img{
-width: 100%;
-height: 100%;
+  opacity: 0.8;
 }
 .resourceSection .card-body a{
-  color: #ff4800;
-  font-size: 14px;
+  color: #0477fb;
+  font-size: 13px;
 }
 .resourceSection .card-body a:hover{
   color: #c43a04;
 }
-/* ^ Content Section */
-.contact-section {
-  background-image: url("../img/RectLight.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
 
-.contact-section .card {
-  border: none;
-  background-color: transparent;
-}
 
-.contact-section .card-wrapper {
-  padding: 2rem 4rem;
-  margin: 0.05rem;
-  display: flex;
-  background: #fafafa;
-  border: none;
-}
-
-.contact-section .section-title {
-  font-family: "Jost", sans-serif;
-  font-size: 3rem;
-  line-height: 1.1;
-  color: #fff;
-  /* margin-bottom: 4rem; */
-}
-
-.contact-section .card-title {
-  font-family: "Jost", sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #5d5d5d;
-}
-
-.contact-section .image-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.contact-section .fa {
-  font-size: 2rem;
-  padding-right: 1.5rem;
-  color: var(--wango-blue);
-}
-/* 
-#1ae1ff
-#9e7bfb
-#ff5b89
-#ff912b
-#ffbb2a
-#aad449
-#01c39b 
-*/
+/* ^ Contact (Get Started) Section */
 .contactSection form{
   max-width: 750px;
 }
@@ -442,7 +362,7 @@ position: relative;
 font-weight: 400;
 opacity: 0.8;
 }
-.contactSection .bar{
+.contactSection .doted_bar{
     width: 50px;
     height: 4px;
     margin-left: 2px;
