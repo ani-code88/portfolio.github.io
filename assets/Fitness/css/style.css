@@ -119,7 +119,8 @@ body {
 a{
 	text-decoration:none;
 	cursor:pointer;
-	color:#fdbd15;
+	color:#fff;
+	font-size: 24;
 }
 
 button,
