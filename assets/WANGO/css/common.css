@@ -160,8 +160,8 @@ a:hover {
     position: static !important;
 }
 .dropdown-menu {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
-    margin-top: 0px !important;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; */
+    margin-top: 1px !important;
     width: 100% !important;
 }
 .drop-down-content a{

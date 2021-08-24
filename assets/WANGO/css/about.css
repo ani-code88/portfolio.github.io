@@ -123,7 +123,19 @@
     border-radius: 30px;
     color: #ecf3ff;
   }
-
+  @media (max-width:767px){
+    .scrollspy-section{
+      padding: 5rem 0.5rem;
+    }
+  }
+  @media (max-width: 600px){
+    .scrollspy-nav .scrollspy-link {
+      font-weight: normal;
+      margin: 0;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.7rem;
+  }
+  }
   /* .................. */
   .aboutWangoMspSection{
       position: relative;

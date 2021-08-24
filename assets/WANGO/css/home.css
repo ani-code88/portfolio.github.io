@@ -34,7 +34,60 @@ Complementary Color: #E46C0A */
 .hero-content .cta-btn-lg {
     display: inline-block;
 }
-
+.submenu-title{
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #dcdcdc;
+    cursor: pointer;
+}
+.submenu-title::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.menu-level-three a{
+    padding: 0.3rem 0;
+    text-decoration: none;
+    color: var(--wango-blue);
+}
+.menu-level-three a:hover{
+    color: #1f91ee;
+}
+.dropdown-menu{
+    border: none;
+    box-shadow: none;
+    background-color: #f3f3f3;
+    border-radius: 0;
+}
+.dropdown-item {
+    white-space: normal;
+    padding: 0;
+}
+.industriesMenu-col a{
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--wango-blue);
+}
+.industriesMenu-col a:hover{
+    color: #1f91ee;
+}
+.industries-intro-col h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.875rem;
+}
+.industries-intro-col p{
+    font-size: 1rem;
+    opacity: 0.9;
+}
 @media (max-width:992px) {
     .top-bar {
         flex-direction: column;
@@ -105,14 +158,14 @@ Complementary Color: #E46C0A */
     cursor: pointer;
     padding: 1rem;
     color: #000;
-    background-color: #f2f4f8;
+    background-color: #eff8ff;
     border: none;
     margin-bottom: 1rem;
 }
 
 .business-solutions .tab-pane .card:hover {
     text-decoration: none;
-    background-color: #e6e8ec;
+    background-color: #dbefff;
 }
 
 .business-solutions .tab-pane h3 {
@@ -122,6 +175,10 @@ Complementary Color: #E46C0A */
 
 .business-solutions .tab-pane .card-icon .fa {
     font-size: 2.5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), to(#333));
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .business-solutions .tab-pane .card p {
@@ -139,6 +196,9 @@ Complementary Color: #E46C0A */
 .infrastructure-services {
     position: relative;
     z-index: 1;
+    background-color: #3282c1;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%,#3282c1, #329dc1, #32b8c2)
 }
 
 .is-bg-wave {
@@ -180,7 +240,7 @@ Complementary Color: #E46C0A */
 
 .infrastructure-services .tab-pane .card:hover {
     text-decoration: none;
-    background-color: #e6e8ec;
+    background-color: #ffefe2;
     border-bottom: 4px solid var(--wango-orange);
 }
 
@@ -211,57 +271,42 @@ Complementary Color: #E46C0A */
 }
 
 /* --------Industries------ */
-.industries .card {
-    display: block;
-    padding: 2.5rem 1.25rem;
-    position: relative;
-    transition: 0.3s;
+.industry-card{
+    /* box-shadow: 3px 3px 5px rgb(0 0 0 / 7%); */
+    padding: 2.25rem 1rem;
+    transition: all 0.2s;
 }
-
-.industries .card:hover {
-    box-shadow: 0.2rem 1rem 1.5rem rgba(0, 0, 0, .1);
-}
-
-.solutions__square--bar {
-    border: 0;
-    border-bottom: 5px solid;
-    margin-bottom: 25px;
-    width: 50px;
-    border-bottom-color: #00bebc;
-}
-
-.industries .card .card-title {
-    display: inline-block;
-    background-color: #fff;
-}
-
-.industries .card .card-title h3 {
+.industry-card:hover{
+    text-decoration: none;
+    background-color: #d2ebff;
     color: #000;
+}
+.industry-card .fa{
+    font-size: 1.5rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dcf0ff;
+    color: #3282c1;
+}
+
+.industry-card h3{
     font-size: 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
     font-weight: 700;
 }
-
-.industries .card .card-body {
-    padding: 0;
-    color: #636363;
+.industry-card p{
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.85;
+    font-weight: 300;
 }
 
-.industries .read-more {
-    text-decoration: none;
-    display: block;
-    padding: 0.3rem 1rem;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 3px;
-    font-size: 0.75rem;
-}
-
-.industries .read-more:hover {
-    background-color: var(--wango-blue);
-    border-color: var(--wango-blue);
-    color: #fff;
-}
-
+/* Support Section */
 .support {
     position: relative;
 }
@@ -393,4 +438,3 @@ footer .business-solution a:hover {
     padding: 0.5rem 0;
     text-align: center;
 }
-
