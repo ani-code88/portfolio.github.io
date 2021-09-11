@@ -197,6 +197,12 @@ a:hover {
     font-weight: 500;
     color: #555558;
 }
+.insights-dropdown .dropdown-menu{
+    padding: 1rem;
+}
+.insights-dropdown .dropdown-item{
+    color: var(--wango-blue);
+}
 .top-breadcrumb a, .top-breadcrumb span{
 color: #fff;
 }
@@ -533,8 +539,8 @@ footer .contact .fa {
 }
 
 footer .social-media {
-    border-top: 2px solid var(--wango-orange);
-    padding-top: 2rem;
+    /* border-top: 2px solid var(--wango-orange); */
+    /* padding-top: 2rem; */
     margin-top: 2rem;
 }
 
@@ -548,7 +554,7 @@ footer .social-media a {
     background-color: #181818;
     margin-right: 1rem;
     font-size: 1rem;
-    border: 2px solid var(--wango-orange);
+    /* border: 2px solid var(--wango-orange); */
     color: var(--wango-orange);
 }
 
@@ -566,13 +572,22 @@ footer .business-solution a {
 footer .resources a:hover,
 footer .infrastructure-service a:hover,
 footer .business-solution a:hover {
-    color: var(--wango-blue);
+    text-decoration: underline;
 }
-
+.footer-bottom{
+    margin-top: 2rem;
+    border-top: 1px solid #353535;
+}
 .footer__copyright {
     font-size: 0.875rem;
     color: #fff;
-    background-color: #000;
-    padding: 0.5rem 0;
     text-align: center;
+    
+}
+.footer-bottom_links a{
+padding: 0.5rem;
+color: #fff;
+}
+.footer-bottom_links a:hover{
+    text-decoration: underline;
 }

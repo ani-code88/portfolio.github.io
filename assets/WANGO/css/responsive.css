@@ -48,4 +48,12 @@
     align-items: center;
     justify-content: center;
 }
+.infrastructure-services .nav-link {
+    padding: 0.3rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+}
+@media (min-width: 100px ) and (max-width: 400px ){
+   
 }

@@ -87,7 +87,7 @@ Complementary Color: #E46C0A */
     cursor: pointer;
     padding: 1rem;
     color: #000;
-    background-color: #eff8ff;
+    background-color: transparent;
     border: none;
     margin-bottom: 1rem;
 }
@@ -100,27 +100,57 @@ Complementary Color: #E46C0A */
 .business-solutions .tab-pane h3 {
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+    margin: 0;
 }
-
+.business-solutions .tab-pane h3 .fa{
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+}
+.business-solutions .tab-pane .card-icon {
+    text-align: center;
+}
 .business-solutions .tab-pane .card-icon .fa {
     font-size: 2.5rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), to(#333));
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), to(#333));
     background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
+    color: #3282c1;
+    text-align: center;
 }
 
 .business-solutions .tab-pane .card p {
-    color: #525252;
-    text-align: start;
-    line-height: 22px;
+    color: #636363;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 300;
 }
 
 .business-solutions .card-arrow,
 .infrastructure-services .card-arrow {
     color: var(--wango-blue);
 }
-
+.explore-all-btn{
+    text-decoration: none;
+    background-color: #ff7300;
+    color: #fff;
+    border-radius: 3px;
+    margin: 1.5rem 0;
+    padding: 0.4rem 1rem;
+    display: inline-block;
+}
+.explore-all-btn:hover{
+    background-color: #ff9640;
+    color: #fff;
+}
+.explore-all-btn:active{
+    background-color: #c7681a;
+}
+.explore-all-btn .fa{
+    margin-left: 0.5rem;
+}
 /* ------------ */
 .infrastructure-services {
     position: relative;
