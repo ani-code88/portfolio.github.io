@@ -65,25 +65,49 @@ a:hover {
     padding: 0.3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--wango-blue);
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .left-search {
     display: inline-block;
-}
-
-.left-search input {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
     border-radius: 40px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.171);
-    color: #fff;
+    overflow: hidden;
+    background-color: #fff;
 }
-
+.left-search label{
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.left-search .fa{
+    display: inline-block;
+}
+.left-search input {
+    display: inline-block;
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    border: none;
+    color: #000;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+/* .left-search .expand-searchBox{
+    width: auto;
+    transition: all 0.3s;
+} */
+/* .change-SearchBox-Bg{
+    background-color: #fff;
+    transition: all 0.3s;
+} */
 .left-search input::placeholder {
     color: #fff;
     font-size: 0.75rem;
@@ -93,10 +117,10 @@ a:hover {
 .left-search input:focus {
     outline: none;
 }
-
-.contact-mail,
-.contact-phone,
-.top-lan {
+.top-right{
+    display: inline-flex;
+}
+.top-bar_links {
     padding: 0.5rem;
     display: inline-flex;
     align-items: center;
@@ -108,35 +132,43 @@ a:hover {
     background-color: transparent;
 }
 
-.contact-phone {
+.contact-phone, .top-support_link {
     border-left: 1px solid rgba(255, 255, 255, 0.219);
     border-right: 1px solid rgba(255, 255, 255, 0.219);
 }
 
-.contact-mail .fa,
-.contact-phone .fa {
+.top-bar_links .fa {
     color: rgb(255, 255, 255);
     font-size: 1rem;
     display: block;
-    margin-right: 0.8rem;
+    margin: 0 0.4rem;
 }
 
-.contact-mail a,
-.contact-phone a {
+.top-bar_links a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 0.875rem;
 }
-.navigation-menu .contact-mail .fa, .navigation-menu .contact-phone .fa, .navigation-menu .contact-mail a, .navigation-menu .contact-phone a{
+@media (max-width:992px) {
+    /* .top-bar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    } */
+}
+.navigation-menu .contact_links .fa,
+.navigation-menu .contact_links a{
     color: #555555;
 }
-.navigation-menu .contact-mail, .navigation-menu .contact-phone{
+.navigation-menu .contact_links{
     padding: 0.5rem 0;
 }
-.navbar-brand img {
+.navbar-brand-logo {
     max-width: 200px;
 }
-
+.changeLogoSize{
+    max-width: 100px;
+}
 .navigation-menu .container {
     padding: 0;
 }
@@ -252,7 +284,7 @@ color: #fff;
       background-image: linear-gradient(to right, var(--wango-orange) 20%, transparent 20%, transparent 30%, var(--wango-orange) 30%, var(--wango-orange) 50%, transparent 50%, transparent 60%, var(--wango-orange) 60%, var(--wango-orange) 100%);
   }
 .business-solutions,
-.infrastructure-services,
+.platforms-section,
 .industries,
 .support {
     padding: 2rem 0;
@@ -485,20 +517,12 @@ color: #fff;
     opacity: 0.9;
 }
 @media (max-width:992px) {
-    .top-bar {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
     .navigation-menu .navbar {
         border-radius: 0;
     }
-
     .navbar-brand img {
         max-width: 100px;
     }
-
 }
 
 

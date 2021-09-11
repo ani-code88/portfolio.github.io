@@ -3,14 +3,30 @@ Complementary Color: #E46C0A */
 .hero {
     min-height: 90vh;
     width: 100%;
-    background-color: aquamarine;
+    background-color: transparent;
     background: url(../img/hero.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
+/* #hero-slider{
+    min-height: 90vh;
+} */
+/* .slider-item{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.slider-item img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+} */
 .hero-content {
     color: #fff;
     text-align: center;
@@ -81,30 +97,41 @@ Complementary Color: #E46C0A */
     background-color: var(--wango-blue);
 }
 
-.business-solutions .tab-pane .card {
+.business-solutions .tab-pane .card,
+.platforms-section .tab-pane .card {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    padding: 1rem;
+    padding: 3.5rem 1.5rem;
     color: #000;
     background-color: transparent;
     border: none;
     margin-bottom: 1rem;
 }
 
-.business-solutions .tab-pane .card:hover {
+.business-solutions .tab-pane .card:hover,
+.platforms-section .tab-pane .card:hover {
     text-decoration: none;
     background-color: #dbefff;
 }
-
-.business-solutions .tab-pane h3 {
+.platforms-section .tab-pane .card-img{
+    display: flex;
+    justify-content: center;
+}
+.platforms-section .tab-pane .card img{
+    max-width: 80px;
+}
+.business-solutions .tab-pane h3,
+.platforms-section .tab-pane h3 {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
     padding: 1.5rem 0 1rem;
     margin: 0;
 }
-.business-solutions .tab-pane h3 .fa{
+.business-solutions .tab-pane h3 .fa,
+.platforms-section .tab-pane h3 .fa,
+.industries h3 .fa{
     margin-left: 0.2rem;
     font-size: 0.7rem;
 }
@@ -121,17 +148,14 @@ Complementary Color: #E46C0A */
     text-align: center;
 }
 
-.business-solutions .tab-pane .card p {
+.business-solutions .tab-pane .card p,
+.platforms-section .tab-pane .card p {
     color: #636363;
     text-align: center;
     line-height: 25px;
     font-weight: 300;
 }
 
-.business-solutions .card-arrow,
-.infrastructure-services .card-arrow {
-    color: var(--wango-blue);
-}
 .explore-all-btn{
     text-decoration: none;
     background-color: #ff7300;
@@ -152,7 +176,7 @@ Complementary Color: #E46C0A */
     margin-left: 0.5rem;
 }
 /* ------------ */
-.infrastructure-services {
+.platforms-section {
     position: relative;
     z-index: 1;
     background-color: #3282c1;
@@ -160,60 +184,19 @@ Complementary Color: #E46C0A */
     background: radial-gradient(circle at 50% 50%,#3282c1, #329dc1, #32b8c2)
 }
 
-.is-bg-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.is-bg-wave img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
-
-.infrastructure-services .section-title h2 {
+.platforms-section .section-title h2 {
     color: #fff;
 }
 
-.infrastructure-services .section-title h2:before,
-.infrastructure-services .section-title h2:after {
+.platforms-section .section-title h2:before,
+.platforms-section .section-title h2:after {
+    background-color: #fff;
+}
+.platforms-section .tab-pane .card{
     background-color: #fff;
 }
 
-.infrastructure-services .tab-pane .card {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 1rem;
-    color: #000;
-    background-color: #f2f4f8;
-    border: none;
-    margin-bottom: 1rem;
-    border-bottom: 4px solid transparent;
-}
-
-.infrastructure-services .tab-pane .card:hover {
-    text-decoration: none;
-    background-color: #ffefe2;
-    border-bottom: 4px solid var(--wango-orange);
-}
-
-.infrastructure-services .tab-pane h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
-.is-img {
-    max-width: 100px;
-}
-
-.infrastructure-services .nav-link {
+.platforms-section .nav-link {
     color: #e4e4e4;
     font-size: 1.2rem;
     font-weight: 600;
@@ -223,7 +206,7 @@ Complementary Color: #E46C0A */
     padding: 0.5rem 2rem;
 }
 
-.infrastructure-services .nav-item .active {
+.platforms-section .nav-item .active {
     background-color: transparent;
     color: #fff;
     border-bottom: 5px solid var(--wango-orange);
@@ -240,7 +223,7 @@ Complementary Color: #E46C0A */
     background-color: #d2ebff;
     color: #000;
 }
-.industry-card .fa{
+.industry-card .industry-card-icon{
     font-size: 1.5rem;
     height: 60px;
     width: 60px;

@@ -27,32 +27,40 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body> 
     <header>
         <div class="top-bar">
-            <div class="left-search">
-                <input type="text" name="" id="" placeholder="Search">
+            <div class="left-search d-flex align-items-center flex-nowrap" id="top-search_wrapper">
+                <label for="search-box"><i class="fa fa-search" aria-hidden="true"></i></label>
+                <input type="text" name="" id="search-box">
             </div>
             <div class="top-right">
-                <div class="contact-mail d-none d-md-inline-flex">
+                <div class="top-login_link top-bar_links d-inline-flex">
+                    <i class="fa fa-user"></i>
+                    <a href="#">Login</a>
+                </div>
+                <div class="top-support_link top-bar_links d-inline-flex">  
+                    <a href="#">Support Portal</a>
+                    <i class="fa fa-external-link ml-2"></i>
+                </div>
+                <div class="contact-mail top-bar_links d-none d-lg-inline-flex">
                     <i class="fa fa-envelope"></i>
                     <a href="mailto:contact@wango.sn">contact@wango.sn</a>
                 </div>
-                <div class="contact-phone d-none d-md-inline-flex">
+                <div class="contact-phone top-bar_links d-none d-lg-inline-flex">
                     <i class="fa fa-phone"></i>
                     <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
                 </div>
                 <div class="top-lan">
-
+    
                 </div>
             </div>
-
         </div>
         <div class="hero">
-            <div class="navigation-menu">
+            <div class="navigation-menu sticky-top">
                 <div class="container shadow">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="WANGO MSP" class="navbar-brand-logo" id="navbar-brand-logo"></a>
                         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                             data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -141,7 +149,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+            
                                         </div>
                                     </div>
                                 </li>
@@ -206,7 +214,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+            
                                         </div>
                                     </div>
                                 </li>
@@ -229,7 +237,7 @@
                                                                     height="auto">
                                                             </div>
                                                         </div>
-
+            
                                                     </div>
                                                     <div class="col-12 col-lg-4">
                                                         <div class="industriesMenu-col">
@@ -242,7 +250,7 @@
                                                             <a href="industries/non-profit-organizations.html">Non-Profit Organizations</a>
                                                             <a href="industries/manufacturing-business .html">Manufacturing Business </a>
                                                         </div>
-
+            
                                                     </div>
                                                     <div class="col-12 col-lg-4">
                                                         <div class="industriesMenu-col">
@@ -252,7 +260,7 @@
                                                             <a href="industries/automotive-and-transportation.html">Automotive & Transportation</a>
                                                             <a href="industries/travel-and-hospitality.html">Travel & Hospitality</a>
                                                         </div>
-
+            
                                                     </div>
                                                 </div>
                                             </div>
@@ -274,14 +282,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="About.html">About</a>
                                 </li>
-                                <li class="nav-item d-block d-md-none">
-                                    <div class="contact-mail">
+                                <li class="nav-item d-block d-lg-none">
+                                    <div class="contact_links">
                                         <i class="fa fa-envelope"></i>
                                         <a href="mailto:contact@wango.sn">contact@wango.sn</a>
                                     </div>
                                 </li>
-                                <li class="nav-item d-block d-md-none">
-                                    <div class="contact-phone">
+                                <li class="nav-item d-block d-lg-none">
+                                    <div class="contact_links">
                                         <i class="fa fa-phone"></i>
                                         <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
                                     </div>
@@ -291,6 +299,23 @@
                     </nav>
                 </div>
             </div>
+            <!-- <div class="owl-carousel" id="hero-slider">
+                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> 
+                    <div class="container pt-md-5">
+                        <div class="row pt-md-5">
+                            <div class="col-12 col-md-10 offset-md-1">
+                                <div class="hero-content">
+                                    <h1>Welcome To <span>WANGO</span></h1>
+                                    <p>WANGO helps companies to build infrastructure and services for their business</p>
+                                    <a class="cta-btn-lg" href="about.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> Content2 </div>
+                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> Content3 </div>
+              </div> -->
             <div class="container pt-md-5">
                 <div class="row pt-md-5">
                     <div class="col-12 col-md-10 offset-md-1">
@@ -341,7 +366,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-database"></i>
                                     </div>
-                                    <h3>Data Center Infrastructure <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Data Center Infrastructure <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates</p>
                                 </a>
@@ -352,7 +377,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-microchip"></i>
                                     </div>
-                                    <h3>Advance Engineering Services <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Advance Engineering Services <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates</p>
                                 </a>
@@ -362,14 +387,14 @@
                                     <div class="card-icon">
                                         <i class="fa fa-server"></i>
                                     </div>
-                                    <h3>Rack Integration <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Rack Integration <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -380,7 +405,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cogs"></i>
                                     </div>
-                                    <h3>DevOps Automation <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>DevOps Automation <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates</p>
                                 </a>
@@ -391,7 +416,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cube"></i>
                                     </div>
-                                    <h3>KPS: Kubernetes-based PaaS <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>KPS: Kubernetes-based PaaS <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
@@ -402,14 +427,14 @@
                                     <div class="card-icon">
                                         <i class="fa fa-globe"></i>
                                     </div>
-                                    <h3>Site Operations <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Site Operations <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -420,7 +445,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cloud"></i>
                                     </div>
-                                    <h3>Public Cloud Implementation <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Public Cloud Implementation <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
@@ -432,7 +457,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cloud"></i>
                                     </div>
-                                    <h3>Hybrid Cloud Implementation <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Hybrid Cloud Implementation <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
@@ -443,14 +468,14 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cloud"></i>
                                     </div>
-                                    <h3>Cloud Adoption & Migration <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Cloud Adoption & Migration <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -461,7 +486,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-cloud"></i>
                                     </div>
-                                    <h3>Cloud Native Apps <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Cloud Native Apps <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
@@ -473,7 +498,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-line-chart"></i>
                                     </div>
-                                    <h3>Advanced Data & Analytics <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Advanced Data & Analytics <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates</p>
                                 </a>
@@ -483,14 +508,14 @@
                                     <div class="card-icon">
                                         <i class="fa fa-envelope"></i>
                                     </div>
-                                    <h3>Email & Productivity <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Email & Productivity <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -501,7 +526,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-lock"></i>
                                     </div>
-                                    <h3>Security Strategy <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Security Strategy <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates</p>
                                 </a>
@@ -512,7 +537,7 @@
                                     <div class="card-icon">
                                         <i class="fa fa-user-secret"></i>
                                     </div>
-                                    <h3>Security Operations <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Security Operations <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
@@ -523,14 +548,14 @@
                                     <div class="card-icon">
                                         <i class="fa fa-shield"></i>
                                     </div>
-                                    <h3>Prevention, Detection & Response <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+                                    <h3>Prevention, Detection & Response <i class="fa fa-chevron-right"></i></h3>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
                                         nisi. Blanditiis excepturi animi voluptates
                                     </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -539,7 +564,7 @@
         </section>
 
         <!-- -------------------------Platforms---------------------------------------- -->
-        <section class="infrastructure-services all-section">
+        <section class="platforms-section all-section">
             <div class="container">
                 <div class="section-title">
                     <h2>Platforms</h2>
@@ -566,63 +591,39 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/clouds/aws.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/aws.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Amazon Web Services</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/aws.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Amazon Web Services <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/clouds/google-clouds.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/googlecloud.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Google Cloud</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/googlecloud.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Google Cloud <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/clouds/kubernetes.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/Kubernetes.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Kubernetes</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/Kubernetes.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Kubernetes <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -630,64 +631,39 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/collaboration/microsoft-office-365.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/m365.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Microsoft Office 365</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/m365.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Microsoft Office 365 <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/collaboration/microsoft-exchange.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/mx.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Microsoft Exchange</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/mx.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Microsoft Exchange <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/collaboration/microsoft-sharepoint.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/SharePoint.png" alt="" width="100%"
-                                                        height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Microsoft SharePoint</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/SharePoint.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Microsoft SharePoint <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -695,64 +671,39 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/applications/microsoft-dynamics-365.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/m365.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Microsoft Dynamics 365</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/m365.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Microsoft Dynamics 365 <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/applications/oracle.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/oracle.png" alt="" width="100%"
-                                                        height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">Oracle</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/oracle.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>Oracle <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/applications/sap.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/Sap.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">SAP</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/Sap.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>SAP <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -760,22 +711,13 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <a class="card" href="platforms/digital-workplace/ecm.html">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-md-4">
-                                                <div class="is-img">
-                                                    <img src="img/platforms/ecm.png" alt="" width="100%" height="auto">
-                                                </div>
-                                                <h3 class="d-inline-block d-lg-block">ECM</h3>
-                                            </div>
-                                            <div class="col-12 col-md-8">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                                                    dolorum pariatur veritatis officiis commodi dolore laborum ea neque.
-                                                </p>
-
-                                            </div>
-                                        </div>
+                                    <div class="card-img">
+                                        <img src="img/platforms/ecm.png" alt="" width="100%" height="auto">
                                     </div>
+                                    <h3>ECM <i class="fa fa-chevron-right"></i></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quos doloribus
+                                        nisi. Blanditiis excepturi animi voluptates
+                                    </p>
                                 </a>
                             </div>
                         </div>
@@ -785,44 +727,40 @@
         </section>
 
         <section class="industries all-section">
-            <div class="container">
                 <div class="section-title">
                     <h2>Industries</h2>
                 </div>
-            </div>
-            <div class="card-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 py-5">
                             <a href="industries/healthcare.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-heartbeat"></i>
-                                <h3 class="text-center">Healthcare</h3>
+                                <i class="fa fa-heartbeat industry-card-icon"></i>
+                                <h3 class="text-center">Healthcare <i class="fa fa-chevron-right"></i></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
                                     deleniti dolorum accusamus placeat doloremque in ex modi</p>
                             </a>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 py-5">
                             <a href="industries/government.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-bank"></i>
-                                <h3 class="text-center">Government</h3>
+                                <i class="fa fa-bank industry-card-icon"></i>
+                                <h3 class="text-center">Government <i class="fa fa-chevron-right"></i></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
                                     deleniti dolorum accusamus placeat doloremque in ex modi</p>
                             </a>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 py-5">
                             <a href="industries/financial-services.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-money"></i>
-                                <h3 class="text-center">Financial Services Providers</h3>
+                                <i class="fa fa-money industry-card-icon"></i>
+                                <h3 class="text-center">Financial Services Providers <i class="fa fa-chevron-right"></i></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
                                     deleniti dolorum accusamus placeat doloremque in ex modi</p>
                             </a>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="support all-section py-5">
@@ -900,10 +838,7 @@
                     sint
                     eaque in suscipit quod nobis voluptatem, deserunt nemo ab iusto, ratione neque reiciendis
                     repudiandae.
-                    Mollitia, dolorem rem!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla assumenda dolor repellendus dolorum
-                    laudantium totam temporibus! Tempora quo velit, repudiandae tempore debitis assumenda qui officia
-                    veniam vitae voluptas eveniet consectetur Tempora quo velit.</p>
+                    </p>
                 <a class="read-more d-inline-flex align-items-center" href="about.html"><span>Learn More</span><i
                         class="fa fa-external-link ml-2"></i></a>
             </div>
@@ -1027,6 +962,18 @@
                     items: 5,
                 }
             }
+        });
+        // Partners Slider
+        $("#hero-slider").owlCarousel({
+            loop: true,
+            items: 1,
+            margin: 0,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            nav: false,
+            slideTransition: "linear",
+            autoplaySpeed: 1000,
+            dots: false,
         });
     </script>
 </body>

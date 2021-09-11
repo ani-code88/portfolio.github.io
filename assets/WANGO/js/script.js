@@ -60,3 +60,20 @@ function openTab(evt, tabTitle) {
 if(document.getElementById("defaultOpen")){
   document.getElementById("defaultOpen").click();
 }
+
+// change navbar-brand logo size on scroll
+window.onscroll = () => changeLogoSize();
+window.onload = () => changeLogoSize();
+window.onresize = () => changeLogoSize();
+
+function changeLogoSize () {
+  var logo = document.getElementById("navbar-brand-logo");
+  const pageYPosition =
+    document.documentElement.scrollTop || document.body.scrollTop;
+  if(pageYPosition > 100){
+    logo.classList.add("changeLogoSize");
+  }
+  else{
+    logo.classList.remove("changeLogoSize");
+  }
+}
