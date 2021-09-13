@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Wango Msp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a href="index.html" class="back-to-home"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <div class="container login-container">
+            <div class="row border p-3">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0">
+                    <h3>Log In</h3>
+                    <form action="">
+                        <div class="cs-input-group">
+                            <label for="userName">Username</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Username">
+                        </div>
+                        <div class="cs-input-group mt-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-check cs-input-group mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <div>
+                            <button class="btn login-btn">Login</button>
+                        </div>
+                        <p id="privacy-terms">
+                            By continuing, you agree to the WANGO MSP Technology
+                            <a href="#" target="_blank">Terms of Use </a>and <a href="#" target="_blank">Privacy Notice.</a>
+                        </p>
+                        <a href="#" class="forgotPwd">Forgot Password ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

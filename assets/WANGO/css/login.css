@@ -1,0 +1,82 @@
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f3f3;
+    padding: 0 1rem;
+    position: relative;
+}
+.back-to-home{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    z-index: 1;
+    font-size: 1.5rem;
+    background-color: #e8e8e8;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: #484848;
+}
+.login-container .row{
+    background-color: #fff;
+}
+h3 {color: #333333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-transform: none;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f1f1f1;
+    font-weight: 500;
+}
+.form-check label{
+    font-size: 0.9rem;
+}
+#privacy-terms {
+    font-size: 0.875rem;
+    margin: 1rem 0 0.5rem;
+}
+#privacy-terms a{
+    background-color: transparent;
+    color: #0051b7;
+    text-decoration: none;
+}
+.login-btn{
+    margin-top: 0.875rem;
+    display: inline-block;
+    padding: 0.3rem 2rem;
+    background-color: #367ed4;
+    border: none;
+    color: #ffffff;
+
+}
+.login-btn:hover{
+    background-color: #0051b7;
+    border-color: transparent;
+    color: #ffffff;
+}
+.forgotPwd{
+    color: #367ed4;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.forgotPwd:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    h3{
+        text-align: center;
+    }
+}
+@media (min-width: 1200px){
+    .login-container{
+        padding: 0 200px;
+    }
+}
