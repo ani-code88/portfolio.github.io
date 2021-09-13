@@ -27,296 +27,368 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body> 
-    <header>
-        <div class="top-bar">
-            <div class="left-search d-flex align-items-center flex-nowrap" id="top-search_wrapper">
-                <label for="search-box"><i class="fa fa-search" aria-hidden="true"></i></label>
-                <input type="text" name="" id="search-box">
+<body>
+    <div class="top-bar">
+        <div class="left-search d-flex align-items-center flex-nowrap" id="top-search_wrapper">
+            <label for="search-box"><i class="fa fa-search" aria-hidden="true"></i></label>
+            <input type="text" name="" id="search-box">
+        </div>
+        <div class="top-right">
+            <div class="top-login_link top-bar_links d-inline-flex">
+                <i class="fa fa-user"></i>
+                <a href="#">Login</a>
             </div>
-            <div class="top-right">
-                <div class="top-login_link top-bar_links d-inline-flex">
-                    <i class="fa fa-user"></i>
-                    <a href="#">Login</a>
-                </div>
-                <div class="top-support_link top-bar_links d-inline-flex">  
-                    <a href="#">Support Portal</a>
-                    <i class="fa fa-external-link ml-2"></i>
-                </div>
-                <div class="contact-mail top-bar_links d-none d-lg-inline-flex">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:contact@wango.sn">contact@wango.sn</a>
-                </div>
-                <div class="contact-phone top-bar_links d-none d-lg-inline-flex">
-                    <i class="fa fa-phone"></i>
-                    <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
-                </div>
-                <div class="top-lan">
-    
-                </div>
+            <div class="top-support_link top-bar_links d-inline-flex">
+                <a href="#">Support Portal</a>
+                <i class="fa fa-external-link ml-2"></i>
+            </div>
+            <div class="contact-mail top-bar_links d-none d-lg-inline-flex">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:contact@wango.sn">contact@wango.sn</a>
+            </div>
+            <div class="contact-phone top-bar_links d-none d-lg-inline-flex">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
+            </div>
+            <div class="top-lan">
+
             </div>
         </div>
-        <div class="hero">
-            <div class="navigation-menu sticky-top">
-                <div class="container shadow">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="WANGO MSP" class="navbar-brand-logo" id="navbar-brand-logo"></a>
-                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavId">
-                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <!-- Solutions Mega Menu -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Solutions</a>
-                                    <div class="dropdown-menu">
-                                        <div class="dropdown-item">
-                                            <div class="container-fluid">
-                                                <div class="row w-100 align-items-start">
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#solutionSubmenu').toggleClass('d-block')">
-                                                            Hyperconverged Infrastructure</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="solutionSubmenu">
-                                                            <a href="solutions/hyperconverged-infrastructure/data-center-infrastructure.html">Data Center Infrastructure</a>
-                                                            <a href="solutions/hyperconverged-infrastructure/advance-engineering-services.html">Advanced Engineering Services</a>
-                                                            <a href="solutions/hyperconverged-infrastructure/rack-integration.html">Rack Integration</a>
-                                                            <a href="solutions/hyperconverged-infrastructure/global-logistics.html">Global Logistics</a>
-                                                            <a href="solutions/hyperconverged-infrastructure/it-assets-disposition.html">IT Asset Disposition</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#solutionSubmenu1').toggleClass('d-block')">
-                                                            DevOps & IT Operations</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="solutionSubmenu1">
-                                                            <a href="solutions/devops-and-it-operations/devops-automation.html">DevOps Automation</a>
-                                                            <a href="solutions/devops-and-it-operations/kps.html">KPS: Kubernetes-based PaaS</a>
-                                                            <a href="solutions/devops-and-it-operations/site-operations.html">Site Operations</a>
-                                                            <a href="solutions/devops-and-it-operations/modern-datacenter.html">Modern Datacenter</a>
-                                                            <a href="solutions/devops-and-it-operations/managed-services.html">Managed Services</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#solutionSubmenu2').toggleClass('d-block')">
-                                                            Cloud Engineering</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="solutionSubmenu2">
-                                                            <a href="solutions/cloud-engineering/public-cloud-implementation.html">Public Cloud Implementation</a>
-                                                            <a href="solutions/cloud-engineering/hybrid-cloud-implementation.html">Hybrid Cloud Implementation</a>
-                                                            <a href="solutions/cloud-engineering/cloud-adoption-and-migration.html">Cloud Adoption & Migration</a>
-                                                            <a href="solutions/cloud-engineering/emerging-technology-integration.html">Emerging Technology Integration</a>
-                                                            <a href="solutions/cloud-engineering/end-user-computing.html">End User Computing</a>
-                                                            <a href="solutions/cloud-engineering/cloud-arbitrage-and-governance.html">Cloud Arbitrage & Governance</a>
-                                                            <a href="solutions/cloud-engineering/disaster-recovery-solutions.html">Disaster Recovery Solutions</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#solutionSubmenu3').toggleClass('d-block')">
-                                                            Business Transformation</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="solutionSubmenu3">
-                                                            <a href="solutions/business-transformation/cloud-native-apps.html">Cloud Native Apps</a>
-                                                            <a href="solutions/business-transformation/advanced-data-and-analytics.html">Advanced Data & Analytics</a>
-                                                            <a href="solutions/business-transformation/email-and-productivity.html">Email & Productivity</a>
-                                                            <a href="solutions/business-transformation/artificial-intelligence.html">Artificial Intelligence</a>
-                                                            <a href="solutions/business-transformation/devops-enablement.html">DevOps Enablement</a>
-                                                            <a href="solutions/business-transformation/iot-and-edge-solutions.html">IoT & Edge Solutions</a>
-                                                            <a href="solutions/business-transformation/digital-transformation.html">Digital Transformation</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#solutionSubmenu4').toggleClass('d-block')">
-                                                            Cyber security</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="solutionSubmenu4">
-                                                            <a href="solutions/cyber-security/security-strategy.html">Security Strategy</a>
-                                                            <a href="solutions/cyber-security/security-operations.html">Security Operations</a>
-                                                            <a href="solutions/cyber-security/prevention-detection-and-response.html">Prevention, Detection & Response</a>
-                                                            <a href="solutions/cyber-security/data-protection.html">Data Protection</a>
-                                                        </div>
-                                                    </div>
+    </div>
+    <div class="navigation-menu sticky-top">
+        <div class="container shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="WANGO MSP"
+                        class="navbar-brand-logo" id="navbar-brand-logo"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- Solutions Mega Menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Solutions</a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <div class="container-fluid">
+                                        <div class="row w-100 align-items-start">
+                                            <div class="col-12 col-lg-4">
+                                                <div class="submenu-title"
+                                                    onclick="$('#solutionSubmenu').toggleClass('d-block')">
+                                                    Hyperconverged Infrastructure</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="solutionSubmenu">
+                                                    <a
+                                                        href="solutions/hyperconverged-infrastructure/data-center-infrastructure.html">Data
+                                                        Center Infrastructure</a>
+                                                    <a
+                                                        href="solutions/hyperconverged-infrastructure/advance-engineering-services.html">Advanced
+                                                        Engineering Services</a>
+                                                    <a
+                                                        href="solutions/hyperconverged-infrastructure/rack-integration.html">Rack
+                                                        Integration</a>
+                                                    <a
+                                                        href="solutions/hyperconverged-infrastructure/global-logistics.html">Global
+                                                        Logistics</a>
+                                                    <a
+                                                        href="solutions/hyperconverged-infrastructure/it-assets-disposition.html">IT
+                                                        Asset Disposition</a>
                                                 </div>
                                             </div>
-            
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- Platforms Mega Menu -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Platforms</a>
-                                    <div class="dropdown-menu">
-                                        <div class="dropdown-item">
-                                            <div class="container-fluid">
-                                                <div class="row w-100 align-items-start">
-                                                    <div class="col-12 col-lg-3">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#platformSubmenu').toggleClass('d-block')">Cloud
-                                                        </div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="platformSubmenu">
-                                                            <a href="platforms/clouds/aws.html">Amazon Web Services</a>
-                                                            <a href="platforms/clouds/google-clouds.html">Google Cloud</a>
-                                                            <a href="platforms/clouds/kubernetes.html">Kubernetes</a>
-                                                            <a href="platforms/clouds/microsoft-azure.html">Microsoft Azure</a>
-                                                            <a href="platforms/clouds/vmware.html">VMware</a>
-                                                            <a href="platforms/clouds/openstack.html">OpenStack</a>
-                                                            <a href="platforms/clouds/alibaba.html">Alibaba</a>
-                                                            <a href="platforms/clouds/kvm.html">KVM</a>
-                                                            <a href="platforms/clouds/colocation.html">Colocation</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-3">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#platformSubmenu1').toggleClass('d-block')">
-                                                            Collaboration</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="platformSubmenu1">
-                                                            <a href="platforms/collaboration/microsoft-office-365.html">Microsoft Office 365</a>
-                                                            <a href="platforms/collaboration/microsoft-exchange.html">Microsoft Exchange</a>
-                                                            <a href="platforms/collaboration/microsoft-sharepoint.html">Microsoft SharePoint</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-3">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#platformSubmenu2').toggleClass('d-block')">
-                                                            Applications</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="platformSubmenu2">
-                                                            <a href="platforms/applications/microsoft-dynamics-365.html">Microsoft Dynamics 365</a>
-                                                            <a href="platforms/applications/oracle.html">Oracle</a>
-                                                            <a href="platforms/applications/sap.html">SAP</a>
-                                                            <a href="platforms/applications/citrix-virtual-apps-and-desktops.html">Citrix Virtual Apps & Desktops</a>
-                                                            <a href="platforms/applications/microsoft-sql-server.html">Microsoft SQL Server</a>
-                                                            <a href="platforms/applications/splunk.html">Splunk</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-3">
-                                                        <div class="submenu-title"
-                                                            onclick="$('#platformSubmenu3').toggleClass('d-block')">
-                                                            Digital Workplace</div>
-                                                        <div class="d-none d-lg-block menu-level-three"
-                                                            id="platformSubmenu3">
-                                                            <a href="platforms/digital-workplace/ecm.html">ECM</a>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="submenu-title"
+                                                    onclick="$('#solutionSubmenu1').toggleClass('d-block')">
+                                                    DevOps & IT Operations</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="solutionSubmenu1">
+                                                    <a
+                                                        href="solutions/devops-and-it-operations/devops-automation.html">DevOps
+                                                        Automation</a>
+                                                    <a href="solutions/devops-and-it-operations/kps.html">KPS:
+                                                        Kubernetes-based PaaS</a>
+                                                    <a
+                                                        href="solutions/devops-and-it-operations/site-operations.html">Site
+                                                        Operations</a>
+                                                    <a
+                                                        href="solutions/devops-and-it-operations/modern-datacenter.html">Modern
+                                                        Datacenter</a>
+                                                    <a
+                                                        href="solutions/devops-and-it-operations/managed-services.html">Managed
+                                                        Services</a>
                                                 </div>
                                             </div>
-            
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- Industries Mega Menu -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Industries</a>
-                                    <div class="dropdown-menu">
-                                        <div class="dropdown-item">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-4 d-none d-lg-block">
-                                                        <div class="industries-intro-col">
-                                                            <h4>Industries</h4>
-                                                            <p>Our experts know your industry, and they know the
-                                                                challenges you’re facing. We deliver customized
-                                                                solutions to help solve these challenges every day.</p>
-                                                            <div class="dropwown-img mt-5">
-                                                                <img src="img/cloud-services.jpg" alt="" width="100%"
-                                                                    height="auto">
-                                                            </div>
-                                                        </div>
-            
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="industriesMenu-col">
-                                                            <a href="industries/healthcare.html">Healthcare</a>
-                                                            <a href="industries/government.html">Government</a>
-                                                            <a href="industries/financial-services.html">Financial Services Providers</a>
-                                                            <a href="industries/utilities-companies.html">Utilities Companies</a>
-                                                            <a href="industries/retailers.html">Retailers</a>
-                                                            <a href="industries/digital-agencies.html">Digital Agencies</a>
-                                                            <a href="industries/non-profit-organizations.html">Non-Profit Organizations</a>
-                                                            <a href="industries/manufacturing-business .html">Manufacturing Business </a>
-                                                        </div>
-            
-                                                    </div>
-                                                    <div class="col-12 col-lg-4">
-                                                        <div class="industriesMenu-col">
-                                                            <a href="industries/media-and-entertainment-industry.html">Media & Entertainment Industry</a>
-                                                            <a href="industries/education.html">Education</a>
-                                                            <a href="industries/oil-and-gas.html">Oil & Gas</a>
-                                                            <a href="industries/automotive-and-transportation.html">Automotive & Transportation</a>
-                                                            <a href="industries/travel-and-hospitality.html">Travel & Hospitality</a>
-                                                        </div>
-            
-                                                    </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="submenu-title"
+                                                    onclick="$('#solutionSubmenu2').toggleClass('d-block')">
+                                                    Cloud Engineering</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="solutionSubmenu2">
+                                                    <a
+                                                        href="solutions/cloud-engineering/public-cloud-implementation.html">Public
+                                                        Cloud Implementation</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/hybrid-cloud-implementation.html">Hybrid
+                                                        Cloud Implementation</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/cloud-adoption-and-migration.html">Cloud
+                                                        Adoption & Migration</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/emerging-technology-integration.html">Emerging
+                                                        Technology Integration</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/end-user-computing.html">End
+                                                        User Computing</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/cloud-arbitrage-and-governance.html">Cloud
+                                                        Arbitrage & Governance</a>
+                                                    <a
+                                                        href="solutions/cloud-engineering/disaster-recovery-solutions.html">Disaster
+                                                        Recovery Solutions</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="submenu-title"
+                                                    onclick="$('#solutionSubmenu3').toggleClass('d-block')">
+                                                    Business Transformation</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="solutionSubmenu3">
+                                                    <a
+                                                        href="solutions/business-transformation/cloud-native-apps.html">Cloud
+                                                        Native Apps</a>
+                                                    <a
+                                                        href="solutions/business-transformation/advanced-data-and-analytics.html">Advanced
+                                                        Data & Analytics</a>
+                                                    <a
+                                                        href="solutions/business-transformation/email-and-productivity.html">Email
+                                                        & Productivity</a>
+                                                    <a
+                                                        href="solutions/business-transformation/artificial-intelligence.html">Artificial
+                                                        Intelligence</a>
+                                                    <a
+                                                        href="solutions/business-transformation/devops-enablement.html">DevOps
+                                                        Enablement</a>
+                                                    <a
+                                                        href="solutions/business-transformation/iot-and-edge-solutions.html">IoT
+                                                        & Edge Solutions</a>
+                                                    <a
+                                                        href="solutions/business-transformation/digital-transformation.html">Digital
+                                                        Transformation</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="submenu-title"
+                                                    onclick="$('#solutionSubmenu4').toggleClass('d-block')">
+                                                    Cyber security</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="solutionSubmenu4">
+                                                    <a href="solutions/cyber-security/security-strategy.html">Security
+                                                        Strategy</a>
+                                                    <a href="solutions/cyber-security/security-operations.html">Security
+                                                        Operations</a>
+                                                    <a
+                                                        href="solutions/cyber-security/prevention-detection-and-response.html">Prevention,
+                                                        Detection & Response</a>
+                                                    <a href="solutions/cyber-security/data-protection.html">Data
+                                                        Protection</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown insights-dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Insights
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="insights.html">Latest Insights</a>
-                                      <a class="dropdown-item" href="insights.html">Customer Success Stories</a>
-                                      <a class="dropdown-item" href="insights.html">Blog</a>
-                                      <a class="dropdown-item" href="insights.html">Events</a>
-                                      <a class="dropdown-item" href="insights.html">Resources</a>
-                                    </div>
-                                  </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="About.html">About</a>
-                                </li>
-                                <li class="nav-item d-block d-lg-none">
-                                    <div class="contact_links">
-                                        <i class="fa fa-envelope"></i>
-                                        <a href="mailto:contact@wango.sn">contact@wango.sn</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item d-block d-lg-none">
-                                    <div class="contact_links">
-                                        <i class="fa fa-phone"></i>
-                                        <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- <div class="owl-carousel" id="hero-slider">
-                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> 
-                    <div class="container pt-md-5">
-                        <div class="row pt-md-5">
-                            <div class="col-12 col-md-10 offset-md-1">
-                                <div class="hero-content">
-                                    <h1>Welcome To <span>WANGO</span></h1>
-                                    <p>WANGO helps companies to build infrastructure and services for their business</p>
-                                    <a class="cta-btn-lg" href="about.html">Learn More</a>
+
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <!-- Platforms Mega Menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Platforms</a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <div class="container-fluid">
+                                        <div class="row w-100 align-items-start">
+                                            <div class="col-12 col-lg-3">
+                                                <div class="submenu-title"
+                                                    onclick="$('#platformSubmenu').toggleClass('d-block')">Cloud
+                                                </div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="platformSubmenu">
+                                                    <a href="platforms/clouds/aws.html">Amazon Web Services</a>
+                                                    <a href="platforms/clouds/google-clouds.html">Google
+                                                        Cloud</a>
+                                                    <a href="platforms/clouds/kubernetes.html">Kubernetes</a>
+                                                    <a href="platforms/clouds/microsoft-azure.html">Microsoft
+                                                        Azure</a>
+                                                    <a href="platforms/clouds/vmware.html">VMware</a>
+                                                    <a href="platforms/clouds/openstack.html">OpenStack</a>
+                                                    <a href="platforms/clouds/alibaba.html">Alibaba</a>
+                                                    <a href="platforms/clouds/kvm.html">KVM</a>
+                                                    <a href="platforms/clouds/colocation.html">Colocation</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <div class="submenu-title"
+                                                    onclick="$('#platformSubmenu1').toggleClass('d-block')">
+                                                    Collaboration</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="platformSubmenu1">
+                                                    <a href="platforms/collaboration/microsoft-office-365.html">Microsoft
+                                                        Office 365</a>
+                                                    <a href="platforms/collaboration/microsoft-exchange.html">Microsoft
+                                                        Exchange</a>
+                                                    <a href="platforms/collaboration/microsoft-sharepoint.html">Microsoft
+                                                        SharePoint</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <div class="submenu-title"
+                                                    onclick="$('#platformSubmenu2').toggleClass('d-block')">
+                                                    Applications</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="platformSubmenu2">
+                                                    <a
+                                                        href="platforms/applications/microsoft-dynamics-365.html">Microsoft
+                                                        Dynamics 365</a>
+                                                    <a href="platforms/applications/oracle.html">Oracle</a>
+                                                    <a href="platforms/applications/sap.html">SAP</a>
+                                                    <a
+                                                        href="platforms/applications/citrix-virtual-apps-and-desktops.html">Citrix
+                                                        Virtual Apps & Desktops</a>
+                                                    <a href="platforms/applications/microsoft-sql-server.html">Microsoft
+                                                        SQL Server</a>
+                                                    <a href="platforms/applications/splunk.html">Splunk</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-3">
+                                                <div class="submenu-title"
+                                                    onclick="$('#platformSubmenu3').toggleClass('d-block')">
+                                                    Digital Workplace</div>
+                                                <div class="d-none d-lg-block menu-level-three"
+                                                    id="platformSubmenu3">
+                                                    <a href="platforms/digital-workplace/ecm.html">ECM</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Industries Mega Menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Industries</a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4 d-none d-lg-block">
+                                                <div class="industries-intro-col">
+                                                    <h4>Industries</h4>
+                                                    <p>Our experts know your industry, and they know the
+                                                        challenges you’re facing. We deliver customized
+                                                        solutions to help solve these challenges every day.</p>
+                                                    <div class="dropwown-img mt-5">
+                                                        <img src="img/cloud-services.jpg" alt="" width="100%"
+                                                            height="auto">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="industriesMenu-col">
+                                                    <a href="industries/healthcare.html">Healthcare</a>
+                                                    <a href="industries/government.html">Government</a>
+                                                    <a href="industries/financial-services.html">Financial
+                                                        Services Providers</a>
+                                                    <a href="industries/utilities-companies.html">Utilities
+                                                        Companies</a>
+                                                    <a href="industries/retailers.html">Retailers</a>
+                                                    <a href="industries/digital-agencies.html">Digital
+                                                        Agencies</a>
+                                                    <a href="industries/non-profit-organizations.html">Non-Profit
+                                                        Organizations</a>
+                                                    <a href="industries/manufacturing-business .html">Manufacturing
+                                                        Business </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-lg-4">
+                                                <div class="industriesMenu-col">
+                                                    <a href="industries/media-and-entertainment-industry.html">Media
+                                                        & Entertainment Industry</a>
+                                                    <a href="industries/education.html">Education</a>
+                                                    <a href="industries/oil-and-gas.html">Oil & Gas</a>
+                                                    <a href="industries/automotive-and-transportation.html">Automotive
+                                                        & Transportation</a>
+                                                    <a href="industries/travel-and-hospitality.html">Travel &
+                                                        Hospitality</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown insights-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Insights
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="insights.html">Latest Insights</a>
+                                <a class="dropdown-item" href="insights.html">Customer Success Stories</a>
+                                <a class="dropdown-item" href="insights.html">Blog</a>
+                                <a class="dropdown-item" href="insights.html">Events</a>
+                                <a class="dropdown-item" href="insights.html">Resources</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <div class="contact_links">
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:contact@wango.sn">contact@wango.sn</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <div class="contact_links">
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+221-33-867-2137">+221-33-867-2137</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> Content2 </div>
-                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"> Content3 </div>
-              </div> -->
-            <div class="container pt-md-5">
+            </nav>
+        </div>
+    </div>
+    <header>
+       
+        
+        <div class="hero">
+            
+            <div class="owl-carousel" id="hero-slider">
+                <div class="slider-item">
+                    <img src="img/hero.png" alt="" width="100%" height="auto">
+                    
+                </div>
+                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"></div>
+                <div class="slider-item"> <img src="img/hero.png" alt="" width="100%" height="auto"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome To <span>WANGO</span></h1>
+                <p>WANGO helps companies to build infrastructure and services for their business</p>
+                <a class="cta-btn-lg" href="about.html">Learn More</a>
+            </div>
+            <!-- <div class="container pt-md-5">
                 <div class="row pt-md-5">
                     <div class="col-12 col-md-10 offset-md-1">
                         <div class="hero-content">
@@ -326,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -362,7 +434,8 @@
                     <div id="bs-menu-1" class="container tab-pane active"><br>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
-                                <a class="card" href="solutions/hyperconverged-infrastructure/data-center-infrastructure.html">
+                                <a class="card"
+                                    href="solutions/hyperconverged-infrastructure/data-center-infrastructure.html">
                                     <div class="card-icon">
                                         <i class="fa fa-database"></i>
                                     </div>
@@ -373,7 +446,8 @@
 
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
-                                <a class="card" href="solutions/hyperconverged-infrastructure/advance-engineering-services.html">
+                                <a class="card"
+                                    href="solutions/hyperconverged-infrastructure/advance-engineering-services.html">
                                     <div class="card-icon">
                                         <i class="fa fa-microchip"></i>
                                     </div>
@@ -394,7 +468,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -434,7 +509,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -475,7 +551,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -494,7 +571,8 @@
 
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
-                                <a class="card" href="solutions/business-transformation/advanced-data-and-analytics.html">
+                                <a class="card"
+                                    href="solutions/business-transformation/advanced-data-and-analytics.html">
                                     <div class="card-icon">
                                         <i class="fa fa-line-chart"></i>
                                     </div>
@@ -515,7 +593,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -555,7 +634,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -623,7 +703,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -663,7 +744,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -703,7 +785,8 @@
                                 </a>
                             </div>
                             <div class="col-12 d-flex justify-content-center">
-                                <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
+                                <a href="#" class="explore-all-btn">Explore All <i
+                                        class="fa fa-long-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -727,40 +810,47 @@
         </section>
 
         <section class="industries all-section">
-                <div class="section-title">
-                    <h2>Industries</h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 py-5">
-                            <a href="industries/healthcare.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-heartbeat industry-card-icon"></i>
-                                <h3 class="text-center">Healthcare <i class="fa fa-chevron-right"></i></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
-                                    deleniti dolorum accusamus placeat doloremque in ex modi</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 py-5">
-                            <a href="industries/government.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-bank industry-card-icon"></i>
-                                <h3 class="text-center">Government <i class="fa fa-chevron-right"></i></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
-                                    deleniti dolorum accusamus placeat doloremque in ex modi</p>
-                            </a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 py-5">
-                            <a href="industries/financial-services.html" class="industry-card d-flex justify-content-center flex-column align-items-center" title="Learn More">
-                                <i class="fa fa-money industry-card-icon"></i>
-                                <h3 class="text-center">Financial Services Providers <i class="fa fa-chevron-right"></i></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
-                                    deleniti dolorum accusamus placeat doloremque in ex modi</p>
-                            </a>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
-                        </div>
+            <div class="section-title">
+                <h2>Industries</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 py-5">
+                        <a href="industries/healthcare.html"
+                            class="industry-card d-flex justify-content-center flex-column align-items-center"
+                            title="Learn More">
+                            <i class="fa fa-heartbeat industry-card-icon"></i>
+                            <h3 class="text-center">Healthcare <i class="fa fa-chevron-right"></i></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
+                                deleniti dolorum accusamus placeat doloremque in ex modi</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-5">
+                        <a href="industries/government.html"
+                            class="industry-card d-flex justify-content-center flex-column align-items-center"
+                            title="Learn More">
+                            <i class="fa fa-bank industry-card-icon"></i>
+                            <h3 class="text-center">Government <i class="fa fa-chevron-right"></i></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
+                                deleniti dolorum accusamus placeat doloremque in ex modi</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 py-5">
+                        <a href="industries/financial-services.html"
+                            class="industry-card d-flex justify-content-center flex-column align-items-center"
+                            title="Learn More">
+                            <i class="fa fa-money industry-card-icon"></i>
+                            <h3 class="text-center">Financial Services Providers <i class="fa fa-chevron-right"></i>
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quam harum maxime,
+                                deleniti dolorum accusamus placeat doloremque in ex modi</p>
+                        </a>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="#" class="explore-all-btn">Explore All <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="support all-section py-5">
@@ -838,7 +928,7 @@
                     sint
                     eaque in suscipit quod nobis voluptatem, deserunt nemo ab iusto, ratione neque reiciendis
                     repudiandae.
-                    </p>
+                </p>
                 <a class="read-more d-inline-flex align-items-center" href="about.html"><span>Learn More</span><i
                         class="fa fa-external-link ml-2"></i></a>
             </div>
@@ -916,7 +1006,7 @@
                             <li class="d-block py-1"><a href="#">Support Portal</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -968,11 +1058,11 @@
             loop: true,
             items: 1,
             margin: 0,
-            autoplay: false,
-            autoplayTimeout: 3000,
+            autoplay: true,
+            autoplayTimeout: 5000,
             nav: false,
             slideTransition: "linear",
-            autoplaySpeed: 1000,
+            autoplaySpeed: 500,
             dots: false,
         });
     </script>
