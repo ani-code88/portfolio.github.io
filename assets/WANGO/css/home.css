@@ -5,7 +5,8 @@ Complementary Color: #E46C0A */
     width: 100%;
     position: relative;
 }
-#hero-slider{
+
+#hero-slider {
     position: absolute;
     top: -107px;
     left: 0;
@@ -13,24 +14,30 @@ Complementary Color: #E46C0A */
     bottom: 0;
     z-index: -1;
 }
-.slider-item{
+
+.slider-item {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 90vh;
 }
-.slider-item img{
+
+.slider-item img {
     min-height: 100%;
     min-width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
+
 .hero-content {
     color: #fff;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 970px;
     z-index: 1000;
 }
@@ -53,24 +60,29 @@ Complementary Color: #E46C0A */
 .hero-content .cta-btn-lg {
     display: inline-block;
 }
+
 @media (max-width:992px) {
-   
+
     .hero-content h1 {
         font-size: 3rem;
     }
+
     .hero-content p {
         font-size: 1.5rem;
         padding: 0;
     }
 }
-@media (min-width: 600px ) and (max-width:992px) {
+
+@media (min-width: 600px) and (max-width:992px) {
     .hero-content {
         text-align: center;
         padding: 2rem;
         top: 30%;
         width: 90%;
     }
-}@media (max-width:599px) {
+}
+
+@media (max-width:599px) {
     .hero-content {
         text-align: center;
         padding: 2rem;
@@ -80,13 +92,17 @@ Complementary Color: #E46C0A */
 }
 
 .business-solutions .nav-item {
-    transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+            transform: skewX(-20deg);
     margin: 0.5rem 0.2rem;
 }
 
 .business-solutions .nav-item span {
     display: block;
-    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+            transform: skewX(20deg);
 }
 
 .business-solutions .nav-item:hover .nav-link {
@@ -124,13 +140,20 @@ Complementary Color: #E46C0A */
     text-decoration: none;
     background-color: #dbefff;
 }
-.platforms-section .tab-pane .card-img{
+
+.platforms-section .tab-pane .card-img {
     display: flex;
-    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
-.platforms-section .tab-pane .card img{
+
+.platforms-section .tab-pane .card img {
     max-width: 80px;
 }
+
 .business-solutions .tab-pane h3,
 .platforms-section .tab-pane h3 {
     font-size: 1rem;
@@ -139,15 +162,18 @@ Complementary Color: #E46C0A */
     padding: 1.5rem 0 1rem;
     margin: 0;
 }
+
 .business-solutions .tab-pane h3 .fa,
 .platforms-section .tab-pane h3 .fa,
-.industries h3 .fa{
+.industries h3 .fa {
     margin-left: 0.2rem;
     font-size: 0.7rem;
 }
+
 .business-solutions .tab-pane .card-icon {
     text-align: center;
 }
+
 .business-solutions .tab-pane .card-icon .fa {
     font-size: 2.5rem;
     /* background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), to(#333));
@@ -166,7 +192,7 @@ Complementary Color: #E46C0A */
     font-weight: 300;
 }
 
-.explore-all-btn{
+.explore-all-btn {
     text-decoration: none;
     background-color: #ff7300;
     color: #fff;
@@ -175,23 +201,28 @@ Complementary Color: #E46C0A */
     padding: 0.4rem 1rem;
     display: inline-block;
 }
-.explore-all-btn:hover{
+
+.explore-all-btn:hover {
     background-color: #ff9640;
     color: #fff;
 }
-.explore-all-btn:active{
+
+.explore-all-btn:active {
     background-color: #c7681a;
 }
-.explore-all-btn .fa{
+
+.explore-all-btn .fa {
     margin-left: 0.5rem;
 }
+
 /* ------------ */
 .platforms-section {
     position: relative;
     z-index: 1;
     background-color: #3282c1;
     min-height: 100vh;
-    background: radial-gradient(circle at 50% 50%,#3282c1, #329dc1, #32b8c2)
+    background: -o-radial-gradient(50% 50%, circle, #3282c1, #329dc1, #32b8c2);
+    background: radial-gradient(circle at 50% 50%, #3282c1, #329dc1, #32b8c2)
 }
 
 .platforms-section .section-title h2 {
@@ -202,7 +233,8 @@ Complementary Color: #E46C0A */
 .platforms-section .section-title h2:after {
     background-color: #fff;
 }
-.platforms-section .tab-pane .card{
+
+.platforms-section .tab-pane .card {
     background-color: #fff;
 }
 
@@ -223,35 +255,48 @@ Complementary Color: #E46C0A */
 }
 
 /* --------Industries------ */
-.industry-card{
-    /* box-shadow: 3px 3px 5px rgb(0 0 0 / 7%); */
-    padding: 2.25rem 1rem;
+.industry-card {
+    /*box-shadow: 3px 3px 5px rgb(0 0 0 / 7%);
+    */padding: 2.25rem 1rem;
     transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
 }
-.industry-card:hover{
+
+.industry-card:hover {
     text-decoration: none;
     background-color: #d2ebff;
     color: #000;
 }
-.industry-card .industry-card-icon{
+
+.industry-card .industry-card-icon {
     font-size: 1.5rem;
     height: 60px;
     width: 60px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #dcf0ff;
     color: #3282c1;
 }
 
-.industry-card h3{
+.industry-card h3 {
     font-size: 1rem;
     margin: 1.5rem 0;
     text-align: center;
     font-weight: 700;
 }
-.industry-card p{
+
+.industry-card p {
     font-size: 1rem;
     text-align: center;
     opacity: 0.85;
@@ -264,8 +309,8 @@ Complementary Color: #E46C0A */
 }
 
 .support .container {
+    background: -o-linear-gradient(318deg, rgb(40, 104, 154) 0%, rgb(71, 127, 150) 50%, rgb(115, 41, 160) 100%);
     background: linear-gradient(132deg, rgb(40, 104, 154) 0%, rgb(71, 127, 150) 50%, rgb(115, 41, 160) 100%);
-    /* background-color: rgb(0, 35, 61); */
     padding: 2rem;
     border-radius: 10px;
     position: relative;
@@ -286,7 +331,7 @@ Complementary Color: #E46C0A */
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .support-left-img img {
@@ -296,8 +341,14 @@ Complementary Color: #E46C0A */
 /* ------------------Partners--------- */
 .partners .item .partners-logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .partners .item img {
@@ -309,5 +360,3 @@ Complementary Color: #E46C0A */
 .support .section-sub-title h2 {
     color: var(--wango-orange);
 }
-
-
