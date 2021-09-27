@@ -1,239 +1,406 @@
-/* ^-------------------------------------------------------------------------- */
-/* ^                Common Style Sheet For All Industries Pages                */
-/* ^-------------------------------------------------------------------------- */
-
-/* ! ------------- All Industry Top Breadcrumb ------------- */
+/* ! ------AWS Page------ */
+/* Main Color #3282c1
+Orange #ff7300 */
+/* ^ Top breadcrumb */
 .breadcrumb {
-    margin: 0;
-    padding: 0 0.5rem;
-    align-items: center;
+  margin: 0;
+  padding: 0 0.5rem;
+  align-items: center;
 }
-
 .breadcrumb-item a,
 .breadcrumb .active {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
- /* ! ----------------------------  Scroll Spy Bar ---------------------------- */
- .scroll-spy-section {
-    position: relative;
-}
-.scroll-spy-section .navbar-nav {
-    flex-direction: row;
-}
-
-.scroll-spy-section .nav-item {
-    padding: 0.5rem;
-}
-/* Custom Scroll Spy */
-.scrollspy-nav {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: #111111;
-    z-index: 1000;
-  }
-  
-  .scrollspy-nav .scrollspy-link {
-    text-decoration: none;
-    color: #ffffff;
-    transition: 0.3s ease;
-    font-weight: bold;
-    margin: 0px 10px;
-    padding: 0.5rem 0.75rem;
-    cursor: pointer;
-  }
-  
-  .scrollspy-nav .scrollspy-link:hover,
-  .scrollspy-nav .scrollspy-link:active {
-    color: #d80505;
-  }
-  
-  .scrollspy-nav .scrollspy-indicator {
-    position: absolute;
-    height: 3px;
-    width: 0;
-    background: #d80505;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s, left 0.1s;
-  }
-  
-  .scrollspy-section {
-    min-height: 100vh;
-    padding: 5rem 3rem;
-  }
-
- /* ^ Healthcare Industry */
- /* ! ------------- All Industry Header ------------- */
-.industries-header {
-    height: auto;
-    width: 100%;
-    background: url(../img/industries-bg.jpg) ,linear-gradient(110deg, rgb(236, 236, 255, 0.85) 40%, transparent);
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    background-blend-mode: overlay;
-    z-index: 1;
+/* ^ Main Header */
+.main-header {
+  height: auto;
+  width: 100%;
+  background: url(../img/industries-bg.jpg),
+    linear-gradient(110deg, rgb(236, 236, 255, 0.85) 40%, transparent);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-blend-mode: overlay;
+  z-index: 1;
 }
 
-.industries-header-content {
-    max-width: 700px;
-    padding: 3rem;
+.main-header-content {
+  max-width: 700px;
+  padding: 3rem;
 }
 
-.industries-header h1 {
-    font-size: 4rem;
+.main-header-content .main_title {
+  font-size: 4rem;
+  line-height: 140%;
+  font-weight: 300;
+}
+
+.main-header-content span {
+  display: block;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+@media (max-width: 767px) {
+  .main-header-content .main_title {
+    font-size: 2rem;
     line-height: 140%;
     font-weight: 300;
-}
+  }
 
-.industries-header span {
+  .main-header-content span {
     display: block;
-    margin-top: 4rem;
-    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
     line-height: 1.25;
-}
-/* ! Responsive Media Queries */
-@media (max-width:767px) {
-    .industries-header h1 {
-        font-size: 2rem;
-        line-height: 140%;
-        font-weight: 300;
-    }
-
-    .industries-header span {
-        display: block;
-        margin-top: 1rem;
-        font-size: 1rem;
-        line-height: 1.25;
-    }
-
-    .industries-header-content {
-        max-width: 700px;
-        padding: 3rem 0.5rem;
-    }
-}
-
-
-/* ! ----------------------- Industries Overview Section ---------------------- */
-
-.industries-common #overview {
-    background-color: #efefef;
-}
-.industries-common #overview .title{
-    color: var(--wango-blue);
-    font-weight: 500;
-}
-.industries-common #overview .right-img img {
-    width: 100%;
-    height: auto;
-}
-
-/* ! ----------------------- Industries Solution Section ---------------------- */
-
-.industries-common #solutions {
-    background-color: #fcfcfc;
-}
-
-.industries-common #solutions .title,
-.industries-common #resources .title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--wango-blue);
-    margin-bottom: 5rem;
-    text-align: center;
-    width: 100%;
-}
-
-/* ! Tabs */
-/* Style the tab */
-.tab-1 {
-    background-color: #ebf2ff;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab-1 button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-    position: relative;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab-1 button:hover {
-    background-color: #d0e0ff;
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tab-1 button.active{
-    background-color: #578ae9;
-    color: #fff;
-  }
-  .tab-1 button.active::before {
-    content: '';
-    border: 12px solid transparent;
-    border-right-color: #fff;
-    position: absolute;
-    right: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  /* Style the tab content */
-  .tabcontent-1 {
-    padding: 0px 12px;
-    /* border: 1px solid #ccc; */
-    width: 100%;
-    border-left: none;
-    height: auto;
-    background-color: #fff;
   }
 
-/* ! ----------------------- Industries Resources Section ---------------------- */
-
-.industries-common #resources {
-    background-color: #ffffff;
-}
-.industries-common #resources .card{
-    margin-bottom: 1rem;
+  .main-header-content {
+    max-width: 700px;
+    padding: 3rem 0.5rem;
+  }
 }
 
-.industries-common #resources .resources-card h5 {
-    color: #000;
-    margin-bottom: 2rem;
+/* ^ Main Scrollspy NavBar */
+.scrollspy-nav {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #111111;
+  z-index: 1000;
+}
+.scrollspy-nav .scrollspy-link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+  font-weight: bold;
+  margin: 0px 10px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+@media (max-width: 600px){
+  .scrollspy-nav .scrollspy-link {
+    font-weight: normal;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+}
+}
+.scrollspy-nav .scrollspy-link:hover,
+.scrollspy-nav .scrollspy-link:active {
+  color: #d80505;
 }
 
-.industries-common #resources .resources-card p {
-    color: #000;
-    margin-top: 2.5rem;
-    display: block;
+.scrollspy-nav .scrollspy-indicator {
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: #d80505;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s, left 0.1s;
+}
+/* Scroll spy Section */
+.scrollspy-section {
+  position: relative;
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+}
+@media (max-width:767px){
+  .scrollspy-section{
+    padding: 5rem 0.5rem;
+  }
+}
+/* all sections main title (h2) */
+.scrollspy-section .section_title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 2rem;
+  position: relative;
+  display: block;
+  color: var(--wango-orange);
+  color: #000;
+  width: fit-content;
+  font-family: 'Lora', serif;
+}
+.scrollspy-section .section_title::before{
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  background-color: var(--wango-orange);
+}
+.scrollspy-section .section_title::after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 15px;
+  left: 0;
+  background-color: var(--wango-orange);
 }
 
-.industries-common #resources .resources-card a {
-    text-decoration: none;
-    color: var(--wango-blue);
+/* ^ Overview Section */
+.overviewSection{
+  background-image: url(../img/SimpleShinyOverview.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overviewSection .left{
+  max-width: 400px;
 }
 
-.industries-common #resources .resources-card a:hover {
-    color: #245d88;
+.overviewSection .left p{
+  opacity: 0.9;
+  display: block;
+  margin-top: 3.5rem;
+  line-height: 28px;
+}
+.overviewSection img {
+  width: 450px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: -10px -10px 0px 0px #3282c1, 10px 10px 0px 0px #ff7300;
+  transform: skewX(
+-15deg
+);
+}
+@media (max-width: 600px){
+  .overviewSection img {
+    width: 240px;
+  }
+}
+/* ^ Solution Section */
+.industry-card {
+  /*box-shadow: 3px 3px 5px rgb(0 0 0 / 7%);*/
+  border: 1px solid #f1f1f1;
+  padding: 2.25rem 1rem;
+  margin-bottom: 0.875rem;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
 }
 
- /* ^ Government Industry */
+.industry-card:hover {
+  text-decoration: none;
+  background-color: #d2ebff;
+  color: #000;
+}
+
+.industry-card .industry-card-icon {
+  font-size: 1.5rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dcf0ff;
+  color: #3282c1;
+}
+
+.industry-card h3 {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+.industry-card h3 .fa {
+  margin-left: 0.2rem;
+  font-size: 0.7rem;
+}
+.industry-card p {
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.85;
+  font-weight: 300;
+}
+
+/* ^ Use Cases Section */
+.useCaseSection {
+  position: relative;
+  background-color: #ffffec;
+}
+.use-cases-right .heading{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50px;
+  width: auto;
+}
+.use-cases-right .heading span{
+  width: max-content;
+  color: #2389d6;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0.5rem;
+}
+.use-cases-right .content{
+  margin-top: .5rem;
+  margin-bottom: 1.875rem;
+  padding-left: 1rem;
+}
+.use-cases-right .heading .fa{
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #f3f6ff;
+  padding: 0.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #2389d6;
+  border: 1px solid #2389d6;
+}
+.use-cases-right .content{
+  padding-left: 80px;
+}
+
+
+
+/* ^ Resources Section */
+.resourceSection{
+  background-color: #e8faff;
+}
+
+.resourceSection .card{
+  background-color: #f8f8f8;
+  margin-bottom: 1rem;
+}
+.resourceSection .card-img{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.resourceSection .card-img img{
+  width: 100%;
+  height: 100%;
+  }
+.resourceSection .card h5{
+  font-size: 16px;
+  font-weight: 700;
+}
+.resourceSection .card p{
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.resourceSection .card-body a{
+  color: #0477fb;
+  font-size: 13px;
+}
+.resourceSection .card-body a:hover{
+  color: #c43a04;
+}
+
+
+/* ^ Contact (Get Started) Section */
+.contactSection form{
+  max-width: 750px;
+}
+.contactSection .form-head h3{
+font-size: 1.5rem;
+font-weight: 700;
+}
+.contactSection .form-head span{
+  color: #6e6e6e;
+  max-width: 465px;
+  display: block;
+}
+.contactSection form label{
+  font-size: 15px;
+  font-weight: 700;
+}
+.contactSection label span{
+  color: #f10a0a;
+}
+
+.contactSection .contact-details{
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.contact-details .title h3{
+font-size: 1.5rem;
+font-weight: 700;
+margin: 0;
+padding: 0;
+position: relative;
+}
+.contact-details .title span{
+  font-size: 0.9rem;
+font-weight: 400;
+opacity: 0.8;
+}
+.contactSection .doted_bar{
+    width: 50px;
+    height: 4px;
+    margin-left: 2px;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--wango-orange) 20%, transparent 20%, transparent 30%, var(--wango-orange) 30%, var(--wango-orange) 50%, transparent 50%, transparent 60%, var(--wango-orange) 60%, var(--wango-orange) 100%);
+}
+.contactSection .contact-box{
+  display: flex;
+}
+
+.contactSection .contact-box .fa{
+  display: inline-block;
+  margin-right: 1rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  color: #000;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactSection .details p{
+  max-width: 400px;
+  color: #000;
+  opacity: 0.9;
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media (max-width: 600px){
+  .contactSection .details p{
+    max-width: 190px;
+  }
+}
+.contactSection .details span{
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+}
